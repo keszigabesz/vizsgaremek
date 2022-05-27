@@ -50,7 +50,7 @@
 * név
 * TAJ
 * születési idő
-* lakcím
+* anyja neve
 
 ### 2. Az oldalon lehetőség van új beteg felvételére
 *Elfogadási kritérium:*
@@ -110,7 +110,6 @@
 * megnevezés
 * ár
 * TB pont
-* aktuálisan elérhető-e a vizsgálat
 
 ### 2. Az oldalon lehetőség van új vizsgálat felvételére
 *Elfogadási kritérium:*
