@@ -10,7 +10,6 @@ import { PhysicianService } from 'src/app/service/physician.service';
 })
 export class PhysicianComponent implements OnInit {
 keys: string[] = Object.keys(new Physician());
-//list$: Observable<Physician[]> = this.physicianService.getAll();
 list$: Observable<Physician[]> = this.physicianService.getAll();
 constructor(private physicianService: PhysicianService) {}
 
