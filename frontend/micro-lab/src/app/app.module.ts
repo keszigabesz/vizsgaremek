@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { PhysicianComponent } from './page/physician/physician.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ListingTableComponent } from './common/listing-table/listing-table.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    PhysicianComponent
+    PhysicianComponent,
+    ListingTableComponent
   ],
   imports: [
     BrowserModule,

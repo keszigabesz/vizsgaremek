@@ -1,14 +1,1 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th *ngFor="let key of keys">{{ key | titlecase }}</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let movie of list$ | async">
-      <td *ngFor="let key of keys">{{ movie[key] }}</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<app-listing-table [list$]="list$" [keys]="keys"></app-listing-table>
