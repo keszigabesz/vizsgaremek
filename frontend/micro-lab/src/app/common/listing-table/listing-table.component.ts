@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Physician } from 'src/app/model/physician';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-listing-table',
@@ -9,7 +8,7 @@ import { Physician } from 'src/app/model/physician';
 })
 export class ListingTableComponent implements OnInit {
 
-  @Input() list$ = new Observable;
+  @Input() list$: Observable<any> = of([]);
   @Input() keys = [''];
 
   constructor() { }
