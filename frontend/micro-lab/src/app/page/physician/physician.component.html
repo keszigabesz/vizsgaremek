@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Név</th>
+            <th>Pecsétszám</th>
+            <th>Város</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let physician of list$ | async">
+            <td>{{ physician.id }}</td>
+            <td>{{ physician.name }}</td>
+            <td>{{ physician.reg_number }}</td>
+            <td>{{ physician.city }}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
