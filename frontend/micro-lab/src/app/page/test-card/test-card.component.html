@@ -1,2 +1,30 @@
 <app-sidebar></app-sidebar>
-<p>test-card works!</p>
+<div class="card">
+  <img
+    class="card-img-top"
+    src="../../../assets/img/laboratory2.jpeg"
+    rel="nofollow"
+    alt="Card image cap"
+  >
+  <div class="card-header card-header-info">
+    <h2 class="card-title">Aktuálisan elérhető vizsgálataink</h2>
+  </div>
+  <div class="card-body">
+    A Micro-Lab által jelenleg végzett vizsgálatok. A lista folyamatosan bővül.
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-5" *ngFor="let test of list$ | async">
+  <div
+    class="card h-100">
+    <div class="card-header card-header-info">
+      <h4 class="card-title">{{test.name}}</h4>
+    </div>
+    <div class="card-body">
+      <p class="mt-1">
+        <span class="text-warning h5 font-weight-bold">{{test.price}}</span> <span class="text-muted">{{currency}}</span>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>

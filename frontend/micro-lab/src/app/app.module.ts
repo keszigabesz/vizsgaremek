@@ -12,7 +12,8 @@ import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
-import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component'
+import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
+import { AdminComponent } from './page/admin/admin.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.comp
     FooterComponent,
     TestCardComponent,
     LoginComponent,
-    SidebarAdminComponent
+    SidebarAdminComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
