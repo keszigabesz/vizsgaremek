@@ -9,7 +9,10 @@ import { PhysicianComponent } from './page/physician/physician.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListingTableComponent } from './common/listing-table/listing-table.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
-import { FooterComponent } from './common/footer/footer.component'
+import { FooterComponent } from './common/footer/footer.component';
+import { TestCardComponent } from './page/test-card/test-card.component';
+import { LoginComponent } from './page/login/login.component';
+import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FooterComponent } from './common/footer/footer.component'
     PhysicianComponent,
     ListingTableComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    TestCardComponent,
+    LoginComponent,
+    SidebarAdminComponent
   ],
   imports: [
     BrowserModule,
