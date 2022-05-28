@@ -7,7 +7,9 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ListingTableComponent } from './common/listing-table/listing-table.component'
+import { ListingTableComponent } from './common/listing-table/listing-table.component';
+import { SidebarComponent } from './common/sidebar/sidebar.component';
+import { FooterComponent } from './common/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ListingTableComponent } from './common/listing-table/listing-table.comp
     NavigationComponent,
     HomeComponent,
     PhysicianComponent,
-    ListingTableComponent
+    ListingTableComponent,
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
