@@ -1,18 +1,6 @@
 <app-sidebar></app-sidebar>
-<div class="card">
-  <img
-    class="card-img-top"
-    src="../../../assets/img/laboratory2.jpeg"
-    rel="nofollow"
-    alt="Card image cap"
-  >
-  <div class="card-header card-header-info">
-    <h2 class="card-title">Aktuálisan elérhető vizsgálataink</h2>
-  </div>
-  <div class="card-body">
-    A Micro-Lab által jelenleg végzett vizsgálatok. A lista folyamatosan bővül.
-  </div>
-</div>
+<app-header [title]="title" [text]="text"></app-header>
+
 <div class="row">
   <div class="col-lg-3 col-md-4 col-sm-6 mb-5" *ngFor="let test of list$ | async">
   <div
@@ -27,7 +15,10 @@
     </div>
     <div class="card-footer">
       <p class="text-warning h5 font-weight-bold">Ár: {{test.price}} {{currency}}</p>
+
     </div>
   </div>
   </div>
 </div>
+
+

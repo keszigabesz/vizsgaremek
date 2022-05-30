@@ -13,7 +13,8 @@ import { FooterComponent } from './common/footer/footer.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
 import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
-import { AdminComponent } from './page/admin/admin.component'
+import { AdminComponent } from './page/admin/admin.component';
+import { HeaderComponent } from './common/header/header.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdminComponent } from './page/admin/admin.component'
     TestCardComponent,
     LoginComponent,
     SidebarAdminComponent,
-    AdminComponent
+    AdminComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,10 @@ import { TestService } from 'src/app/service/test.service';
   styleUrls: ['./test-card.component.scss'],
 })
 export class TestCardComponent implements OnInit {
+  title: string = 'Aktuálisan elérhető vizsgálataink';
+  text: string =
+    'Itt találja a Micro-Lab által jelenleg végzett vizsgálatokat. Az elérhető vizsgálatok listáját folyamatosan bővítjük.';
+
   currency: string = ' Ft';
   list$: Observable<Test[]> = this.testService.getAll();
 
