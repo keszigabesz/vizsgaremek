@@ -4,4 +4,5 @@ export class Test {
   name: string = '';
   price: number = 0;
   point: number = 0;
+  description: string = '';
 }
