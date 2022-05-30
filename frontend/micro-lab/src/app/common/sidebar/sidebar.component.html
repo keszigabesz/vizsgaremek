@@ -7,30 +7,13 @@
 
   <div class="sidebar-wrapper">
     <ul class="nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/">
-          <i class="material-icons">home</i>
-          <p>Kezdőoldal</p>
+      <li *ngFor="let item of sidebar" class="nav-item">
+        <a class="nav-link" [routerLink]="item.link" [ngClass]="item.class">
+          <i *ngIf="item.icon" class="material-icons">{{item.icon}}</i>
+          <p>{{ item.title }}</p>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/test-card">
-          <i class="material-icons">science</i>
-          <p>Elérhető vizsgálatok</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://www.microscopy-uk.org.uk/" target=”_blank”>
-          <i class="material-icons">biotech</i>
-          <p>Mikroszkópok világa</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-danger" routerLink="/login">
-          <i class="material-icons red">login</i>
-          <p>Bejelentkezés</p>
-        </a>
-      </li>
+
     </ul>
   </div>
 </div>
