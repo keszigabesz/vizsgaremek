@@ -14,7 +14,8 @@ import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
 import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
 import { AdminComponent } from './page/admin/admin.component';
-import { HeaderComponent } from './common/header/header.component'
+import { HeaderComponent } from './common/header/header.component';
+import { CountPipe } from './pipe/count.pipe'
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { HeaderComponent } from './common/header/header.component'
     LoginComponent,
     SidebarAdminComponent,
     AdminComponent,
-    HeaderComponent
+    HeaderComponent,
+    CountPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
