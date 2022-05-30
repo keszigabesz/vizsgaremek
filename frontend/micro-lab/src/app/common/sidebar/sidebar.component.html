@@ -9,7 +9,7 @@
     <ul class="nav">
       <li *ngFor="let item of sidebar" class="nav-item">
         <a class="nav-link" [routerLink]="item.link" [ngClass]="item.class">
-          <i *ngIf="item.icon" class="material-icons">{{item.icon}}</i>
+          <i *ngIf="item.icon" class="material-icons" [ngClass]="item.iconClass">{{item.icon}}</i>
           <p>{{ item.title }}</p>
         </a>
       </li>
