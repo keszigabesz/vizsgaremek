@@ -1,2 +1,6 @@
 <app-sidebar-admin></app-sidebar-admin>
-<p>patient works!</p>
+<ng-data-table
+  *ngIf="list$ | async as list"
+  [columns]="columns"
+  [list]="list"
+></ng-data-table>
