@@ -20,7 +20,6 @@ import { PatientComponent } from './page/patient/patient.component';
 import { SampleComponent } from './page/sample/sample.component';
 import { TestComponent } from './page/test/test.component';
 import { ReagentComponent } from './page/reagent/reagent.component';
-import { FilterPipe } from './pipe/filter.pipe';
 import { DataTableModule } from './data-table/data-table.module';
 
 @NgModule({
@@ -41,7 +40,6 @@ import { DataTableModule } from './data-table/data-table.module';
     SampleComponent,
     TestComponent,
     ReagentComponent,
-    FilterPipe,
   ],
   imports: [
     BrowserModule,
