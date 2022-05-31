@@ -88,6 +88,27 @@ export class ConfigService {
     { key: 'reg_number', title: 'Pecsétszám' },
     { key: 'city', title: 'Település' },
   ];
+  reagentTableColumns: INgTableColumn[] = [
+    { key: 'id', title: '#' },
+    { key: 'name', title: 'Név' },
+    { key: 'manufacturer', title: 'Gyártó' },
+    { key: 'price', title: 'Ár' },
+    { key: 'stock', title: 'Készlet' },
+  ];
+  sampleTableColumns: INgTableColumn[] = [
+    { key: 'id', title: '#' },
+    { key: 'type', title: 'Típus' },
+    { key: 'patient_name', title: 'Beteg neve' },
+    { key: 'physician_name', title: 'Beküldő orvos' },
+    { key: 'sampling_date', title: 'Mintavétel dátuma' },
+  ];
+  testTableColumns: INgTableColumn[] = [
+    { key: 'id', title: '#' },
+    { key: 'name', title: 'Név' },
+    { key: 'price', title: 'Ár' },
+    { key: 'point', title: 'TB pont' },
+    { key: 'description', title: 'Leírás' },
+  ];
 
   constructor() {}
 }
