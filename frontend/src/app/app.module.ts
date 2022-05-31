@@ -8,7 +8,6 @@ import { HomeComponent } from './page/home/home.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ListingTableComponent } from './common/listing-table/listing-table.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
@@ -28,7 +27,6 @@ import { DataTableModule } from './data-table/data-table.module';
     NavigationComponent,
     HomeComponent,
     PhysicianComponent,
-    ListingTableComponent,
     SidebarComponent,
     TestCardComponent,
     LoginComponent,
