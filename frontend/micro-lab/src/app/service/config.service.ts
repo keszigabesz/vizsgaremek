@@ -18,6 +18,14 @@ export class ConfigService {
     {link: '/test-card', title: 'Elérhető vizsgálatok',  icon: 'science', class: '', iconClass: ''},
     {link: '/login', title: 'Bejelentkezés', icon: 'login', class: 'text-danger', iconClass: 'icon-red'},
   ];
+  adminSidebarMenu: IMenuItem[] = [
+    {link: '/patient', title: 'Betegek', icon: 'person', class: '', iconClass: ''},
+    {link: '/sample', title: 'Minták',  icon: 'biotech', class: '', iconClass: ''},
+    {link: '/physician', title: 'Orvosok',  icon: 'person', class: '', iconClass: ''},
+    {link: '/test', title: 'Vizsgálatok',  icon: 'science', class: '', iconClass: ''},
+    {link: '/reagent', title: 'Reagensek',  icon: 'bloodtype', class: '', iconClass: ''},
+    {link: '/logout', title: 'Kijelentkezés', icon: 'logout', class: 'text-danger', iconClass: 'icon-red'},
+  ];
 
   constructor() { }
 }

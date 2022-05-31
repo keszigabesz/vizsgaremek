@@ -15,7 +15,11 @@ import { LoginComponent } from './page/login/login.component';
 import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { HeaderComponent } from './common/header/header.component';
-import { CountPipe } from './pipe/count.pipe'
+import { CountPipe } from './pipe/count.pipe';
+import { PatientComponent } from './page/patient/patient.component';
+import { SampleComponent } from './page/sample/sample.component';
+import { TestComponent } from './page/test/test.component';
+import { ReagentComponent } from './page/reagent/reagent.component'
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { CountPipe } from './pipe/count.pipe'
     AdminComponent,
     HeaderComponent,
     CountPipe,
+    PatientComponent,
+    SampleComponent,
+    TestComponent,
+    ReagentComponent,
   ],
   imports: [
     BrowserModule,

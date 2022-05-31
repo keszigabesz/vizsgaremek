@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-sidebar-admin',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar-admin.component.scss']
 })
 export class SidebarAdminComponent implements OnInit {
+  sidebar: IMenuItem[] = this.config.adminSidebarMenu;
 
-  constructor() { }
+  constructor(
+    private config: ConfigService
+  ) { }
 
   ngOnInit(): void {
   }

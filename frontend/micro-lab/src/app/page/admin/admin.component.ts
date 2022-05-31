@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
+  title: string = 'Kedves Felhasználó, Ön belépett a Micro_Lab adminisztrációs felületére!';
+  text: string =
+    'Kérjük, hogy a laboratórium adminisztrációs rendszerében az adatokat nagy körültekintéssel kezelje! Köszönettel: a Micro-Lab vezetősége.';
+
   constructor() { }
 
   ngOnInit(): void {
