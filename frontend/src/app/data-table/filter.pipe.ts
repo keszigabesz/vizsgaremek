@@ -3,14 +3,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'filter',
 })
-export class FilterPipe<T extends { [key: string]: any }>
-  implements PipeTransform
-{
+export class FilterPipe implements PipeTransform {
   transform(
-    value: T[] | null,
+    value: any | null,
     phrase: string = '',
     key: string = ''
-  ): T[] | null {
+  ): Array<any> | null {
     if (!Array.isArray(value) || !phrase) {
       return value;
     }
