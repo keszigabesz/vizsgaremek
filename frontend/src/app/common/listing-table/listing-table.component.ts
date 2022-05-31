@@ -4,16 +4,15 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'app-listing-table',
   templateUrl: './listing-table.component.html',
-  styleUrls: ['./listing-table.component.scss']
+  styleUrls: ['./listing-table.component.scss'],
 })
 export class ListingTableComponent implements OnInit {
-
   @Input() list$: Observable<any> = of([]);
   @Input() keys = [''];
+  phrase: string = '';
+  filterKey: string = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

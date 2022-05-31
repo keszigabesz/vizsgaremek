@@ -1,14 +1,45 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th *ngFor="let key of keys">{{ key | titlecase }}</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of list$ | async">
-      <td *ngFor="let key of keys">{{ item[key] }}</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div
+    class
+    class="row"
+  >
+    <div class="col-4">
+      <select
+        [(ngModel)]="filterKey"
+        class="form-control"
+      >
+        <option value="">Keresés az összes oszlopban</option>
+        <option
+          *ngFor="let key of keys"
+          [value]="key"
+        >{{key | titlecase}}</option>
+      </select>
+    </div>
+    <div class="col-8">
+      <input
+        [(ngModel)]="phrase"
+        type="text"
+        class="form-control"
+        placeholder="Keresés a táblázatban...."
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th *ngFor="let key of keys">{{ key | titlecase }}</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list$ | async | filter:phrase:filterKey">
+            <td *ngFor="let key of keys">{{ item[key] }}</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

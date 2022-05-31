@@ -7,9 +7,9 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { ListingTableComponent } from './common/listing-table/listing-table.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
-import { FooterComponent } from './common/footer/footer.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
 import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
@@ -19,7 +19,8 @@ import { CountPipe } from './pipe/count.pipe';
 import { PatientComponent } from './page/patient/patient.component';
 import { SampleComponent } from './page/sample/sample.component';
 import { TestComponent } from './page/test/test.component';
-import { ReagentComponent } from './page/reagent/reagent.component'
+import { ReagentComponent } from './page/reagent/reagent.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,6 @@ import { ReagentComponent } from './page/reagent/reagent.component'
     PhysicianComponent,
     ListingTableComponent,
     SidebarComponent,
-    FooterComponent,
     TestCardComponent,
     LoginComponent,
     SidebarAdminComponent,
@@ -40,13 +40,10 @@ import { ReagentComponent } from './page/reagent/reagent.component'
     SampleComponent,
     TestComponent,
     ReagentComponent,
+    FilterPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
