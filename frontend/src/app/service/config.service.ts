@@ -82,6 +82,12 @@ export class ConfigService {
     { key: 'birth_date', title: 'Szül. idő' },
     { key: 'mothers_name', title: 'Anyja neve' },
   ];
+  physicianTableColumns: INgTableColumn[] = [
+    { key: 'id', title: '#' },
+    { key: 'name', title: 'Név' },
+    { key: 'reg_number', title: 'Pecsétszám' },
+    { key: 'city', title: 'Település' },
+  ];
 
   constructor() {}
 }
