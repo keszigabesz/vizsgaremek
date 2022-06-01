@@ -1,104 +1,98 @@
-<div
-  class="row"
-  *ngIf="editedObject"
->
-
-
-  id: number = 0;
-  name: string = '';
-  taj: number = 0;
-  birth_date: string = '';
-  mothers_name: string = '';
-
-
-  <div class="col-6 offset-3">
-    <div class="card">
-      <div class="card-header card-header-info">
-        <h4 class="card-title">Betegek szerkesztés és új beteg hozzáadása</h4>
-      </div>
-      <div class="card-body">
-        <form
-          #userForm="ngForm"
-          (ngSubmit)="onSend(editedObject)"
-        >
-          <input
-            type="hidden"
-            name="id"
-            [(ngModel)]="editedObject.id"
+<app-sidebar-admin></app-sidebar-admin>
+<div class="">
+  <div
+    class="row"
+    *ngIf="editedObject"
+  >
+    <div class="col-6 offset-3">
+      <div class="card">
+        <div class="card-header card-header-info">
+          <h4 class="card-title">Betegek szerkesztés és új beteg hozzáadása</h4>
+        </div>
+        <div class="card-body">
+          <form
+            #userForm="ngForm"
+            (ngSubmit)="onSend(editedObject)"
           >
-          <div class="form-group">
-            <label
-              class="bmd-label-floating"
-              for="i1ID"
-            >Név</label>
             <input
-              id="i1ID"
-              class="form-control"
-              type="text"
-              name="name"
-              [(ngModel)]="editedObject.name"
-              pattern="^([A-Űa-ű]){2,}.*$"
-              required
+              type="hidden"
+              name="id"
+              [(ngModel)]="editedObject.id"
             >
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="i1ID"
+              >Név</label>
+              <input
+                id="i1ID"
+                class="form-control"
+                type="text"
+                name="name"
+                [(ngModel)]="editedObject.name"
+                pattern="^([A-Űa-ű]){2,}.*$"
+                required
+              >
 
-          </div>
-          <div class="form-group">
-            <label
-              class="bmd-label-floating"
-              for="i2ID"
-            >TAJ</label>
-            <input
-              id="i2ID"
-              class="form-control"
-              type="number"
-              name="taj"
-              [(ngModel)]="editedObject.taj"
-              pattern=""
-              required
-            >
-          </div>
-          <div class="form-group">
-            <label
-              class="bmd-label-floating"
-              for="i3ID"
-            >Születési idő</label>
-            <input
-              id="i3ID"
-              class="form-control"
-              type="text"
-              name="birth_date"
-              [(ngModel)]="editedObject.birth_date"
-              pattern=""
-              required
-            >
-          </div>
-          <div class="form-group">
-            <label
-              class="bmd-label-floating"
-              for="i4ID"
-            >Anyja neve</label>
-            <input
-              id="i4ID"
-              class="form-control"
-              type="text"
-              name="mothers_name"
-              [(ngModel)]="editedObject.mothers_name"
-              pattern=""
-              required
-            >
-          </div>
-          <button
-            [disabled]="!userForm.valid"
-            type="submit"
-            class="btn btn-success btn-link mr-2"
-          > <i class="material-icons">save</i>
-            Mentés</button>
-          <button
-            routerLink="/patient"
-            class="btn btn-danger btn-link"
-          > <i class="material-icons">not_interested</i>
-            Mégse</button>
-        </form>
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="i2ID"
+              >TAJ</label>
+              <input
+                id="i2ID"
+                class="form-control"
+                type="number"
+                name="taj"
+                [(ngModel)]="editedObject.taj"
+                pattern=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="i3ID"
+              >Születési idő</label>
+              <input
+                id="i3ID"
+                class="form-control"
+                type="text"
+                name="birth_date"
+                [(ngModel)]="editedObject.birth_date"
+                pattern=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="i4ID"
+              >Anyja neve</label>
+              <input
+                id="i4ID"
+                class="form-control"
+                type="text"
+                name="mothers_name"
+                [(ngModel)]="editedObject.mothers_name"
+                pattern=""
+                required
+              >
+            </div>
+            <button
+              [disabled]="!userForm.valid"
+              type="submit"
+              class="btn btn-success btn-link mr-2"
+            > <i class="material-icons">save</i>
+              Mentés</button>
+            <button
+              routerLink="/patient"
+              class="btn btn-danger btn-link"
+            > <i class="material-icons">not_interested</i>
+              Mégse</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
