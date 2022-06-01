@@ -30,8 +30,6 @@ export class PatientComponent implements OnInit {
   }
 
   onEdit(id: number): void {
-    console.log(id);
-    console.log(new Patient());
     this.router.navigate(['patient-edit', id]);
   }
 }
