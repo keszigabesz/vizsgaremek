@@ -1,1 +1,101 @@
-<p>test-edit works!</p>
+<app-sidebar-admin></app-sidebar-admin>
+<div class="">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div class="card">
+        <div class="card-header card-header-info">
+          <h4
+            *ngIf="test$ | async"
+            class="card-title"
+          >Vizsgálat szerkesztése</h4>
+          <h4
+            *ngIf="!(test$ | async)"
+            class="card-title"
+          >Új vizsgálat hozzáadása</h4>
+        </div>
+        <div class="card-body">
+          <form
+            #testForm="ngForm"
+            (ngSubmit)="onSend(test)"
+          >
+            <input
+              type="hidden"
+              name="id"
+              [(ngModel)]="test.id"
+            >
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="name"
+              >Név</label>
+              <input
+                id="name"
+                class="form-control"
+                type="text"
+                name="name"
+                [(ngModel)]="test.name"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="price"
+              >Ár</label>
+              <input
+                id="price"
+                class="form-control"
+                type="number"
+                name="price"
+                [(ngModel)]="test.price"
+                pattern=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="point"
+              >TB pont</label>
+              <input
+                id="point"
+                class="form-control"
+                type="number"
+                name="point"
+                [(ngModel)]="test.point"
+                pattern=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label
+                class="bmd-label-floating"
+                for="description"
+              >Leírás</label>
+              <input
+                id="description"
+                class="form-control"
+                type="text"
+                name="description"
+                [(ngModel)]="test.description"
+                pattern=""
+                required
+              >
+            </div>
+            <button
+              [disabled]="!testForm.valid"
+              type="submit"
+              class="btn btn-success btn-link mr-2"
+            > <i class="material-icons">save</i>
+              Mentés</button>
+            <button
+              routerLink="/test"
+              class="btn btn-danger btn-link"
+            > <i class="material-icons">not_interested</i>
+              Mégse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

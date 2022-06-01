@@ -12,6 +12,7 @@ import { TestService } from 'src/app/service/test.service';
 export class TestComponent implements OnInit {
   columns = this.config.testTableColumns;
   list$: Observable<Test[]> = this.testService.getAll();
+  editor: string = '/test-edit/';
 
   constructor(
     private config: ConfigService,

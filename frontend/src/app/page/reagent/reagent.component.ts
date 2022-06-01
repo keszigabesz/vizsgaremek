@@ -12,6 +12,7 @@ import { ReagentService } from 'src/app/service/reagent.service';
 export class ReagentComponent implements OnInit {
   columns = this.config.reagentTableColumns;
   list$: Observable<Reagent[]> = this.reagentService.getAll();
+  editor: string = '/reagent-edit/';
 
   constructor(
     private config: ConfigService,

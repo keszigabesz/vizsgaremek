@@ -110,5 +110,16 @@ export class ConfigService {
     { key: 'description', title: 'Leírás' },
   ];
 
+  sampleTypes: any[] = [
+    'vizelet',
+    'széklet',
+    'köpet',
+    'sebváladék',
+    'liquor',
+    'vér',
+    'torok váladék',
+    'orr váladék',
+  ];
+
   constructor() {}
 }

@@ -1827,31 +1827,31 @@
   "samples": [
     {
       "id": 1,
-      "type": "H21509",
-      "patient_name": "Ermentrude Fenck",
-      "physician_name": "Mano Baldin",
-      "sampling_date": "2022-05-24"
+      "type": "vizelet",
+      "patient_name": "Emily Hubberton",
+      "physician_name": "Nessi Karolowski",
+      "sampling_date": "2022-05-27"
     },
     {
       "id": 3,
-      "type": "S24139",
+      "type": "vér",
       "patient_name": "Wren Chomicki",
       "physician_name": "Cash Doughill",
       "sampling_date": "2022-05-05"
     },
     {
       "id": 4,
-      "type": "S66322S",
+      "type": "torok váladék",
       "patient_name": "Xever Ridehalgh",
       "physician_name": "Mendy Cleve",
       "sampling_date": "2022-04-27"
     },
     {
       "id": 5,
-      "type": "V899XXD",
+      "type": "liquor",
       "patient_name": "Bertrand Easterling",
       "physician_name": "Teddie Breckon",
-      "sampling_date": "2022-01-17"
+      "sampling_date": "2020-06-26"
     },
     {
       "id": 6,
@@ -3553,13 +3553,20 @@
       "patient_name": "Charlton Houchen",
       "physician_name": "Karlik Chesman",
       "sampling_date": "2022-01-18"
+    },
+    {
+      "id": 249,
+      "type": "széklet",
+      "patient_name": "Daven Cundey",
+      "physician_name": "Teressa Boyet",
+      "sampling_date": "2022-05-12"
     }
   ],
   "tests": [
     {
       "id": 1,
       "name": "Vizelet általános bakterológiai vizsgálata",
-      "price": 7072,
+      "price": 7075,
       "point": 93,
       "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
     },
