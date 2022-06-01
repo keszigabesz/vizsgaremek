@@ -5,6 +5,7 @@ import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { PatientEditComponent } from './page/patient-edit/patient-edit.component';
 import { PatientComponent } from './page/patient/patient.component';
+import { PhysicianEditComponent } from './page/physician-edit/physician-edit.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { ReagentComponent } from './page/reagent/reagent.component';
 import { SampleComponent } from './page/sample/sample.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'physician',
     component: PhysicianComponent,
+  },
+  {
+    path: 'physician-edit/:id',
+    component: PhysicianEditComponent,
   },
   {
     path: 'patient',

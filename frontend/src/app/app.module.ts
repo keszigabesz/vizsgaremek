@@ -21,6 +21,7 @@ import { TestComponent } from './page/test/test.component';
 import { ReagentComponent } from './page/reagent/reagent.component';
 import { DataTableModule } from './data-table/data-table.module';
 import { PatientEditComponent } from './page/patient-edit/patient-edit.component';
+import { PhysicianEditComponent } from './page/physician-edit/physician-edit.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PatientEditComponent } from './page/patient-edit/patient-edit.component
     TestComponent,
     ReagentComponent,
     PatientEditComponent,
+    PhysicianEditComponent,
   ],
   imports: [
     BrowserModule,
