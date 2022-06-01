@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './page/admin/admin.component';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
+import { PatientEditComponent } from './page/patient-edit/patient-edit.component';
 import { PatientComponent } from './page/patient/patient.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { ReagentComponent } from './page/reagent/reagent.component';
@@ -23,6 +24,11 @@ const routes: Routes = [
     path: 'patient',
     component: PatientComponent,
   },
+  {
+    path: 'patient-edit/:id',
+    component: PatientEditComponent,
+  },
+
   {
     path: 'sample',
     component: SampleComponent,
@@ -57,9 +63,8 @@ const routes: Routes = [
   },
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

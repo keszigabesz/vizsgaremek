@@ -1,0 +1,4024 @@
+{
+    "patients": [{
+            "id": 1,
+            "name": "Em Hubber",
+            "taj": 776865676,
+            "birth_date": "1997-08-25",
+            "mothers_name": "Gerald Castro"
+        },
+        {
+            "id": 2,
+            "name": "Dulcy Sheringham",
+            "taj": 349805453,
+            "birth_date": "1991-04-08",
+            "mothers_name": "Bunnie Guillon"
+        },
+        {
+            "id": 3,
+            "name": "Maisie Domegan",
+            "taj": 990238356,
+            "birth_date": "1999-04-11",
+            "mothers_name": "Gregorio Whorlton"
+        },
+        {
+            "id": 4,
+            "name": "Livy Batho",
+            "taj": 417919847,
+            "birth_date": "1988-10-17",
+            "mothers_name": "Delinda Rewcastle"
+        },
+        {
+            "id": 5,
+            "name": "Wyn Manion",
+            "taj": 422143840,
+            "birth_date": "2007-03-26",
+            "mothers_name": "Michell Dragonette"
+        },
+        {
+            "id": 6,
+            "name": "Matti Breitling",
+            "taj": 529444018,
+            "birth_date": "1987-01-16",
+            "mothers_name": "Nathanael Banthorpe"
+        },
+        {
+            "id": 7,
+            "name": "Elmo Blase",
+            "taj": 461186663,
+            "birth_date": "2003-06-10",
+            "mothers_name": "Krissy Casaletto"
+        },
+        {
+            "id": 8,
+            "name": "Donica Filippazzo",
+            "taj": 637078485,
+            "birth_date": "2013-04-06",
+            "mothers_name": "Nady Esbrook"
+        },
+        {
+            "id": 9,
+            "name": "Charyl Rubinshtein",
+            "taj": 169807038,
+            "birth_date": "1989-06-15",
+            "mothers_name": "Rhody Attwoul"
+        },
+        {
+            "id": 10,
+            "name": "Bryce Annon",
+            "taj": 529842063,
+            "birth_date": "1989-01-08",
+            "mothers_name": "Paulita Macvain"
+        },
+        {
+            "id": 11,
+            "name": "Adelbert Dockwray",
+            "taj": 137828428,
+            "birth_date": "2009-08-31",
+            "mothers_name": "Rene Labrow"
+        },
+        {
+            "id": 12,
+            "name": "Israel Andrioni",
+            "taj": 925365990,
+            "birth_date": "1980-03-30",
+            "mothers_name": "Gratia Overal"
+        },
+        {
+            "id": 13,
+            "name": "Curtice Tungate",
+            "taj": 395824621,
+            "birth_date": "2013-06-02",
+            "mothers_name": "Grove Asplen"
+        },
+        {
+            "id": 14,
+            "name": "Muffin Harlowe",
+            "taj": 369824484,
+            "birth_date": "1997-06-15",
+            "mothers_name": "Abbot O'Gorman"
+        },
+        {
+            "id": 15,
+            "name": "Ammamaria Odney",
+            "taj": 460396182,
+            "birth_date": "2011-12-09",
+            "mothers_name": "Donelle Weldon"
+        },
+        {
+            "id": 16,
+            "name": "Meade Esslemont",
+            "taj": 389917628,
+            "birth_date": "1990-03-01",
+            "mothers_name": "Valeria Trimming"
+        },
+        {
+            "id": 17,
+            "name": "Peggi Ilchenko",
+            "taj": 183269057,
+            "birth_date": "2020-04-17",
+            "mothers_name": "Loise Everest"
+        },
+        {
+            "id": 18,
+            "name": "Daven Cundey",
+            "taj": 452887242,
+            "birth_date": "1984-06-04",
+            "mothers_name": "Sigvard McKeighen"
+        },
+        {
+            "id": 19,
+            "name": "Ennis Gatward",
+            "taj": 714460522,
+            "birth_date": "2018-07-31",
+            "mothers_name": "Domenico Woodlands"
+        },
+        {
+            "id": 20,
+            "name": "Stearne Skillicorn",
+            "taj": 832144570,
+            "birth_date": "1994-12-28",
+            "mothers_name": "Antonella Ragge"
+        },
+        {
+            "id": 21,
+            "name": "Willabella Screach",
+            "taj": 767948653,
+            "birth_date": "1995-01-18",
+            "mothers_name": "Egan Ughini"
+        },
+        {
+            "id": 22,
+            "name": "Judi Yerill",
+            "taj": 487429015,
+            "birth_date": "1998-03-07",
+            "mothers_name": "Arluene Wintringham"
+        },
+        {
+            "id": 23,
+            "name": "Marion Morrison",
+            "taj": 288785173,
+            "birth_date": "2007-01-13",
+            "mothers_name": "Allix Oldrey"
+        },
+        {
+            "id": 24,
+            "name": "Basil Dancey",
+            "taj": 385348195,
+            "birth_date": "2010-02-16",
+            "mothers_name": "Prentiss Franzke"
+        },
+        {
+            "id": 25,
+            "name": "Gaby Viant",
+            "taj": 670575978,
+            "birth_date": "1991-04-14",
+            "mothers_name": "Gabbie MacSkeaghan"
+        },
+        {
+            "id": 26,
+            "name": "Filippo Florentine",
+            "taj": 520915183,
+            "birth_date": "1980-03-10",
+            "mothers_name": "Michelina Twycross"
+        },
+        {
+            "id": 27,
+            "name": "Selena Lockney",
+            "taj": 337563498,
+            "birth_date": "2017-11-07",
+            "mothers_name": "Bamby Geffinger"
+        },
+        {
+            "id": 28,
+            "name": "Hort Richel",
+            "taj": 496979212,
+            "birth_date": "2019-03-30",
+            "mothers_name": "Elladine Trimble"
+        },
+        {
+            "id": 29,
+            "name": "Curran Kubista",
+            "taj": 438305670,
+            "birth_date": "2012-03-05",
+            "mothers_name": "Dionisio Beechcraft"
+        },
+        {
+            "id": 30,
+            "name": "Carin Krelle",
+            "taj": 396860291,
+            "birth_date": "2013-01-01",
+            "mothers_name": "Fern Riccardo"
+        },
+        {
+            "id": 31,
+            "name": "Andras Cribbin",
+            "taj": 489930915,
+            "birth_date": "2012-08-22",
+            "mothers_name": "Sayre Lorinez"
+        },
+        {
+            "id": 32,
+            "name": "Linnie Learoyde",
+            "taj": 940314389,
+            "birth_date": "2015-05-29",
+            "mothers_name": "Edeline Maasze"
+        },
+        {
+            "id": 33,
+            "name": "Beilul Trood",
+            "taj": 712212538,
+            "birth_date": "1992-10-18",
+            "mothers_name": "Blake Makiver"
+        },
+        {
+            "id": 34,
+            "name": "Dunc Gabitis",
+            "taj": 555726189,
+            "birth_date": "2016-05-14",
+            "mothers_name": "Eudora Scruby"
+        },
+        {
+            "id": 35,
+            "name": "Lia Le Port",
+            "taj": 950928134,
+            "birth_date": "2015-05-13",
+            "mothers_name": "Tamar Kettel"
+        },
+        {
+            "id": 36,
+            "name": "Basile Northover",
+            "taj": 418197075,
+            "birth_date": "2017-03-29",
+            "mothers_name": "Gregor Carlin"
+        },
+        {
+            "id": 37,
+            "name": "Maggi Vaud",
+            "taj": 878953327,
+            "birth_date": "1980-10-17",
+            "mothers_name": "Danit Chimes"
+        },
+        {
+            "id": 38,
+            "name": "Norri Blakelock",
+            "taj": 636509775,
+            "birth_date": "2000-05-31",
+            "mothers_name": "Anne-corinne Dahlback"
+        },
+        {
+            "id": 39,
+            "name": "Kendra Hirche",
+            "taj": 501504695,
+            "birth_date": "1990-03-15",
+            "mothers_name": "Kerri Bools"
+        },
+        {
+            "id": 40,
+            "name": "Jewel Muffitt",
+            "taj": 298868224,
+            "birth_date": "2015-06-08",
+            "mothers_name": "Daniella Reast"
+        },
+        {
+            "id": 41,
+            "name": "Denys Pedder",
+            "taj": 471496152,
+            "birth_date": "2007-09-29",
+            "mothers_name": "Caddric Seacroft"
+        },
+        {
+            "id": 42,
+            "name": "Margie Chaddock",
+            "taj": 438298103,
+            "birth_date": "1987-02-02",
+            "mothers_name": "Matty Moro"
+        },
+        {
+            "id": 43,
+            "name": "Rafaela Taig",
+            "taj": 219642713,
+            "birth_date": "1982-06-12",
+            "mothers_name": "Gannie Toon"
+        },
+        {
+            "id": 44,
+            "name": "Brigida Raulston",
+            "taj": 293682687,
+            "birth_date": "2009-08-03",
+            "mothers_name": "Joceline Jorat"
+        },
+        {
+            "id": 45,
+            "name": "Neils Cromb",
+            "taj": 227925375,
+            "birth_date": "1992-07-29",
+            "mothers_name": "Jarvis Cowland"
+        },
+        {
+            "id": 46,
+            "name": "Cornall Buckmaster",
+            "taj": 386361604,
+            "birth_date": "2011-10-15",
+            "mothers_name": "Robin Liverock"
+        },
+        {
+            "id": 47,
+            "name": "De Huikerby",
+            "taj": 532952026,
+            "birth_date": "2000-04-19",
+            "mothers_name": "Timothea Decroix"
+        },
+        {
+            "id": 48,
+            "name": "Franny Rodenborch",
+            "taj": 796708778,
+            "birth_date": "2003-12-30",
+            "mothers_name": "Janina Matzl"
+        },
+        {
+            "id": 49,
+            "name": "Paton Ashbe",
+            "taj": 933193319,
+            "birth_date": "2019-11-15",
+            "mothers_name": "Brant O'Brogan"
+        },
+        {
+            "id": 50,
+            "name": "Faythe Aslam",
+            "taj": 112129470,
+            "birth_date": "1990-02-01",
+            "mothers_name": "Tirrell Peaseman"
+        },
+        {
+            "id": 51,
+            "name": "Ilene Robic",
+            "taj": 245229551,
+            "birth_date": "1995-12-07",
+            "mothers_name": "Darrell Ratke"
+        },
+        {
+            "id": 52,
+            "name": "Violette Burchmore",
+            "taj": 571635726,
+            "birth_date": "2020-09-05",
+            "mothers_name": "Denice Guerreau"
+        },
+        {
+            "id": 53,
+            "name": "Felicdad Duligall",
+            "taj": 974338762,
+            "birth_date": "2003-06-30",
+            "mothers_name": "Edward Howford"
+        },
+        {
+            "id": 54,
+            "name": "Cyrillus Laingmaid",
+            "taj": 984332732,
+            "birth_date": "1994-04-05",
+            "mothers_name": "Emlyn Earingey"
+        },
+        {
+            "id": 55,
+            "name": "Chaim Apps",
+            "taj": 751503655,
+            "birth_date": "2010-04-08",
+            "mothers_name": "Barbe Coupman"
+        },
+        {
+            "id": 56,
+            "name": "Halette Ganford",
+            "taj": 611221850,
+            "birth_date": "1992-06-07",
+            "mothers_name": "Nicol Hackford"
+        },
+        {
+            "id": 57,
+            "name": "Lark Cossey",
+            "taj": 757397351,
+            "birth_date": "1998-06-01",
+            "mothers_name": "Brynne McFie"
+        },
+        {
+            "id": 58,
+            "name": "Georgeanne Seegar",
+            "taj": 163324217,
+            "birth_date": "1982-02-20",
+            "mothers_name": "Verge Plumstead"
+        },
+        {
+            "id": 59,
+            "name": "Prudence Asbrey",
+            "taj": 659488959,
+            "birth_date": "2003-04-26",
+            "mothers_name": "Gertie Thew"
+        },
+        {
+            "id": 60,
+            "name": "Cati Barkshire",
+            "taj": 996494003,
+            "birth_date": "1999-11-05",
+            "mothers_name": "Luis Atterbury"
+        },
+        {
+            "id": 61,
+            "name": "Elfrida Moorrud",
+            "taj": 909960454,
+            "birth_date": "1986-03-04",
+            "mothers_name": "Isadora Moorton"
+        },
+        {
+            "id": 62,
+            "name": "Anette Prester",
+            "taj": 458239144,
+            "birth_date": "2004-04-05",
+            "mothers_name": "Randy Logan"
+        },
+        {
+            "id": 63,
+            "name": "Nevin Kelshaw",
+            "taj": 315904038,
+            "birth_date": "2012-04-29",
+            "mothers_name": "Vinnie Buckney"
+        },
+        {
+            "id": 64,
+            "name": "Etta D'Ambrogi",
+            "taj": 263395520,
+            "birth_date": "2013-03-16",
+            "mothers_name": "Joelly Ansteys"
+        },
+        {
+            "id": 65,
+            "name": "Javier Trude",
+            "taj": 153341242,
+            "birth_date": "1982-06-16",
+            "mothers_name": "Verge Damarell"
+        },
+        {
+            "id": 66,
+            "name": "Almeta Itzhaiek",
+            "taj": 522303222,
+            "birth_date": "1981-12-04",
+            "mothers_name": "Venita Frostdicke"
+        },
+        {
+            "id": 67,
+            "name": "Mersey O'Flannery",
+            "taj": 559514005,
+            "birth_date": "2010-01-29",
+            "mothers_name": "Lena Sharville"
+        },
+        {
+            "id": 68,
+            "name": "Norrie Norree",
+            "taj": 389943365,
+            "birth_date": "2004-11-04",
+            "mothers_name": "Phaidra Cornell"
+        },
+        {
+            "id": 69,
+            "name": "Archy Bosson",
+            "taj": 496305885,
+            "birth_date": "2015-05-24",
+            "mothers_name": "Abby McEnteggart"
+        },
+        {
+            "id": 70,
+            "name": "Tedman Schellig",
+            "taj": 593756450,
+            "birth_date": "1993-11-25",
+            "mothers_name": "Casie Brendeke"
+        },
+        {
+            "id": 71,
+            "name": "Eugenia Arniz",
+            "taj": 270799876,
+            "birth_date": "1994-07-06",
+            "mothers_name": "Willie Ogborne"
+        },
+        {
+            "id": 72,
+            "name": "Walliw Rattenberie",
+            "taj": 628164673,
+            "birth_date": "1982-12-22",
+            "mothers_name": "Siffre Retallack"
+        },
+        {
+            "id": 73,
+            "name": "Raye Matic",
+            "taj": 185678333,
+            "birth_date": "1991-07-05",
+            "mothers_name": "Shaylynn Haill"
+        },
+        {
+            "id": 74,
+            "name": "Luciana Erickssen",
+            "taj": 180148521,
+            "birth_date": "1998-03-10",
+            "mothers_name": "Harri O'Deegan"
+        },
+        {
+            "id": 75,
+            "name": "Ezechiel Treasaden",
+            "taj": 440489491,
+            "birth_date": "2017-05-03",
+            "mothers_name": "Joanie Greenshiels"
+        },
+        {
+            "id": 76,
+            "name": "Oates Eynald",
+            "taj": 775921642,
+            "birth_date": "1987-12-29",
+            "mothers_name": "Magdalene Herche"
+        },
+        {
+            "id": 77,
+            "name": "Lloyd Orteaux",
+            "taj": 475637628,
+            "birth_date": "1988-01-13",
+            "mothers_name": "Pavla Benck"
+        },
+        {
+            "id": 78,
+            "name": "Leoine Verrier",
+            "taj": 285829451,
+            "birth_date": "2009-09-26",
+            "mothers_name": "Aime Brandom"
+        },
+        {
+            "id": 79,
+            "name": "Ase Joerning",
+            "taj": 993616112,
+            "birth_date": "1994-01-21",
+            "mothers_name": "Eugine Bert"
+        },
+        {
+            "id": 80,
+            "name": "Stacie Kulas",
+            "taj": 928835867,
+            "birth_date": "2000-05-21",
+            "mothers_name": "North Tremmil"
+        },
+        {
+            "id": 81,
+            "name": "Selby Kesper",
+            "taj": 350045053,
+            "birth_date": "2006-04-04",
+            "mothers_name": "Goldi O'Sullivan"
+        },
+        {
+            "id": 82,
+            "name": "Sarena Bartos",
+            "taj": 223181132,
+            "birth_date": "2018-01-10",
+            "mothers_name": "Karlan Sambidge"
+        },
+        {
+            "id": 83,
+            "name": "Haily Rettie",
+            "taj": 587303103,
+            "birth_date": "2015-08-08",
+            "mothers_name": "Cilka Lebell"
+        },
+        {
+            "id": 84,
+            "name": "Katha Demko",
+            "taj": 919761702,
+            "birth_date": "2005-12-18",
+            "mothers_name": "Milena Dudenie"
+        },
+        {
+            "id": 85,
+            "name": "Malachi Baseke",
+            "taj": 948167601,
+            "birth_date": "2008-05-16",
+            "mothers_name": "Quinta Slader"
+        },
+        {
+            "id": 86,
+            "name": "Remy Zanazzi",
+            "taj": 463089246,
+            "birth_date": "1983-05-26",
+            "mothers_name": "Barnaby Leipoldt"
+        },
+        {
+            "id": 87,
+            "name": "Reeta Vela",
+            "taj": 542048431,
+            "birth_date": "1980-06-16",
+            "mothers_name": "Rhetta Lorans"
+        },
+        {
+            "id": 88,
+            "name": "Morrie Clelland",
+            "taj": 787663993,
+            "birth_date": "1990-04-06",
+            "mothers_name": "Boyd Kleinfeld"
+        },
+        {
+            "id": 89,
+            "name": "Lalo Tanzer",
+            "taj": 587671794,
+            "birth_date": "2015-03-10",
+            "mothers_name": "Leonhard Didsbury"
+        },
+        {
+            "id": 90,
+            "name": "Giulietta Newbatt",
+            "taj": 986185267,
+            "birth_date": "1999-01-01",
+            "mothers_name": "Lois Ferron"
+        },
+        {
+            "id": 91,
+            "name": "Mitchael McMonnies",
+            "taj": 480976317,
+            "birth_date": "1995-03-26",
+            "mothers_name": "Zebadiah Paoli"
+        },
+        {
+            "id": 92,
+            "name": "Della Croft",
+            "taj": 886155439,
+            "birth_date": "1985-04-17",
+            "mothers_name": "Willyt Nys"
+        },
+        {
+            "id": 93,
+            "name": "Alisun Isaak",
+            "taj": 132753565,
+            "birth_date": "1988-01-11",
+            "mothers_name": "Lev Pettiward"
+        },
+        {
+            "id": 94,
+            "name": "Deana Langston",
+            "taj": 622775090,
+            "birth_date": "1999-09-21",
+            "mothers_name": "Hunt Brigman"
+        },
+        {
+            "id": 95,
+            "name": "Reggi Deery",
+            "taj": 651027762,
+            "birth_date": "1982-08-07",
+            "mothers_name": "Sheri Garland"
+        },
+        {
+            "id": 96,
+            "name": "Avis Fuke",
+            "taj": 685124030,
+            "birth_date": "2012-09-27",
+            "mothers_name": "Alleyn Leaman"
+        },
+        {
+            "id": 97,
+            "name": "Sonny Yearnes",
+            "taj": 873684292,
+            "birth_date": "1995-06-18",
+            "mothers_name": "Beverly Addeycott"
+        },
+        {
+            "id": 98,
+            "name": "Garwin Curle",
+            "taj": 205572157,
+            "birth_date": "1993-09-19",
+            "mothers_name": "Alejoa Dumberrill"
+        },
+        {
+            "id": 99,
+            "name": "Iona Lambrick",
+            "taj": 487525895,
+            "birth_date": "2004-04-26",
+            "mothers_name": "Standford Nineham"
+        },
+        {
+            "id": 100,
+            "name": "Lonee Sissens",
+            "taj": 214131415,
+            "birth_date": "2000-09-25",
+            "mothers_name": "Roscoe China"
+        }
+    ],
+    "physicians": [{
+            "id": 1,
+            "name": "Daria Faull",
+            "reg_number": 43074,
+            "city": "Budapest"
+        },
+        {
+            "id": 2,
+            "name": "Ad Calveley",
+            "reg_number": 92059,
+            "city": "Debrecen"
+        },
+        {
+            "id": 3,
+            "name": "Terese Yabsley",
+            "reg_number": 45450,
+            "city": "Szeged"
+        },
+        {
+            "id": 4,
+            "name": "Nessi Karolowski",
+            "reg_number": 49705,
+            "city": "Győr"
+        },
+        {
+            "id": 5,
+            "name": "Shela Salerg",
+            "reg_number": 84761,
+            "city": "Miskolc"
+        },
+        {
+            "id": 6,
+            "name": "Drona Wilfinger",
+            "reg_number": 66410,
+            "city": "Budapest"
+        },
+        {
+            "id": 7,
+            "name": "Sallee Keighly",
+            "reg_number": 30138,
+            "city": "Budapest"
+        },
+        {
+            "id": 8,
+            "name": "Justen Riha",
+            "reg_number": 66133,
+            "city": "Győr"
+        },
+        {
+            "id": 9,
+            "name": "Way Thiese",
+            "reg_number": 27748,
+            "city": "Miskolc"
+        },
+        {
+            "id": 10,
+            "name": "Kevon Gatley",
+            "reg_number": 88633,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 11,
+            "name": "Vic Gabala",
+            "reg_number": 61873,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 12,
+            "name": "Merry Dri",
+            "reg_number": 72991,
+            "city": "Miskolc"
+        },
+        {
+            "id": 13,
+            "name": "Teressa Boyet",
+            "reg_number": 55123,
+            "city": "Győr"
+        },
+        {
+            "id": 14,
+            "name": "Lamar Readitt",
+            "reg_number": 56314,
+            "city": "Szeged"
+        },
+        {
+            "id": 15,
+            "name": "Jerrie Lancley",
+            "reg_number": 63898,
+            "city": "Szeged"
+        },
+        {
+            "id": 16,
+            "name": "Darsey Betjeman",
+            "reg_number": 33058,
+            "city": "Szeged"
+        },
+        {
+            "id": 17,
+            "name": "Wallie McNeil",
+            "reg_number": 54041,
+            "city": "Szeged"
+        },
+        {
+            "id": 18,
+            "name": "Hermann Azemar",
+            "reg_number": 98600,
+            "city": "Szeged"
+        },
+        {
+            "id": 19,
+            "name": "Elizabet Starmore",
+            "reg_number": 52919,
+            "city": "Szeged"
+        },
+        {
+            "id": 20,
+            "name": "Nealson Starrs",
+            "reg_number": 63622,
+            "city": "Győr"
+        },
+        {
+            "id": 21,
+            "name": "Frazier Foulstone",
+            "reg_number": 57721,
+            "city": "Győr"
+        },
+        {
+            "id": 22,
+            "name": "Wait Earengey",
+            "reg_number": 81051,
+            "city": "Győr"
+        },
+        {
+            "id": 23,
+            "name": "Willdon McCullock",
+            "reg_number": 68617,
+            "city": "Győr"
+        },
+        {
+            "id": 24,
+            "name": "Modestia Sinncock",
+            "reg_number": 13361,
+            "city": "Győr"
+        },
+        {
+            "id": 25,
+            "name": "Raina Gilardoni",
+            "reg_number": 10738,
+            "city": "Győr"
+        },
+        {
+            "id": 26,
+            "name": "Ramsay Topling",
+            "reg_number": 35645,
+            "city": "Győr"
+        },
+        {
+            "id": 27,
+            "name": "Norbie Fitchell",
+            "reg_number": 30960,
+            "city": "Győr"
+        },
+        {
+            "id": 28,
+            "name": "Lyndy Kornilov",
+            "reg_number": 14445,
+            "city": "Győr"
+        },
+        {
+            "id": 29,
+            "name": "Karly Tivnan",
+            "reg_number": 79769,
+            "city": "Győr"
+        },
+        {
+            "id": 30,
+            "name": "Twila Jindrak",
+            "reg_number": 53446,
+            "city": "Győr"
+        },
+        {
+            "id": 31,
+            "name": "Emiline Coot",
+            "reg_number": 81427,
+            "city": "Győr"
+        },
+        {
+            "id": 32,
+            "name": "Lizette Ellwell",
+            "reg_number": 89203,
+            "city": "Győr"
+        },
+        {
+            "id": 33,
+            "name": "Wadsworth Delph",
+            "reg_number": 12028,
+            "city": "Miskolc"
+        },
+        {
+            "id": 34,
+            "name": "Jard Elsip",
+            "reg_number": 87671,
+            "city": "Miskolc"
+        },
+        {
+            "id": 35,
+            "name": "Bjorn Faveryear",
+            "reg_number": 50468,
+            "city": "Miskolc"
+        },
+        {
+            "id": 36,
+            "name": "Tally Carryer",
+            "reg_number": 46912,
+            "city": "Miskolc"
+        },
+        {
+            "id": 37,
+            "name": "Vail Kolodziej",
+            "reg_number": 96845,
+            "city": "Miskolc"
+        },
+        {
+            "id": 38,
+            "name": "Guilbert Kitteringham",
+            "reg_number": 42090,
+            "city": "Miskolc"
+        },
+        {
+            "id": 39,
+            "name": "Vincenz McLugaish",
+            "reg_number": 34857,
+            "city": "Miskolc"
+        },
+        {
+            "id": 40,
+            "name": "Skelly Carslaw",
+            "reg_number": 38979,
+            "city": "Miskolc"
+        },
+        {
+            "id": 41,
+            "name": "Tobe Fancutt",
+            "reg_number": 70162,
+            "city": "Miskolc"
+        },
+        {
+            "id": 42,
+            "name": "Rae Tootell",
+            "reg_number": 96074,
+            "city": "Miskolc"
+        },
+        {
+            "id": 43,
+            "name": "Hazlett Skelhorn",
+            "reg_number": 57949,
+            "city": "Miskolc"
+        },
+        {
+            "id": 44,
+            "name": "Berenice Perell",
+            "reg_number": 85029,
+            "city": "Miskolc"
+        },
+        {
+            "id": 45,
+            "name": "Justine Benham",
+            "reg_number": 65028,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 46,
+            "name": "Bailey Huby",
+            "reg_number": 85598,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 47,
+            "name": "Kitty Dearn",
+            "reg_number": 46998,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 48,
+            "name": "Etty Duffin",
+            "reg_number": 10255,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 49,
+            "name": "Ketty Easseby",
+            "reg_number": 52690,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 50,
+            "name": "Elianora Leeming",
+            "reg_number": 95559,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 51,
+            "name": "Raviv Clashe",
+            "reg_number": 58508,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 52,
+            "name": "Ardelia Rowell",
+            "reg_number": 38420,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 53,
+            "name": "Gretna Makiver",
+            "reg_number": 43701,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 54,
+            "name": "Trumann Pina",
+            "reg_number": 38514,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 55,
+            "name": "Harley Corn",
+            "reg_number": 16408,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 56,
+            "name": "Deane Boatswain",
+            "reg_number": 95936,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 57,
+            "name": "Niki Madre",
+            "reg_number": 75399,
+            "city": "Kecskemét"
+        },
+        {
+            "id": 58,
+            "name": "Norene Isley",
+            "reg_number": 91693,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 59,
+            "name": "Hilarius Hawe",
+            "reg_number": 95586,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 60,
+            "name": "Iorgo Creenan",
+            "reg_number": 71570,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 61,
+            "name": "Cherey Muddicliffe",
+            "reg_number": 32215,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 62,
+            "name": "Maryellen Steketee",
+            "reg_number": 98293,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 63,
+            "name": "Lynnett Torrent",
+            "reg_number": 80873,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 64,
+            "name": "Rolfe Ricciardiello",
+            "reg_number": 28075,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 65,
+            "name": "Elwin Julien",
+            "reg_number": 32409,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 66,
+            "name": "Brittani Westpfel",
+            "reg_number": 89583,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 67,
+            "name": "Land Thelwll",
+            "reg_number": 95125,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 68,
+            "name": "Allegra Smolan",
+            "reg_number": 61903,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 69,
+            "name": "Imogene Gerrard",
+            "reg_number": 57314,
+            "city": "Nyíregyházs"
+        },
+        {
+            "id": 70,
+            "name": "Bevon Halliday",
+            "reg_number": 86939,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 71,
+            "name": "Val Bonett",
+            "reg_number": 32187,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 72,
+            "name": "Rhea O'Henehan",
+            "reg_number": 95077,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 73,
+            "name": "Tito Harmar",
+            "reg_number": 78176,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 74,
+            "name": "Francesco Fruser",
+            "reg_number": 98967,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 75,
+            "name": "Gayel Lodwick",
+            "reg_number": 40887,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 76,
+            "name": "Cole Le Grand",
+            "reg_number": 79666,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 77,
+            "name": "Bran Dewberry",
+            "reg_number": 10904,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 78,
+            "name": "Arluene Sirmond",
+            "reg_number": 11821,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 79,
+            "name": "Bobbette Delf",
+            "reg_number": 78398,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 80,
+            "name": "Julianna Yakobowitch",
+            "reg_number": 99962,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 81,
+            "name": "Suzanna Hyam",
+            "reg_number": 83246,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 82,
+            "name": "Bendick Catteroll",
+            "reg_number": 58607,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 83,
+            "name": "Adah Pavlovic",
+            "reg_number": 23751,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 84,
+            "name": "Rockie Akid",
+            "reg_number": 98703,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 85,
+            "name": "Chester Fetteplace",
+            "reg_number": 37762,
+            "city": "Dunakeszi"
+        },
+        {
+            "id": 86,
+            "name": "Andrei Palluschek",
+            "reg_number": 60215,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 87,
+            "name": "Georas Radborn",
+            "reg_number": 21141,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 88,
+            "name": "Heda Foddy",
+            "reg_number": 73791,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 89,
+            "name": "Izabel Lattey",
+            "reg_number": 46657,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 90,
+            "name": "Bibbie Marton",
+            "reg_number": 54575,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 91,
+            "name": "Tan Skittles",
+            "reg_number": 60479,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 92,
+            "name": "Jorgan Gennings",
+            "reg_number": 30726,
+            "city": "Zalaegerszeg"
+        },
+        {
+            "id": 93,
+            "name": "Rupert MacKegg",
+            "reg_number": 79133,
+            "city": "Eger"
+        },
+        {
+            "id": 94,
+            "name": "Corissa Stearley",
+            "reg_number": 27973,
+            "city": "Eger"
+        },
+        {
+            "id": 95,
+            "name": "Odella Stienham",
+            "reg_number": 72928,
+            "city": "Eger"
+        },
+        {
+            "id": 96,
+            "name": "Frannie Kite",
+            "reg_number": 72110,
+            "city": "Eger"
+        },
+        {
+            "id": 97,
+            "name": "Pippy Aubry",
+            "reg_number": 51955,
+            "city": "Eger"
+        },
+        {
+            "id": 98,
+            "name": "Bertha Glazebrook",
+            "reg_number": 42005,
+            "city": "Fót"
+        },
+        {
+            "id": 99,
+            "name": "Harris Bobasch",
+            "reg_number": 98108,
+            "city": "Ajka"
+        },
+        {
+            "id": 100,
+            "name": "Johnny Losebie",
+            "reg_number": 97228,
+            "city": "Visegrád"
+        }
+    ],
+    "reagents": [{
+            "id": 1,
+            "name": "HealthMart",
+            "manufacturer": "McKesson",
+            "price": 96270,
+            "stock": 710
+        },
+        {
+            "id": 2,
+            "name": "ARNICA MONTANA",
+            "manufacturer": "Remedy Makers",
+            "price": 60566,
+            "stock": 629
+        },
+        {
+            "id": 3,
+            "name": "smart sense anti itch",
+            "manufacturer": "Kmart Corporation",
+            "price": 1216,
+            "stock": 132
+        },
+        {
+            "id": 4,
+            "name": "Citalopram",
+            "manufacturer": "Cardinal Health",
+            "price": 69517,
+            "stock": 418
+        },
+        {
+            "id": 5,
+            "name": "PRIME PRIMER HYDRATING FINISH",
+            "manufacturer": "F&CO Co., Ltd.",
+            "price": 59747,
+            "stock": 99
+        },
+        {
+            "id": 6,
+            "name": "Enviro",
+            "manufacturer": "Deseret Biologicals, Inc.",
+            "price": 5131,
+            "stock": 332
+        },
+        {
+            "id": 7,
+            "name": "ACD-A",
+            "manufacturer": "Fenwal Inc",
+            "price": 69469,
+            "stock": 677
+        },
+        {
+            "id": 8,
+            "name": "Multi-Symptom Menstrual Pain Relief",
+            "manufacturer": "Family Dollar",
+            "price": 98513,
+            "stock": 151
+        },
+        {
+            "id": 9,
+            "name": "Unithroid",
+            "manufacturer": "Gemini Laboratories, LLC",
+            "price": 30035,
+            "stock": 462
+        },
+        {
+            "id": 10,
+            "name": "Clobetasol Propionate",
+            "manufacturer": "Morton Grove Pharmaceuticals, Inc.",
+            "price": 3438,
+            "stock": 597
+        },
+        {
+            "id": 11,
+            "name": "THERA Antifungal Body",
+            "manufacturer": "McKesson Medical-Surgical Inc.",
+            "price": 75486,
+            "stock": 120
+        },
+        {
+            "id": 12,
+            "name": "Vitamin A and Vitamin D",
+            "manufacturer": "Physicians Total Care, Inc.",
+            "price": 45044,
+            "stock": 792
+        },
+        {
+            "id": 13,
+            "name": "Zegerid",
+            "manufacturer": "Santarus, Inc.",
+            "price": 26282,
+            "stock": 427
+        },
+        {
+            "id": 14,
+            "name": "Betamethasone Sodium Phosphate and Betamethasone Acetate",
+            "manufacturer": "American Regent, Inc.",
+            "price": 84875,
+            "stock": 157
+        },
+        {
+            "id": 15,
+            "name": "Ana-Lex",
+            "manufacturer": "Avion Pharmaceuticals, LLC",
+            "price": 12859,
+            "stock": 497
+        },
+        {
+            "id": 16,
+            "name": "Loperamide Hydrochloride",
+            "manufacturer": "Valu Merchandisers Company",
+            "price": 63218,
+            "stock": 868
+        },
+        {
+            "id": 17,
+            "name": "Yellow Dock",
+            "manufacturer": "Nelco Laboratories, Inc.",
+            "price": 21373,
+            "stock": 150
+        },
+        {
+            "id": 18,
+            "name": "LOTEMAX",
+            "manufacturer": "Bausch & Lomb Incorporated",
+            "price": 7531,
+            "stock": 463
+        },
+        {
+            "id": 19,
+            "name": "Oxygen",
+            "manufacturer": "American Welding & Gas",
+            "price": 12187,
+            "stock": 627
+        },
+        {
+            "id": 20,
+            "name": "Nitrofurantion Macrocrystals",
+            "manufacturer": "REMEDYREPACK INC.",
+            "price": 44327,
+            "stock": 87
+        },
+        {
+            "id": 21,
+            "name": "Temazepam",
+            "manufacturer": "Mylan Pharmaceuticals Inc.",
+            "price": 20002,
+            "stock": 785
+        },
+        {
+            "id": 22,
+            "name": "DIPYRIDAMOLE",
+            "manufacturer": "Major Pharmaceuticals",
+            "price": 7039,
+            "stock": 217
+        },
+        {
+            "id": 23,
+            "name": "acamprosate calcium",
+            "manufacturer": "Forest Laboratories, Inc.",
+            "price": 73999,
+            "stock": 62
+        },
+        {
+            "id": 24,
+            "name": "Fresh N Up",
+            "manufacturer": "Rockline Industries, Inc",
+            "price": 64466,
+            "stock": 69
+        },
+        {
+            "id": 25,
+            "name": "Carvedilol",
+            "manufacturer": "BluePoint Laboratories",
+            "price": 9777,
+            "stock": 949
+        },
+        {
+            "id": 26,
+            "name": "Topiramate",
+            "manufacturer": "REMEDYREPACK INC.",
+            "price": 39171,
+            "stock": 638
+        },
+        {
+            "id": 27,
+            "name": "Kadian",
+            "manufacturer": "Actavis Pharma, Inc.",
+            "price": 76731,
+            "stock": 851
+        },
+        {
+            "id": 28,
+            "name": "Eucalyptus Pollen",
+            "manufacturer": "Allermed Laboratories, Inc.",
+            "price": 86378,
+            "stock": 548
+        },
+        {
+            "id": 29,
+            "name": "Quik Spray",
+            "manufacturer": "Cinogen Cosmetics Zhaoqing, LTD.",
+            "price": 70234,
+            "stock": 604
+        },
+        {
+            "id": 30,
+            "name": "Our Family Dish and Antibacterial Green Apple Scent",
+            "manufacturer": "Sun Products Corporation",
+            "price": 10904,
+            "stock": 843
+        },
+        {
+            "id": 31,
+            "name": "Cold Multi-Symptom Severe",
+            "manufacturer": "GREENBRIER INTERNATIONAL, INC.",
+            "price": 43428,
+            "stock": 564
+        },
+        {
+            "id": 32,
+            "name": "HAWAIIAN Tropic",
+            "manufacturer": "Energizer Personal Care LLC",
+            "price": 92211,
+            "stock": 505
+        },
+        {
+            "id": 33,
+            "name": "gentle lax",
+            "manufacturer": "Kroger Company",
+            "price": 22724,
+            "stock": 356
+        },
+        {
+            "id": 34,
+            "name": "CAREONE ANTIMICROBIAL FOAMING HAND SP FALLING RAIN",
+            "manufacturer": "AMERICAN SALES COMPANY",
+            "price": 95173,
+            "stock": 702
+        },
+        {
+            "id": 35,
+            "name": "Albuterol Sulfate",
+            "manufacturer": "Watson Laboratories, Inc.",
+            "price": 9030,
+            "stock": 112
+        },
+        {
+            "id": 36,
+            "name": "womans laxative",
+            "manufacturer": "Mckesson (Sunmark)",
+            "price": 95414,
+            "stock": 388
+        },
+        {
+            "id": 37,
+            "name": "Haloperidol",
+            "manufacturer": "NCS HealthCare of KY, Inc dba Vangard Labs",
+            "price": 16696,
+            "stock": 176
+        },
+        {
+            "id": 38,
+            "name": "Gambil Oak",
+            "manufacturer": "Nelco Laboratories, Inc.",
+            "price": 19074,
+            "stock": 680
+        },
+        {
+            "id": 39,
+            "name": "Nasal",
+            "manufacturer": "L Perrigo Company",
+            "price": 16620,
+            "stock": 176
+        },
+        {
+            "id": 40,
+            "name": "Cefepime Hydrochloride",
+            "manufacturer": "Sandoz Inc",
+            "price": 54341,
+            "stock": 950
+        },
+        {
+            "id": 41,
+            "name": "BENADRYL Extra Strength Itch Cooling",
+            "manufacturer": "Johnson & Johnson Consumer Products Company, Division of Johnson & Johnson Consumer Companies, Inc.",
+            "price": 40010,
+            "stock": 450
+        },
+        {
+            "id": 42,
+            "name": "ALLEGRA",
+            "manufacturer": "sanofi-aventis U.S. LLC",
+            "price": 75804,
+            "stock": 629
+        },
+        {
+            "id": 43,
+            "name": "Amlodipine Besylate",
+            "manufacturer": "Aidarex Pharmaceuticals LLC",
+            "price": 67870,
+            "stock": 209
+        },
+        {
+            "id": 44,
+            "name": "Risperidone",
+            "manufacturer": "Mylan Pharmaceuticals Inc.",
+            "price": 55132,
+            "stock": 644
+        },
+        {
+            "id": 45,
+            "name": "HOUSE DUST",
+            "manufacturer": "ALK-Abello, Inc.",
+            "price": 1302,
+            "stock": 967
+        },
+        {
+            "id": 46,
+            "name": "Sulfamethoxazole and Trimethoprim",
+            "manufacturer": "Contract Pharmacy Services-PA",
+            "price": 86907,
+            "stock": 977
+        },
+        {
+            "id": 47,
+            "name": "BIOWHITE BRIGHTENING",
+            "manufacturer": "ZION SYNTHETIC FIBER CO., LTD.",
+            "price": 29802,
+            "stock": 723
+        },
+        {
+            "id": 48,
+            "name": "PHOENIX HEALTHCARE SOLUTIONS, LLC",
+            "manufacturer": "PHOENIX HEALTHCARE SOLUTIONS, LLC",
+            "price": 12818,
+            "stock": 130
+        },
+        {
+            "id": 49,
+            "name": "Yves Saint Laurent Top Secrets All In One BB",
+            "manufacturer": "L'Oreal USA Products Inc",
+            "price": 14026,
+            "stock": 87
+        },
+        {
+            "id": 50,
+            "name": "Rouge Dior 470 Pearly Pink Serum",
+            "manufacturer": "Parfums Christian Dior",
+            "price": 47346,
+            "stock": 726
+        },
+        {
+            "id": 51,
+            "name": "Azithromycin",
+            "manufacturer": "REMEDYREPACK INC.",
+            "price": 32943,
+            "stock": 214
+        },
+        {
+            "id": 52,
+            "name": "Creations Garden",
+            "manufacturer": "Creations Garden Natural Products, Inc",
+            "price": 17667,
+            "stock": 671
+        },
+        {
+            "id": 53,
+            "name": "Triadine",
+            "manufacturer": "H and P Industries, Inc. dba Triad Group",
+            "price": 44972,
+            "stock": 920
+        },
+        {
+            "id": 54,
+            "name": "Mirtazapine",
+            "manufacturer": "Watson Laboratories, Inc.",
+            "price": 22271,
+            "stock": 331
+        },
+        {
+            "id": 55,
+            "name": "Nighttime Sleep Aid",
+            "manufacturer": "SUPERVALU INC.",
+            "price": 33480,
+            "stock": 780
+        },
+        {
+            "id": 56,
+            "name": "Advanced Firming and Anti Wrinkle",
+            "manufacturer": "Rite Aid Corporation",
+            "price": 18385,
+            "stock": 613
+        },
+        {
+            "id": 57,
+            "name": "Mineral Oil",
+            "manufacturer": "Dynarex Corporation",
+            "price": 10754,
+            "stock": 787
+        },
+        {
+            "id": 58,
+            "name": "Dry Idea A.Dry Antiperspirant Unscented",
+            "manufacturer": "The Dial Corporation",
+            "price": 1017,
+            "stock": 1
+        },
+        {
+            "id": 59,
+            "name": "Stress - Panic",
+            "manufacturer": "Newton Laboratories, Inc.",
+            "price": 65030,
+            "stock": 740
+        },
+        {
+            "id": 60,
+            "name": "Arnicare Trauma",
+            "manufacturer": "Laboratoires Boiron",
+            "price": 71464,
+            "stock": 70
+        },
+        {
+            "id": 61,
+            "name": "Nystatin",
+            "manufacturer": "A-S Medication Solutions LLC",
+            "price": 10553,
+            "stock": 383
+        },
+        {
+            "id": 62,
+            "name": "Moisture Renew",
+            "manufacturer": "Rimmel Inc.",
+            "price": 22988,
+            "stock": 764
+        },
+        {
+            "id": 63,
+            "name": "Fetzima",
+            "manufacturer": "Forest Laboratories, Inc.",
+            "price": 48360,
+            "stock": 266
+        },
+        {
+            "id": 64,
+            "name": "Ben E. Keith",
+            "manufacturer": "Ben E. Keith Foods",
+            "price": 40909,
+            "stock": 409
+        },
+        {
+            "id": 65,
+            "name": "Antibacterial Hand",
+            "manufacturer": "Henry Schein, Inc.",
+            "price": 56101,
+            "stock": 11
+        },
+        {
+            "id": 66,
+            "name": "Allopurinol",
+            "manufacturer": "Clinical Solutions Wholesale",
+            "price": 13717,
+            "stock": 654
+        },
+        {
+            "id": 67,
+            "name": "GODDESS GARDEN ORGANICS Grapefruit Bergamot DAILY BROAD SPECTRUM SPF 15",
+            "manufacturer": "Crossing Cultures, LLC dba Goddess Garden",
+            "price": 33463,
+            "stock": 49
+        },
+        {
+            "id": 68,
+            "name": "itchy eye",
+            "manufacturer": "Kroger Company",
+            "price": 34564,
+            "stock": 757
+        },
+        {
+            "id": 69,
+            "name": "Ampicillin and Sulbactam",
+            "manufacturer": "Baxter Healthcare Corporation",
+            "price": 17323,
+            "stock": 250
+        },
+        {
+            "id": 70,
+            "name": "Harris Teeter",
+            "manufacturer": "HARRIS TEETER",
+            "price": 88120,
+            "stock": 387
+        },
+        {
+            "id": 71,
+            "name": "Lima Beans",
+            "manufacturer": "Nelco Laboratories, Inc.",
+            "price": 74814,
+            "stock": 911
+        },
+        {
+            "id": 72,
+            "name": "ONDANSETRON",
+            "manufacturer": "PD-Rx Pharmaceuticals, Inc.",
+            "price": 32319,
+            "stock": 539
+        },
+        {
+            "id": 73,
+            "name": "Isosorbide Mononitrate",
+            "manufacturer": "Actavis Elizabeth LLC",
+            "price": 60307,
+            "stock": 223
+        },
+        {
+            "id": 74,
+            "name": "PRENATAL PLUS",
+            "manufacturer": "Atlantic Biologicals Corps",
+            "price": 41298,
+            "stock": 277
+        },
+        {
+            "id": 75,
+            "name": "All Day Allergy",
+            "manufacturer": "Freds Inc",
+            "price": 27593,
+            "stock": 129
+        },
+        {
+            "id": 76,
+            "name": "SENSE Daytime Protective Broad Spectrum SPF 15",
+            "manufacturer": "USANA Health Sciences, Inc.",
+            "price": 60575,
+            "stock": 81
+        },
+        {
+            "id": 77,
+            "name": "Levocetirizine dihydrochloride",
+            "manufacturer": "Perrigo New York Inc",
+            "price": 42109,
+            "stock": 418
+        },
+        {
+            "id": 78,
+            "name": "HAND SANITIZER",
+            "manufacturer": "DZA BRANDS",
+            "price": 947,
+            "stock": 956
+        },
+        {
+            "id": 79,
+            "name": "Ziprasidone Hydrochloride",
+            "manufacturer": "Major Pharmaceuticals",
+            "price": 28148,
+            "stock": 46
+        },
+        {
+            "id": 80,
+            "name": "Allegheny Antibac",
+            "manufacturer": "Deb USA, Inc.",
+            "price": 68476,
+            "stock": 418
+        }
+    ],
+    "samples": [{
+            "id": 1,
+            "type": "H21509",
+            "patient_name": "Ermentrude Fenck",
+            "physician_name": "Mano Baldin",
+            "sampling_date": "2022-05-24"
+        },
+        {
+            "id": 2,
+            "type": "Y92112",
+            "patient_name": "Aylmar Drewes",
+            "physician_name": "Claus Jozwiak",
+            "sampling_date": "2022-01-01"
+        },
+        {
+            "id": 3,
+            "type": "S24139",
+            "patient_name": "Wren Chomicki",
+            "physician_name": "Cash Doughill",
+            "sampling_date": "2022-05-05"
+        },
+        {
+            "id": 4,
+            "type": "S66322S",
+            "patient_name": "Xever Ridehalgh",
+            "physician_name": "Mendy Cleve",
+            "sampling_date": "2022-04-27"
+        },
+        {
+            "id": 5,
+            "type": "V899XXD",
+            "patient_name": "Bertrand Easterling",
+            "physician_name": "Teddie Breckon",
+            "sampling_date": "2022-01-17"
+        },
+        {
+            "id": 6,
+            "type": "C902",
+            "patient_name": "Alyssa Jannequin",
+            "physician_name": "Jan Cohane",
+            "sampling_date": "2022-05-28"
+        },
+        {
+            "id": 7,
+            "type": "S31120A",
+            "patient_name": "Archibald Timbs",
+            "physician_name": "Wilmer Palphramand",
+            "sampling_date": "2022-01-01"
+        },
+        {
+            "id": 8,
+            "type": "S92034P",
+            "patient_name": "Townie Bruyet",
+            "physician_name": "Welsh Boylin",
+            "sampling_date": "2022-02-18"
+        },
+        {
+            "id": 9,
+            "type": "S52264M",
+            "patient_name": "Kaia Thewless",
+            "physician_name": "Jeremias Eliesco",
+            "sampling_date": "2022-03-06"
+        },
+        {
+            "id": 10,
+            "type": "S14104A",
+            "patient_name": "Lillian Sains",
+            "physician_name": "Edythe Goodboddy",
+            "sampling_date": "2022-04-26"
+        },
+        {
+            "id": 11,
+            "type": "W051",
+            "patient_name": "Harvey Ales0",
+            "physician_name": "Gino Searby",
+            "sampling_date": "2022-02-01"
+        },
+        {
+            "id": 12,
+            "type": "V9324XD",
+            "patient_name": "Katti Birtwhistle",
+            "physician_name": "Abrahan Matteo",
+            "sampling_date": "2022-04-15"
+        },
+        {
+            "id": 13,
+            "type": "S42365P",
+            "patient_name": "Huntley Braidwood",
+            "physician_name": "Ertha Isaacson",
+            "sampling_date": "2022-04-23"
+        },
+        {
+            "id": 14,
+            "type": "S66901S",
+            "patient_name": "Marena Dailey",
+            "physician_name": "Lazare Karlik",
+            "sampling_date": "2022-02-26"
+        },
+        {
+            "id": 15,
+            "type": "H16392",
+            "patient_name": "Rozele Brisley",
+            "physician_name": "Granger Sell",
+            "sampling_date": "2022-02-15"
+        },
+        {
+            "id": 16,
+            "type": "B012",
+            "patient_name": "Hillary Orr",
+            "physician_name": "Verna Conningham",
+            "sampling_date": "2022-01-14"
+        },
+        {
+            "id": 17,
+            "type": "C8173",
+            "patient_name": "Irwinn Wilkie",
+            "physician_name": "Thaxter Yeudall",
+            "sampling_date": "2022-04-19"
+        },
+        {
+            "id": 18,
+            "type": "A185",
+            "patient_name": "Edgard Urwen",
+            "physician_name": "Cecil Roll",
+            "sampling_date": "2022-03-16"
+        },
+        {
+            "id": 19,
+            "type": "Q43",
+            "patient_name": "Launce Rumbold",
+            "physician_name": "Misti Crann",
+            "sampling_date": "2022-03-20"
+        },
+        {
+            "id": 20,
+            "type": "S25591D",
+            "patient_name": "Heywood Vasyuchov",
+            "physician_name": "Lori Touret",
+            "sampling_date": "2022-03-04"
+        },
+        {
+            "id": 21,
+            "type": "L89212",
+            "patient_name": "Chev Puleque",
+            "physician_name": "Shaylah MacAleese",
+            "sampling_date": "2022-01-09"
+        },
+        {
+            "id": 22,
+            "type": "S22070S",
+            "patient_name": "Cecil Vina",
+            "physician_name": "Amerigo Litt",
+            "sampling_date": "2022-03-15"
+        },
+        {
+            "id": 23,
+            "type": "F6813",
+            "patient_name": "Padget Burtwistle",
+            "physician_name": "Magdalen Yushkin",
+            "sampling_date": "2022-03-14"
+        },
+        {
+            "id": 24,
+            "type": "V4920",
+            "patient_name": "Shelli McAreavey",
+            "physician_name": "Filmore Hatliffe",
+            "sampling_date": "2022-04-10"
+        },
+        {
+            "id": 25,
+            "type": "T24329D",
+            "patient_name": "Ellwood Gercke",
+            "physician_name": "Gabriella Bourdice",
+            "sampling_date": "2022-05-17"
+        },
+        {
+            "id": 26,
+            "type": "O4191X3",
+            "patient_name": "Kalli Jerams",
+            "physician_name": "Ogden Notti",
+            "sampling_date": "2022-02-03"
+        },
+        {
+            "id": 27,
+            "type": "S92499",
+            "patient_name": "Tillie Shadfourth",
+            "physician_name": "Irma Itzcovich",
+            "sampling_date": "2022-05-30"
+        },
+        {
+            "id": 28,
+            "type": "S78119A",
+            "patient_name": "Farrel Headan",
+            "physician_name": "Stepha Olsson",
+            "sampling_date": "2022-02-03"
+        },
+        {
+            "id": 29,
+            "type": "P052",
+            "patient_name": "Corby Pulbrook",
+            "physician_name": "Sheffy Sjostrom",
+            "sampling_date": "2022-02-02"
+        },
+        {
+            "id": 30,
+            "type": "L088",
+            "patient_name": "Breena Chatto",
+            "physician_name": "Billi Szymanzyk",
+            "sampling_date": "2022-05-05"
+        },
+        {
+            "id": 31,
+            "type": "Y35313D",
+            "patient_name": "Gretchen Droogan",
+            "physician_name": "Robinett Bowller",
+            "sampling_date": "2022-02-21"
+        },
+        {
+            "id": 32,
+            "type": "S32454",
+            "patient_name": "Skippie Petrov",
+            "physician_name": "Feliks Newnham",
+            "sampling_date": "2022-03-27"
+        },
+        {
+            "id": 33,
+            "type": "S82445M",
+            "patient_name": "Marcellus Farmar",
+            "physician_name": "Athene Dot",
+            "sampling_date": "2022-04-29"
+        },
+        {
+            "id": 34,
+            "type": "Y36020S",
+            "patient_name": "Fidelity McUre",
+            "physician_name": "Tildi Askam",
+            "sampling_date": "2022-03-05"
+        },
+        {
+            "id": 35,
+            "type": "S25592S",
+            "patient_name": "Ulrikaumeko Rizzolo",
+            "physician_name": "Anny Buckie",
+            "sampling_date": "2022-01-02"
+        },
+        {
+            "id": 36,
+            "type": "T8509XS",
+            "patient_name": "Elladine Breakwell",
+            "physician_name": "Thatch Callicott",
+            "sampling_date": "2022-02-28"
+        },
+        {
+            "id": 37,
+            "type": "S92192S",
+            "patient_name": "Holly Upston",
+            "physician_name": "Montague Bulcock",
+            "sampling_date": "2022-01-07"
+        },
+        {
+            "id": 38,
+            "type": "T512X1S",
+            "patient_name": "Orrin Grugerr",
+            "physician_name": "Lucian Orthmann",
+            "sampling_date": "2022-05-21"
+        },
+        {
+            "id": 39,
+            "type": "T85850A",
+            "patient_name": "Christie Hattersley",
+            "physician_name": "Jobina Holtom",
+            "sampling_date": "2022-02-05"
+        },
+        {
+            "id": 40,
+            "type": "Q659",
+            "patient_name": "Antone Toppes",
+            "physician_name": "Herbert Izkovicz",
+            "sampling_date": "2022-01-15"
+        },
+        {
+            "id": 41,
+            "type": "S14135S",
+            "patient_name": "Ginger McGruar",
+            "physician_name": "Brendan Manston",
+            "sampling_date": "2022-02-03"
+        },
+        {
+            "id": 42,
+            "type": "V8641XD",
+            "patient_name": "Renae Hansell",
+            "physician_name": "Hamnet Dibbe",
+            "sampling_date": "2022-02-27"
+        },
+        {
+            "id": 43,
+            "type": "S09391S",
+            "patient_name": "Cortie Schimke",
+            "physician_name": "Amandy Gambell",
+            "sampling_date": "2022-02-22"
+        },
+        {
+            "id": 44,
+            "type": "L405",
+            "patient_name": "Jocelyn Theodore",
+            "physician_name": "Damon Herion",
+            "sampling_date": "2022-02-05"
+        },
+        {
+            "id": 45,
+            "type": "T454X4",
+            "patient_name": "Dulci Kirkup",
+            "physician_name": "Doralia Drissell",
+            "sampling_date": "2022-02-02"
+        },
+        {
+            "id": 46,
+            "type": "M80069A",
+            "patient_name": "Linzy Jurca",
+            "physician_name": "Ardene Emmens",
+            "sampling_date": "2022-03-26"
+        },
+        {
+            "id": 47,
+            "type": "T71194A",
+            "patient_name": "Giacopo Fundell",
+            "physician_name": "Berrie Turrell",
+            "sampling_date": "2022-04-04"
+        },
+        {
+            "id": 48,
+            "type": "A39",
+            "patient_name": "Ellery MacKimm",
+            "physician_name": "Josi Seman",
+            "sampling_date": "2022-03-25"
+        },
+        {
+            "id": 49,
+            "type": "S14156A",
+            "patient_name": "Perle Lightoller",
+            "physician_name": "Tobye Freed",
+            "sampling_date": "2022-01-30"
+        },
+        {
+            "id": 50,
+            "type": "V319XXD",
+            "patient_name": "Nev Boggis",
+            "physician_name": "Olav Gansbuhler",
+            "sampling_date": "2022-01-09"
+        },
+        {
+            "id": 51,
+            "type": "V9038XA",
+            "patient_name": "Josefa Towsey",
+            "physician_name": "Imogene Laity",
+            "sampling_date": "2022-01-16"
+        },
+        {
+            "id": 52,
+            "type": "M238X1",
+            "patient_name": "Chrisse Allebone",
+            "physician_name": "Happy Copnar",
+            "sampling_date": "2022-02-01"
+        },
+        {
+            "id": 53,
+            "type": "V6960XA",
+            "patient_name": "Matthus Branscombe",
+            "physician_name": "Cheri Poynton",
+            "sampling_date": "2022-04-18"
+        },
+        {
+            "id": 54,
+            "type": "S61306D",
+            "patient_name": "Delilah Towe",
+            "physician_name": "Brynna Northridge",
+            "sampling_date": "2022-01-22"
+        },
+        {
+            "id": 55,
+            "type": "Q932",
+            "patient_name": "Jenica Meynell",
+            "physician_name": "Giuseppe Goffe",
+            "sampling_date": "2022-01-16"
+        },
+        {
+            "id": 56,
+            "type": "T8509",
+            "patient_name": "Jareb Corfield",
+            "physician_name": "Lynn Trussell",
+            "sampling_date": "2022-03-09"
+        },
+        {
+            "id": 57,
+            "type": "T562X1",
+            "patient_name": "Rey Stidever",
+            "physician_name": "Janette Cromb",
+            "sampling_date": "2022-04-12"
+        },
+        {
+            "id": 58,
+            "type": "T362X1",
+            "patient_name": "Baudoin Lauks",
+            "physician_name": "Henry Shera",
+            "sampling_date": "2022-01-18"
+        },
+        {
+            "id": 59,
+            "type": "S82435N",
+            "patient_name": "Cassy Bensley",
+            "physician_name": "Boycey Mulcahy",
+            "sampling_date": "2022-03-31"
+        },
+        {
+            "id": 60,
+            "type": "S72099A",
+            "patient_name": "Jaymee Botley",
+            "physician_name": "Rosalia Bossingham",
+            "sampling_date": "2022-01-12"
+        },
+        {
+            "id": 61,
+            "type": "S0211B",
+            "patient_name": "Edouard Brickell",
+            "physician_name": "Dael Whitelaw",
+            "sampling_date": "2022-02-10"
+        },
+        {
+            "id": 62,
+            "type": "S53421S",
+            "patient_name": "Garrik Tineman",
+            "physician_name": "Mellisa Chandlar",
+            "sampling_date": "2022-04-13"
+        },
+        {
+            "id": 63,
+            "type": "S066X1A",
+            "patient_name": "Konstance MacKaile",
+            "physician_name": "Quill Kilcoyne",
+            "sampling_date": "2022-01-03"
+        },
+        {
+            "id": 64,
+            "type": "S62604A",
+            "patient_name": "Verney Tremouille",
+            "physician_name": "Shepherd Carneck",
+            "sampling_date": "2022-02-24"
+        },
+        {
+            "id": 65,
+            "type": "S02118A",
+            "patient_name": "Harv Sheryn",
+            "physician_name": "Caryl Dahlback",
+            "sampling_date": "2022-05-09"
+        },
+        {
+            "id": 66,
+            "type": "S21032A",
+            "patient_name": "Nathalie Blanchflower",
+            "physician_name": "Mohandis Ramage",
+            "sampling_date": "2022-01-19"
+        },
+        {
+            "id": 67,
+            "type": "S32312B",
+            "patient_name": "Pris Bilston",
+            "physician_name": "Anne-marie Taffley",
+            "sampling_date": "2022-04-17"
+        },
+        {
+            "id": 68,
+            "type": "M1A1321",
+            "patient_name": "Chrysler Jaimez",
+            "physician_name": "Aldon Chipping",
+            "sampling_date": "2022-01-04"
+        },
+        {
+            "id": 69,
+            "type": "S35534D",
+            "patient_name": "Albina Sankey",
+            "physician_name": "Viviyan Rangeley",
+            "sampling_date": "2022-03-21"
+        },
+        {
+            "id": 70,
+            "type": "S92525G",
+            "patient_name": "Calhoun Faint",
+            "physician_name": "Florinda Hassent",
+            "sampling_date": "2022-02-23"
+        },
+        {
+            "id": 71,
+            "type": "V9330XD",
+            "patient_name": "Torey Goodbairn",
+            "physician_name": "Ruby Tart",
+            "sampling_date": "2022-04-23"
+        },
+        {
+            "id": 72,
+            "type": "M62171",
+            "patient_name": "Winnie Euston",
+            "physician_name": "Patrizio MacMillan",
+            "sampling_date": "2022-05-18"
+        },
+        {
+            "id": 73,
+            "type": "S40919A",
+            "patient_name": "Lanna Tallboy",
+            "physician_name": "Saraann Delucia",
+            "sampling_date": "2022-01-08"
+        },
+        {
+            "id": 74,
+            "type": "S52601A",
+            "patient_name": "Pia Dorling",
+            "physician_name": "Farlie Stailey",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 75,
+            "type": "S49091",
+            "patient_name": "Ryley Stede",
+            "physician_name": "Bernard Humpage",
+            "sampling_date": "2022-02-14"
+        },
+        {
+            "id": 76,
+            "type": "S8252XK",
+            "patient_name": "Katharina Kennham",
+            "physician_name": "Bat Malt",
+            "sampling_date": "2022-03-03"
+        },
+        {
+            "id": 77,
+            "type": "M87363",
+            "patient_name": "Gwennie Emlin",
+            "physician_name": "Deanna Nertney",
+            "sampling_date": "2022-05-21"
+        },
+        {
+            "id": 78,
+            "type": "S7000XS",
+            "patient_name": "Kimbell Gurnett",
+            "physician_name": "Dolph Puttick",
+            "sampling_date": "2022-04-14"
+        },
+        {
+            "id": 79,
+            "type": "M84572G",
+            "patient_name": "Loralee Abbotts",
+            "physician_name": "Ami Tommasuzzi",
+            "sampling_date": "2022-05-04"
+        },
+        {
+            "id": 80,
+            "type": "S72124C",
+            "patient_name": "Rochester Swettenham",
+            "physician_name": "Sarajane Bumpus",
+            "sampling_date": "2022-01-29"
+        },
+        {
+            "id": 81,
+            "type": "O4102X2",
+            "patient_name": "Bernadine Stalf",
+            "physician_name": "Lee Roles",
+            "sampling_date": "2022-03-21"
+        },
+        {
+            "id": 82,
+            "type": "C131",
+            "patient_name": "Marie-ann Willstrop",
+            "physician_name": "Craig Volks",
+            "sampling_date": "2022-03-15"
+        },
+        {
+            "id": 83,
+            "type": "S72322S",
+            "patient_name": "Maggy Wadge",
+            "physician_name": "Lincoln Munt",
+            "sampling_date": "2022-03-22"
+        },
+        {
+            "id": 84,
+            "type": "M05249",
+            "patient_name": "Lindsay Read",
+            "physician_name": "Wilek Pearsall",
+            "sampling_date": "2022-03-04"
+        },
+        {
+            "id": 85,
+            "type": "S6332",
+            "patient_name": "Daren Olivet",
+            "physician_name": "Bear Clemmitt",
+            "sampling_date": "2022-05-22"
+        },
+        {
+            "id": 86,
+            "type": "E135",
+            "patient_name": "Janka Townrow",
+            "physician_name": "Richardo Tansey",
+            "sampling_date": "2022-01-08"
+        },
+        {
+            "id": 87,
+            "type": "M93851",
+            "patient_name": "Peirce Brogioni",
+            "physician_name": "Lucila Wraight",
+            "sampling_date": "2022-03-22"
+        },
+        {
+            "id": 88,
+            "type": "V6909",
+            "patient_name": "Moselle Rallings",
+            "physician_name": "Hughie Joriot",
+            "sampling_date": "2022-04-11"
+        },
+        {
+            "id": 89,
+            "type": "T363X6S",
+            "patient_name": "Junette Bilby",
+            "physician_name": "Wilburt Crutchfield",
+            "sampling_date": "2022-03-06"
+        },
+        {
+            "id": 90,
+            "type": "S91154",
+            "patient_name": "Iorgos Sambedge",
+            "physician_name": "Jermain Duddridge",
+            "sampling_date": "2022-02-17"
+        },
+        {
+            "id": 91,
+            "type": "S49129D",
+            "patient_name": "Thomas Barok",
+            "physician_name": "Gillan Tinsley",
+            "sampling_date": "2022-05-06"
+        },
+        {
+            "id": 92,
+            "type": "E569",
+            "patient_name": "Jaclin Maginn",
+            "physician_name": "Gabbie Stutter",
+            "sampling_date": "2022-02-26"
+        },
+        {
+            "id": 93,
+            "type": "F1328",
+            "patient_name": "Myrwyn Skouling",
+            "physician_name": "Murray Shwalbe",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 94,
+            "type": "S72431F",
+            "patient_name": "Elianora Clawe",
+            "physician_name": "Shea Chicco",
+            "sampling_date": "2022-02-23"
+        },
+        {
+            "id": 95,
+            "type": "S81019",
+            "patient_name": "Emmaline Pagett",
+            "physician_name": "Nanice Rodenhurst",
+            "sampling_date": "2022-04-27"
+        },
+        {
+            "id": 96,
+            "type": "T6389",
+            "patient_name": "Alaine Dils",
+            "physician_name": "Ellswerth Curreen",
+            "sampling_date": "2022-04-03"
+        },
+        {
+            "id": 97,
+            "type": "Y92821",
+            "patient_name": "Bronson McIan",
+            "physician_name": "Florry Coombs",
+            "sampling_date": "2022-03-07"
+        },
+        {
+            "id": 98,
+            "type": "S83145",
+            "patient_name": "Townsend Minucci",
+            "physician_name": "Vi Stickells",
+            "sampling_date": "2022-01-21"
+        },
+        {
+            "id": 99,
+            "type": "S33111S",
+            "patient_name": "Gar Noddles",
+            "physician_name": "Lawry Passby",
+            "sampling_date": "2022-04-15"
+        },
+        {
+            "id": 100,
+            "type": "S62342",
+            "patient_name": "Alfons Boyne",
+            "physician_name": "Alon Yansons",
+            "sampling_date": "2022-04-18"
+        },
+        {
+            "id": 101,
+            "type": "S850",
+            "patient_name": "Jenifer Caselick",
+            "physician_name": "Janette Gager",
+            "sampling_date": "2022-05-12"
+        },
+        {
+            "id": 102,
+            "type": "S89392K",
+            "patient_name": "Monroe Cowp",
+            "physician_name": "Reynold Gartenfeld",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 103,
+            "type": "S06350",
+            "patient_name": "Rudolph Neilus",
+            "physician_name": "Ulrikaumeko Odger",
+            "sampling_date": "2022-01-26"
+        },
+        {
+            "id": 104,
+            "type": "D592",
+            "patient_name": "Kev Mowbray",
+            "physician_name": "Kalil Cruickshanks",
+            "sampling_date": "2022-01-21"
+        },
+        {
+            "id": 105,
+            "type": "C7911",
+            "patient_name": "Adele Weaver",
+            "physician_name": "Vladimir Hanbridge",
+            "sampling_date": "2022-03-23"
+        },
+        {
+            "id": 106,
+            "type": "S59009D",
+            "patient_name": "Kasey Pennycook",
+            "physician_name": "Ody Hanlon",
+            "sampling_date": "2022-04-20"
+        },
+        {
+            "id": 107,
+            "type": "S92499",
+            "patient_name": "Erick De Ferraris",
+            "physician_name": "Pietro Laborda",
+            "sampling_date": "2022-04-09"
+        },
+        {
+            "id": 108,
+            "type": "K120",
+            "patient_name": "Seumas Humber",
+            "physician_name": "Adara Boggs",
+            "sampling_date": "2022-03-04"
+        },
+        {
+            "id": 109,
+            "type": "Q851",
+            "patient_name": "Maiga Kleeman",
+            "physician_name": "Willem Elgood",
+            "sampling_date": "2022-01-14"
+        },
+        {
+            "id": 110,
+            "type": "S3753",
+            "patient_name": "Creight Konrad",
+            "physician_name": "Reinaldos Dotson",
+            "sampling_date": "2022-03-18"
+        },
+        {
+            "id": 111,
+            "type": "S82225G",
+            "patient_name": "Bob Helin",
+            "physician_name": "Mickey Hustler",
+            "sampling_date": "2022-03-30"
+        },
+        {
+            "id": 112,
+            "type": "S62136D",
+            "patient_name": "Micheal Grinaway",
+            "physician_name": "Katrina Rickman",
+            "sampling_date": "2022-03-16"
+        },
+        {
+            "id": 113,
+            "type": "T50906A",
+            "patient_name": "Wanids Dolbey",
+            "physician_name": "Veradis Frowde",
+            "sampling_date": "2022-02-10"
+        },
+        {
+            "id": 114,
+            "type": "T387X6A",
+            "patient_name": "Ryon Frazer",
+            "physician_name": "Marie-ann Josefer",
+            "sampling_date": "2022-02-28"
+        },
+        {
+            "id": 115,
+            "type": "S90812A",
+            "patient_name": "Roby Huws",
+            "physician_name": "Franz Sirmon",
+            "sampling_date": "2022-01-16"
+        },
+        {
+            "id": 116,
+            "type": "H353133",
+            "patient_name": "Nanine Karlqvist",
+            "physician_name": "Laure Bertolin",
+            "sampling_date": "2022-02-27"
+        },
+        {
+            "id": 117,
+            "type": "S92254B",
+            "patient_name": "Courtney Averall",
+            "physician_name": "Kai Crossingham",
+            "sampling_date": "2022-05-22"
+        },
+        {
+            "id": 118,
+            "type": "T608X4D",
+            "patient_name": "Nerta Wenderott",
+            "physician_name": "Gerrie Vassbender",
+            "sampling_date": "2022-04-15"
+        },
+        {
+            "id": 119,
+            "type": "T2242",
+            "patient_name": "Lacee Frances",
+            "physician_name": "Kora Frosdick",
+            "sampling_date": "2022-05-13"
+        },
+        {
+            "id": 120,
+            "type": "S9333",
+            "patient_name": "Laney Liversage",
+            "physician_name": "Ashleigh Scrancher",
+            "sampling_date": "2022-02-06"
+        },
+        {
+            "id": 121,
+            "type": "T704XXS",
+            "patient_name": "Stanfield Osler",
+            "physician_name": "Vivie Prangley",
+            "sampling_date": "2022-04-08"
+        },
+        {
+            "id": 122,
+            "type": "M19042",
+            "patient_name": "Mag Leppard",
+            "physician_name": "Inna Parmenter",
+            "sampling_date": "2022-02-17"
+        },
+        {
+            "id": 123,
+            "type": "S63242S",
+            "patient_name": "Bogart MacGuiness",
+            "physician_name": "Jilli Ponter",
+            "sampling_date": "2022-02-04"
+        },
+        {
+            "id": 124,
+            "type": "S62133",
+            "patient_name": "Andie Domoni",
+            "physician_name": "Carolus Tanti",
+            "sampling_date": "2022-02-26"
+        },
+        {
+            "id": 125,
+            "type": "O10211",
+            "patient_name": "Giorgio Crier",
+            "physician_name": "Ailsun Elphey",
+            "sampling_date": "2022-02-27"
+        },
+        {
+            "id": 126,
+            "type": "O09299",
+            "patient_name": "Blondy Lauga",
+            "physician_name": "Alden Covell",
+            "sampling_date": "2022-05-29"
+        },
+        {
+            "id": 127,
+            "type": "S33121S",
+            "patient_name": "Camille Wardington",
+            "physician_name": "Caitrin Ramshay",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 128,
+            "type": "V750",
+            "patient_name": "Stacee Holdall",
+            "physician_name": "Chandra Spire",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 129,
+            "type": "H4042X0",
+            "patient_name": "Caitrin di Rocca",
+            "physician_name": "Janel Heyns",
+            "sampling_date": "2022-03-04"
+        },
+        {
+            "id": 130,
+            "type": "S60421A",
+            "patient_name": "Marty Lipman",
+            "physician_name": "Gram Bang",
+            "sampling_date": "2022-03-18"
+        },
+        {
+            "id": 131,
+            "type": "O29291",
+            "patient_name": "Ethelda Berthel",
+            "physician_name": "Sansone Duligall",
+            "sampling_date": "2022-05-09"
+        },
+        {
+            "id": 132,
+            "type": "S8530",
+            "patient_name": "Morley Waggitt",
+            "physician_name": "Paddie Duggon",
+            "sampling_date": "2022-05-17"
+        },
+        {
+            "id": 133,
+            "type": "Q554",
+            "patient_name": "Daryn Coronado",
+            "physician_name": "Dorena Ricoald",
+            "sampling_date": "2022-01-18"
+        },
+        {
+            "id": 134,
+            "type": "E7801",
+            "patient_name": "Jyoti Hallgath",
+            "physician_name": "Eliot Avramchik",
+            "sampling_date": "2022-01-12"
+        },
+        {
+            "id": 135,
+            "type": "T82331",
+            "patient_name": "Valentin Pinnijar",
+            "physician_name": "Sisely Seear",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 136,
+            "type": "A31",
+            "patient_name": "Jenni Meacher",
+            "physician_name": "Martin Cyseley",
+            "sampling_date": "2022-02-28"
+        },
+        {
+            "id": 137,
+            "type": "S728X2S",
+            "patient_name": "Ernestus Cinelli",
+            "physician_name": "Red Culcheth",
+            "sampling_date": "2022-01-28"
+        },
+        {
+            "id": 138,
+            "type": "S88021",
+            "patient_name": "Gav Cancott",
+            "physician_name": "Amil Leimster",
+            "sampling_date": "2022-04-22"
+        },
+        {
+            "id": 139,
+            "type": "S72091",
+            "patient_name": "Kirbie Dyde",
+            "physician_name": "Kimberly De Marchi",
+            "sampling_date": "2022-03-23"
+        },
+        {
+            "id": 140,
+            "type": "S63633S",
+            "patient_name": "Lyn Bentjens",
+            "physician_name": "Marlee Burgne",
+            "sampling_date": "2022-03-29"
+        },
+        {
+            "id": 141,
+            "type": "V97811S",
+            "patient_name": "Juieta Quarmby",
+            "physician_name": "Dolorita Manginot",
+            "sampling_date": "2022-03-01"
+        },
+        {
+            "id": 142,
+            "type": "S56392A",
+            "patient_name": "Benedikta Dran",
+            "physician_name": "Ninnette Brackenbury",
+            "sampling_date": "2022-02-15"
+        },
+        {
+            "id": 143,
+            "type": "S53141D",
+            "patient_name": "Justine Iapico",
+            "physician_name": "Waldemar Gosby",
+            "sampling_date": "2022-01-17"
+        },
+        {
+            "id": 144,
+            "type": "S52023E",
+            "patient_name": "Kleon Oty",
+            "physician_name": "Loretta Gaskin",
+            "sampling_date": "2022-05-14"
+        },
+        {
+            "id": 145,
+            "type": "T443X4D",
+            "patient_name": "Genny Emeney",
+            "physician_name": "Vachel Craddy",
+            "sampling_date": "2022-04-03"
+        },
+        {
+            "id": 146,
+            "type": "S15099D",
+            "patient_name": "Josselyn Nouch",
+            "physician_name": "Norry Asman",
+            "sampling_date": "2022-01-05"
+        },
+        {
+            "id": 147,
+            "type": "W16112A",
+            "patient_name": "Tabbie Gaven",
+            "physician_name": "Carrie Hindrick",
+            "sampling_date": "2022-02-24"
+        },
+        {
+            "id": 148,
+            "type": "V477",
+            "patient_name": "Pauli Puddifer",
+            "physician_name": "Lexis Gammie",
+            "sampling_date": "2022-04-30"
+        },
+        {
+            "id": 149,
+            "type": "S59002",
+            "patient_name": "Leelah Sacks",
+            "physician_name": "Gill Daines",
+            "sampling_date": "2022-02-10"
+        },
+        {
+            "id": 150,
+            "type": "S89122S",
+            "patient_name": "Elizabet Scuffham",
+            "physician_name": "Tammie Tissell",
+            "sampling_date": "2022-01-04"
+        },
+        {
+            "id": 151,
+            "type": "D6101",
+            "patient_name": "Chrysa Gowen",
+            "physician_name": "Vivyanne Jahndel",
+            "sampling_date": "2022-04-17"
+        },
+        {
+            "id": 152,
+            "type": "T3791XA",
+            "patient_name": "Remy O'Coskerry",
+            "physician_name": "Ketty Petracchi",
+            "sampling_date": "2022-05-18"
+        },
+        {
+            "id": 153,
+            "type": "Z45010",
+            "patient_name": "Joni Drewitt",
+            "physician_name": "Sarina Vogel",
+            "sampling_date": "2022-03-28"
+        },
+        {
+            "id": 154,
+            "type": "S83211A",
+            "patient_name": "Margaux Brandino",
+            "physician_name": "Indira Giscken",
+            "sampling_date": "2022-03-13"
+        },
+        {
+            "id": 155,
+            "type": "S2501XA",
+            "patient_name": "Jenna Arpur",
+            "physician_name": "Jemmy Brotherhed",
+            "sampling_date": "2022-03-29"
+        },
+        {
+            "id": 156,
+            "type": "L025",
+            "patient_name": "Valaree Pear",
+            "physician_name": "Cathryn Mulberry",
+            "sampling_date": "2022-02-13"
+        },
+        {
+            "id": 157,
+            "type": "T85848",
+            "patient_name": "Stepha Doughill",
+            "physician_name": "Barclay Paske",
+            "sampling_date": "2022-01-31"
+        },
+        {
+            "id": 158,
+            "type": "O9892",
+            "patient_name": "Roger Trunchion",
+            "physician_name": "Katee Jost",
+            "sampling_date": "2022-01-12"
+        },
+        {
+            "id": 159,
+            "type": "R412",
+            "patient_name": "Sydelle Pimblott",
+            "physician_name": "Hagen Skedge",
+            "sampling_date": "2022-02-14"
+        },
+        {
+            "id": 160,
+            "type": "S45811",
+            "patient_name": "Rinaldo Abramson",
+            "physician_name": "Avigdor McTeer",
+            "sampling_date": "2022-05-25"
+        },
+        {
+            "id": 161,
+            "type": "T41295D",
+            "patient_name": "Pace McCunn",
+            "physician_name": "Burl Dragonette",
+            "sampling_date": "2022-02-15"
+        },
+        {
+            "id": 162,
+            "type": "Q21",
+            "patient_name": "Philippa Whatley",
+            "physician_name": "Irv Cornford",
+            "sampling_date": "2022-05-08"
+        },
+        {
+            "id": 163,
+            "type": "H93239",
+            "patient_name": "Doralynne Reichardt",
+            "physician_name": "L;urette Templar",
+            "sampling_date": "2022-05-23"
+        },
+        {
+            "id": 164,
+            "type": "H4020X0",
+            "patient_name": "Alica Kubu",
+            "physician_name": "Bjorn De Hailes",
+            "sampling_date": "2022-02-02"
+        },
+        {
+            "id": 165,
+            "type": "T7521",
+            "patient_name": "Orsa Brooker",
+            "physician_name": "Garwood Sapauton",
+            "sampling_date": "2022-02-27"
+        },
+        {
+            "id": 166,
+            "type": "S98912A",
+            "patient_name": "Teresita Slinn",
+            "physician_name": "Urban McVrone",
+            "sampling_date": "2022-04-28"
+        },
+        {
+            "id": 167,
+            "type": "S91222",
+            "patient_name": "Wilhelm Buckoke",
+            "physician_name": "Calypso Szreter",
+            "sampling_date": "2022-05-03"
+        },
+        {
+            "id": 168,
+            "type": "T493X2A",
+            "patient_name": "Adi Kitchaside",
+            "physician_name": "Arlan Lieber",
+            "sampling_date": "2022-04-01"
+        },
+        {
+            "id": 169,
+            "type": "S83002S",
+            "patient_name": "Catha Tailby",
+            "physician_name": "Harmonie Di Nisco",
+            "sampling_date": "2022-01-15"
+        },
+        {
+            "id": 170,
+            "type": "M13162",
+            "patient_name": "Britteny Laphorn",
+            "physician_name": "Valina Docharty",
+            "sampling_date": "2022-02-04"
+        },
+        {
+            "id": 171,
+            "type": "T86831",
+            "patient_name": "Avrom Keveren",
+            "physician_name": "Nollie Chave",
+            "sampling_date": "2022-05-22"
+        },
+        {
+            "id": 172,
+            "type": "O411031",
+            "patient_name": "Kristina Peschka",
+            "physician_name": "Karlene Blondin",
+            "sampling_date": "2022-05-10"
+        },
+        {
+            "id": 173,
+            "type": "S2042",
+            "patient_name": "Rex Grigorey",
+            "physician_name": "Adena McCorry",
+            "sampling_date": "2022-05-13"
+        },
+        {
+            "id": 174,
+            "type": "W5619XD",
+            "patient_name": "Reuben Rue",
+            "physician_name": "Niven Ivashev",
+            "sampling_date": "2022-05-15"
+        },
+        {
+            "id": 175,
+            "type": "A5141",
+            "patient_name": "Nissa Kadwallider",
+            "physician_name": "Freemon Ferne",
+            "sampling_date": "2022-05-06"
+        },
+        {
+            "id": 176,
+            "type": "Q311",
+            "patient_name": "Charlton Wallach",
+            "physician_name": "Ivan Elcock",
+            "sampling_date": "2022-02-06"
+        },
+        {
+            "id": 177,
+            "type": "S72124N",
+            "patient_name": "Ailis Roth",
+            "physician_name": "Austin Hicks",
+            "sampling_date": "2022-01-04"
+        },
+        {
+            "id": 178,
+            "type": "S8321",
+            "patient_name": "Karil Plewes",
+            "physician_name": "Jecho Martinelli",
+            "sampling_date": "2022-05-14"
+        },
+        {
+            "id": 179,
+            "type": "M84359A",
+            "patient_name": "Roger Lind",
+            "physician_name": "Elbertina Tapper",
+            "sampling_date": "2022-05-15"
+        },
+        {
+            "id": 180,
+            "type": "D219",
+            "patient_name": "Jeffrey Tanby",
+            "physician_name": "Muffin Viveash",
+            "sampling_date": "2022-04-12"
+        },
+        {
+            "id": 181,
+            "type": "O2510",
+            "patient_name": "Lavinia McArte",
+            "physician_name": "Urbano Le Gallo",
+            "sampling_date": "2022-01-09"
+        },
+        {
+            "id": 182,
+            "type": "M84334P",
+            "patient_name": "Erek Arbuckel",
+            "physician_name": "Erinna Keats",
+            "sampling_date": "2022-05-15"
+        },
+        {
+            "id": 183,
+            "type": "E7151",
+            "patient_name": "Joey Watson",
+            "physician_name": "Aurelia Reina",
+            "sampling_date": "2022-05-11"
+        },
+        {
+            "id": 184,
+            "type": "Y9251",
+            "patient_name": "Heindrick Vecard",
+            "physician_name": "Benson Falkous",
+            "sampling_date": "2022-03-25"
+        },
+        {
+            "id": 185,
+            "type": "S02400G",
+            "patient_name": "Rosemarie Cowterd",
+            "physician_name": "Kenny Hannum",
+            "sampling_date": "2022-05-07"
+        },
+        {
+            "id": 186,
+            "type": "S52616S",
+            "patient_name": "Baily Nern",
+            "physician_name": "Consuela Delgaty",
+            "sampling_date": "2022-03-15"
+        },
+        {
+            "id": 187,
+            "type": "H34839",
+            "patient_name": "Jedidiah Christauffour",
+            "physician_name": "Zechariah Crofts",
+            "sampling_date": "2022-01-24"
+        },
+        {
+            "id": 188,
+            "type": "S27309",
+            "patient_name": "Quintin Petigrew",
+            "physician_name": "Burgess McGarrie",
+            "sampling_date": "2022-01-07"
+        },
+        {
+            "id": 189,
+            "type": "M89269",
+            "patient_name": "Ferdy Rowler",
+            "physician_name": "Kevina Stiant",
+            "sampling_date": "2022-04-07"
+        },
+        {
+            "id": 190,
+            "type": "S42256B",
+            "patient_name": "Joya Dunford",
+            "physician_name": "Adam Redshaw",
+            "sampling_date": "2022-01-16"
+        },
+        {
+            "id": 191,
+            "type": "K75",
+            "patient_name": "Guthry Soeiro",
+            "physician_name": "Lyndsay McGrey",
+            "sampling_date": "2022-02-26"
+        },
+        {
+            "id": 192,
+            "type": "T464X5D",
+            "patient_name": "Gabriell Charlot",
+            "physician_name": "Sheilah Jansa",
+            "sampling_date": "2022-01-07"
+        },
+        {
+            "id": 193,
+            "type": "Y9351",
+            "patient_name": "Gracie McMillam",
+            "physician_name": "Towny McPartlin",
+            "sampling_date": "2022-02-01"
+        },
+        {
+            "id": 194,
+            "type": "S86391D",
+            "patient_name": "Lorri Knappe",
+            "physician_name": "Adele Tellenbrok",
+            "sampling_date": "2022-03-13"
+        },
+        {
+            "id": 195,
+            "type": "S98222D",
+            "patient_name": "Chrissie Bauman",
+            "physician_name": "Cull Aldersea",
+            "sampling_date": "2022-01-25"
+        },
+        {
+            "id": 196,
+            "type": "M653",
+            "patient_name": "Alla Trodden",
+            "physician_name": "Mae Ellerbeck",
+            "sampling_date": "2022-04-17"
+        },
+        {
+            "id": 197,
+            "type": "S92054",
+            "patient_name": "Gardy Kliner",
+            "physician_name": "Joli Smethurst",
+            "sampling_date": "2022-05-30"
+        },
+        {
+            "id": 198,
+            "type": "T443X6D",
+            "patient_name": "Sheeree Beltzner",
+            "physician_name": "Ericka Blogg",
+            "sampling_date": "2022-04-23"
+        },
+        {
+            "id": 199,
+            "type": "O98012",
+            "patient_name": "Dimitry Caplen",
+            "physician_name": "Euphemia Hilliam",
+            "sampling_date": "2022-01-13"
+        },
+        {
+            "id": 200,
+            "type": "M6500",
+            "patient_name": "Gray Bartoletti",
+            "physician_name": "Pincus Tagg",
+            "sampling_date": "2022-02-03"
+        },
+        {
+            "id": 201,
+            "type": "S82266S",
+            "patient_name": "Barn Jeanequin",
+            "physician_name": "Hanni Baudy",
+            "sampling_date": "2022-02-18"
+        },
+        {
+            "id": 202,
+            "type": "T63193",
+            "patient_name": "Griffy Heathcott",
+            "physician_name": "Ellette Feldberger",
+            "sampling_date": "2022-01-11"
+        },
+        {
+            "id": 203,
+            "type": "T370X6S",
+            "patient_name": "Godart Hallworth",
+            "physician_name": "Andrej Caroli",
+            "sampling_date": "2022-05-16"
+        },
+        {
+            "id": 204,
+            "type": "S72121S",
+            "patient_name": "Pedro Ossulton",
+            "physician_name": "Breena Peschke",
+            "sampling_date": "2022-04-19"
+        },
+        {
+            "id": 205,
+            "type": "M4624",
+            "patient_name": "Marcella O'Day",
+            "physician_name": "Filippo Jochen",
+            "sampling_date": "2022-03-24"
+        },
+        {
+            "id": 206,
+            "type": "S83272S",
+            "patient_name": "Rickie Jandl",
+            "physician_name": "Ashla Greet",
+            "sampling_date": "2022-03-17"
+        },
+        {
+            "id": 207,
+            "type": "V9304",
+            "patient_name": "Mela Dust",
+            "physician_name": "Aaren Boustred",
+            "sampling_date": "2022-01-14"
+        },
+        {
+            "id": 208,
+            "type": "S72111E",
+            "patient_name": "Mateo Johansen",
+            "physician_name": "Karissa Indgs",
+            "sampling_date": "2022-05-06"
+        },
+        {
+            "id": 209,
+            "type": "C8512",
+            "patient_name": "Pammi Gadson",
+            "physician_name": "Dacey Owbrick",
+            "sampling_date": "2022-03-25"
+        },
+        {
+            "id": 210,
+            "type": "V8011XS",
+            "patient_name": "Bondie Mantram",
+            "physician_name": "Olia Matherson",
+            "sampling_date": "2022-02-21"
+        },
+        {
+            "id": 211,
+            "type": "C50821",
+            "patient_name": "Muriel Cominetti",
+            "physician_name": "Desdemona Bortolutti",
+            "sampling_date": "2022-05-25"
+        },
+        {
+            "id": 212,
+            "type": "S09301A",
+            "patient_name": "Franciska Robard",
+            "physician_name": "Freddy Trevallion",
+            "sampling_date": "2022-01-13"
+        },
+        {
+            "id": 213,
+            "type": "V0592XA",
+            "patient_name": "Darill Bucktharp",
+            "physician_name": "Arch Langlois",
+            "sampling_date": "2022-01-19"
+        },
+        {
+            "id": 214,
+            "type": "S43304D",
+            "patient_name": "Alanson Strother",
+            "physician_name": "Vasilis Hamlington",
+            "sampling_date": "2022-05-02"
+        },
+        {
+            "id": 215,
+            "type": "S91125A",
+            "patient_name": "Dacia Elstub",
+            "physician_name": "Abe Leban",
+            "sampling_date": "2022-04-22"
+        },
+        {
+            "id": 216,
+            "type": "T434X2D",
+            "patient_name": "Vergil Milius",
+            "physician_name": "Wynn Elwill",
+            "sampling_date": "2022-04-17"
+        },
+        {
+            "id": 217,
+            "type": "I289",
+            "patient_name": "Early Butter",
+            "physician_name": "Meta Seegar",
+            "sampling_date": "2022-01-12"
+        },
+        {
+            "id": 218,
+            "type": "S92226P",
+            "patient_name": "Cart Salomon",
+            "physician_name": "Camilla Melin",
+            "sampling_date": "2022-01-19"
+        },
+        {
+            "id": 219,
+            "type": "S12551A",
+            "patient_name": "Herve de Keyser",
+            "physician_name": "Kingsley Gaudin",
+            "sampling_date": "2022-03-24"
+        },
+        {
+            "id": 220,
+            "type": "V4393XS",
+            "patient_name": "Zia De Gregorio",
+            "physician_name": "Bekki Sutheran",
+            "sampling_date": "2022-01-27"
+        },
+        {
+            "id": 221,
+            "type": "T82532",
+            "patient_name": "Carlee McCuthais",
+            "physician_name": "Austin Brady",
+            "sampling_date": "2022-05-18"
+        },
+        {
+            "id": 222,
+            "type": "V8691XA",
+            "patient_name": "Briana Giblett",
+            "physician_name": "Tedmund Bute",
+            "sampling_date": "2022-05-20"
+        },
+        {
+            "id": 223,
+            "type": "T23011",
+            "patient_name": "Rayner Raspel",
+            "physician_name": "Debi Van Salzberger",
+            "sampling_date": "2022-04-07"
+        },
+        {
+            "id": 224,
+            "type": "M80019P",
+            "patient_name": "Lothaire Jaskiewicz",
+            "physician_name": "Stanislaus Lemmens",
+            "sampling_date": "2022-03-27"
+        },
+        {
+            "id": 225,
+            "type": "S62394D",
+            "patient_name": "Dame Ching",
+            "physician_name": "Bili Baltrushaitis",
+            "sampling_date": "2022-04-16"
+        },
+        {
+            "id": 226,
+            "type": "M2407",
+            "patient_name": "Jerrylee Maryska",
+            "physician_name": "Goddard Iacovides",
+            "sampling_date": "2022-02-05"
+        },
+        {
+            "id": 227,
+            "type": "T411X4S",
+            "patient_name": "Maddalena Hanretty",
+            "physician_name": "Borden Spargo",
+            "sampling_date": "2022-03-02"
+        },
+        {
+            "id": 228,
+            "type": "S82899P",
+            "patient_name": "Madella von Hagt",
+            "physician_name": "Anstice Roxburgh",
+            "sampling_date": "2022-04-28"
+        },
+        {
+            "id": 229,
+            "type": "S948X2S",
+            "patient_name": "Julian Warhurst",
+            "physician_name": "Karlee Blethin",
+            "sampling_date": "2022-05-07"
+        },
+        {
+            "id": 230,
+            "type": "H16302",
+            "patient_name": "Kurtis Jeaves",
+            "physician_name": "Aubine de Werk",
+            "sampling_date": "2022-01-28"
+        },
+        {
+            "id": 231,
+            "type": "S71129A",
+            "patient_name": "Sheffield Peploe",
+            "physician_name": "Lindy Boxhill",
+            "sampling_date": "2022-05-30"
+        },
+        {
+            "id": 232,
+            "type": "S92502A",
+            "patient_name": "Adler Melhuish",
+            "physician_name": "Antonetta Rixon",
+            "sampling_date": "2022-05-17"
+        },
+        {
+            "id": 233,
+            "type": "E220",
+            "patient_name": "Launce Di Carli",
+            "physician_name": "Billy Lummus",
+            "sampling_date": "2022-04-24"
+        },
+        {
+            "id": 234,
+            "type": "Q6410",
+            "patient_name": "Alphard D'Emanuele",
+            "physician_name": "Tally Yesson",
+            "sampling_date": "2022-02-05"
+        },
+        {
+            "id": 235,
+            "type": "H40839",
+            "patient_name": "Davine Brownjohn",
+            "physician_name": "Mort Beausang",
+            "sampling_date": "2022-01-10"
+        },
+        {
+            "id": 236,
+            "type": "T82398D",
+            "patient_name": "Kayle Pecey",
+            "physician_name": "Cal Frankis",
+            "sampling_date": "2022-03-22"
+        },
+        {
+            "id": 237,
+            "type": "S42362B",
+            "patient_name": "Hildegarde Handling",
+            "physician_name": "Judah Bigly",
+            "sampling_date": "2022-04-13"
+        },
+        {
+            "id": 238,
+            "type": "H5350",
+            "patient_name": "Matti Catterall",
+            "physician_name": "Sibeal Olivazzi",
+            "sampling_date": "2022-03-16"
+        },
+        {
+            "id": 239,
+            "type": "T17518S",
+            "patient_name": "Gert Waldie",
+            "physician_name": "Brnaba Lindsley",
+            "sampling_date": "2022-02-25"
+        },
+        {
+            "id": 240,
+            "type": "S37092A",
+            "patient_name": "Yancy Ringe",
+            "physician_name": "Joan Greensted",
+            "sampling_date": "2022-04-21"
+        },
+        {
+            "id": 241,
+            "type": "S63435D",
+            "patient_name": "Evvie Mackett",
+            "physician_name": "Gwynne Domican",
+            "sampling_date": "2022-02-17"
+        },
+        {
+            "id": 242,
+            "type": "O10919",
+            "patient_name": "Clem Renbold",
+            "physician_name": "Nevsa Senyard",
+            "sampling_date": "2022-01-06"
+        },
+        {
+            "id": 243,
+            "type": "S42413K",
+            "patient_name": "Erroll Hurring",
+            "physician_name": "Cookie McCartan",
+            "sampling_date": "2022-04-02"
+        },
+        {
+            "id": 244,
+            "type": "H7113",
+            "patient_name": "Gladi Hathwood",
+            "physician_name": "Lilly Carabine",
+            "sampling_date": "2022-02-09"
+        },
+        {
+            "id": 245,
+            "type": "S58919D",
+            "patient_name": "Boot Tyrwhitt",
+            "physician_name": "Abraham Roose",
+            "sampling_date": "2022-05-28"
+        },
+        {
+            "id": 246,
+            "type": "K432",
+            "patient_name": "Pincus Corstan",
+            "physician_name": "Harmony Demetr",
+            "sampling_date": "2022-03-26"
+        },
+        {
+            "id": 247,
+            "type": "S68129D",
+            "patient_name": "Sofia Roskeilly",
+            "physician_name": "Gunar Humburton",
+            "sampling_date": "2022-04-10"
+        },
+        {
+            "id": 248,
+            "type": "S91154D",
+            "patient_name": "Charlton Houchen",
+            "physician_name": "Karlik Chesman",
+            "sampling_date": "2022-01-18"
+        }
+    ],
+    "tests": [{
+            "id": 1,
+            "name": "Vizelet általános bakterológiai vizsgálata",
+            "price": 7072,
+            "point": 93,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 2,
+            "name": "Vizelet teljes mikológiai vizsgálata",
+            "price": 5826,
+            "point": 12,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 3,
+            "name": "Vizelet virológiai vizsgálata, tenyésztéssel",
+            "price": 7923,
+            "point": 65,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 4,
+            "name": "Vizelet mikroszkópos vizsgálata",
+            "price": 8801,
+            "point": 79,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 5,
+            "name": "Széklet általános vizsgálata, tenyésztés nélkül",
+            "price": 19319,
+            "point": 72,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 6,
+            "name": "Széklet általános vizsgálata tenyésztéssel",
+            "price": 13231,
+            "point": 67,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 7,
+            "name": "Széklet járványügyi vizsgálata",
+            "price": 3428,
+            "point": 59,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 8,
+            "name": "Széklet mikológiai vizsgálata tenyésztéssel",
+            "price": 1574,
+            "point": 80,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 9,
+            "name": "Széklet mikológiai vizsgálata tenyésztés nélkül",
+            "price": 3205,
+            "point": 7,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 10,
+            "name": "Széklet mikroszkópos vizsgálata (parazitakimutatás)",
+            "price": 4394,
+            "point": 80,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 11,
+            "name": "Sebváladék általános bakterológiai vizsgálata",
+            "price": 11999,
+            "point": 57,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 12,
+            "name": "Sebváladék teljes mikológia vizsgálata",
+            "price": 19429,
+            "point": 79,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 13,
+            "name": "Sebváladék mikroszkópos vizsgálata Gram festéssel",
+            "price": 4549,
+            "point": 32,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 14,
+            "name": "Sebváladék mikroszkópos vizsgálata metilénkék festéssel",
+            "price": 17345,
+            "point": 11,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 15,
+            "name": "Sebváladék teljes anaerob vizsgálata",
+            "price": 19943,
+            "point": 49,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 16,
+            "name": "Légúti váladék bakterológiai vizsgálata kenettel",
+            "price": 13573,
+            "point": 7,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 17,
+            "name": "Légúti váladék bakterológiai vizsgálata kenet nélkül",
+            "price": 10629,
+            "point": 27,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 18,
+            "name": "Légúti váladék mikológiai vizsgálata",
+            "price": 4090,
+            "point": 64,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 19,
+            "name": "Légúti váladék virológiai vizsgálata tenyésztés nélkül",
+            "price": 4836,
+            "point": 29,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 20,
+            "name": "Légúti váladék virológiai vizsgálata tenyésztéssel",
+            "price": 11973,
+            "point": 71,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 21,
+            "name": "Coronavírus kimutatás légúti váladékból (antigén gyorsteszt)",
+            "price": 11616,
+            "point": 52,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 22,
+            "name": "Coronavírus kimutatás légúti váladékból (PCR teszt)",
+            "price": 10248,
+            "point": 47,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 23,
+            "name": "Mycobacterium kimutatása kenetből Ziehl-Neelsen festéssel",
+            "price": 17510,
+            "point": 53,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 24,
+            "name": "Vér tenyésztése (hemokultura)",
+            "price": 14001,
+            "point": 52,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 25,
+            "name": "Vér anaerob tenyésztése (anaerob hemokultura)",
+            "price": 13757,
+            "point": 97,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 26,
+            "name": "Vér mikológiai vizsgálata tenyésztéssel",
+            "price": 5378,
+            "point": 49,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 27,
+            "name": "Vér mikológiai vizsgálata tenyésztés nélkül",
+            "price": 5796,
+            "point": 38,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 28,
+            "name": "Vér szerológiai vizsgálata (víruskimutatás ELISA teszttel)",
+            "price": 2750,
+            "point": 26,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 29,
+            "name": "Vér szerológiai vizsgálata (baktériumkimutatás ELISA teszttel)",
+            "price": 13820,
+            "point": 60,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 30,
+            "name": "Vér szerológiai vizsgálata (gombák kimutatása ELISA teszttel)",
+            "price": 2391,
+            "point": 80,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 31,
+            "name": "Vér mikroszkópos vizsgálata (egy féle festéssel)",
+            "price": 6687,
+            "point": 4,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 32,
+            "name": "Vér mikroszkópos vizsgálata (kettő féle festéssel)",
+            "price": 12846,
+            "point": 3,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 33,
+            "name": "Bőrkaparék teljes mikológiai vizsgálata",
+            "price": 13659,
+            "point": 96,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 34,
+            "name": "Bőrkaparék csak mikroszkópos mikológiai vizsgálata",
+            "price": 18162,
+            "point": 7,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 35,
+            "name": "Bőrkaparék csak tenyésztéses mikológiai vizsgálata",
+            "price": 7528,
+            "point": 68,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 36,
+            "name": "Gombák meghatározása (teljes identifikálás)",
+            "price": 15083,
+            "point": 58,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 37,
+            "name": "Genitális váladék teljes vizsgálata",
+            "price": 1375,
+            "point": 21,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 38,
+            "name": "Genitális váladék mikroszkópos vizsgálata metilénkék festéssel",
+            "price": 1198,
+            "point": 65,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 39,
+            "name": "Genitális váladék mikroszkópos vizsgálata Gram festéssel",
+            "price": 11254,
+            "point": 16,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 40,
+            "name": "Vírusizolálás szövettenyészetben",
+            "price": 6436,
+            "point": 93,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 41,
+            "name": "Vírusizolálás labóratóriumi egérben",
+            "price": 6329,
+            "point": 68,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 42,
+            "name": "MRSA kimutatás légúti váladékból",
+            "price": 2153,
+            "point": 52,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 43,
+            "name": "Antibiotikum-érzékenységi vizsgálat (egy sorozat)",
+            "price": 5510,
+            "point": 41,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 44,
+            "name": "Antibiotikum-érzékenységi vizsgálat (kettő sorozat)",
+            "price": 13738,
+            "point": 62,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 45,
+            "name": "Antibiotikum-érzékenységi vizsgálat (három sorozat)",
+            "price": 19771,
+            "point": 23,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 46,
+            "name": "Bőrkaparék parazitológiai vizsgálata (rühatka keresése)",
+            "price": 2099,
+            "point": 52,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 47,
+            "name": "Féregkimutatás székletből (makroszkópos)",
+            "price": 10597,
+            "point": 79,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 48,
+            "name": "Féregkimutatás székletből (mikroszkópos)",
+            "price": 3874,
+            "point": 93,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 49,
+            "name": "Férgek azonosítása (identifikálás)",
+            "price": 1557,
+            "point": 48,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 50,
+            "name": "Herpeszkimutatás (bármilyen mintából)",
+            "price": 16620,
+            "point": 85,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 51,
+            "name": "Baktériumok azonosítása biokémiai tesztekkel (identifikálás)",
+            "price": 11820,
+            "point": 69,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 52,
+            "name": "Baktériumok azonosítása PCR tesztel",
+            "price": 18434,
+            "point": 65,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 53,
+            "name": "Környezethigiéniai vizsgálat",
+            "price": 3519,
+            "point": 34,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 54,
+            "name": "Személyi higiéniai vizsgálat",
+            "price": 17084,
+            "point": 8,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 55,
+            "name": "Élelmiszerhigiéniai vizsgálat",
+            "price": 15633,
+            "point": 54,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 56,
+            "name": "Munkaegészségügyi mikrobiológiai szűrés",
+            "price": 19150,
+            "point": 46,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 57,
+            "name": "Chlamydia-kimutatás bármilyen mintából",
+            "price": 15440,
+            "point": 98,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 58,
+            "name": "Virus-neutralizációs teszt",
+            "price": 18607,
+            "point": 94,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 59,
+            "name": "Antibiotikum MIC érték meghatározás",
+            "price": 15592,
+            "point": 5,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        },
+        {
+            "id": 60,
+            "name": "Állategészségügyi mikrobiológiai vizsgálat (csak előre egyeztetés után)",
+            "price": 6342,
+            "point": 37,
+            "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
+        }
+    ]
+
+}

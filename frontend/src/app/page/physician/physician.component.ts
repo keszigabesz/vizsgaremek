@@ -18,4 +18,10 @@ export class PhysicianComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  onDeleteOne(physician: Physician): void {
+    this.physicianService
+      .delete(physician.id)
+      .subscribe(() => (this.list$ = this.physicianService.getAll()));
+  }
 }

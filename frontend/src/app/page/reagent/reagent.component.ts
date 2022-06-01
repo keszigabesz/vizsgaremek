@@ -19,4 +19,10 @@ export class ReagentComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  onDeleteOne(reagent: Reagent): void {
+    this.reagentService
+      .delete(reagent.id)
+      .subscribe(() => (this.list$ = this.reagentService.getAll()));
+  }
 }

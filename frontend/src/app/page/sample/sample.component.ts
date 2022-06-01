@@ -19,4 +19,10 @@ export class SampleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  onDeleteOne(sample: Sample): void {
+    this.sampleService
+      .delete(sample.id)
+      .subscribe(() => (this.list$ = this.sampleService.getAll()));
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface INgTableColumn {
   title: string;
@@ -15,6 +16,10 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
   // data
   @Input() list: T[] = [];
   @Input() columns: any[] = [];
+  @Input() entity: string = '';
+
+  @Output() editItem = new EventEmitter<any>();
+  @Output() deleteItem = new EventEmitter<any>();
 
   // filter
   phrase: string = '';
@@ -30,7 +35,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     return new Array(pageSize).fill(1).map((item, index) => index + 1);
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -39,5 +44,12 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     this.page = pageNum;
     this.startSlice = this.pageSize * (pageNum - 1);
     this.endSlice = this.startSlice + this.pageSize;
+  }
+
+  onEdit(id: any): void {
+    this.editItem.emit(id);
+  }
+  onDelete(item: any): void {
+    this.deleteItem.emit(item);
   }
 }

@@ -20,6 +20,7 @@ import { SampleComponent } from './page/sample/sample.component';
 import { TestComponent } from './page/test/test.component';
 import { ReagentComponent } from './page/reagent/reagent.component';
 import { DataTableModule } from './data-table/data-table.module';
+import { PatientEditComponent } from './page/patient-edit/patient-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DataTableModule } from './data-table/data-table.module';
     SampleComponent,
     TestComponent,
     ReagentComponent,
+    PatientEditComponent,
   ],
   imports: [
     BrowserModule,

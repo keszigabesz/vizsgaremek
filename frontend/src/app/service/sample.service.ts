@@ -4,12 +4,11 @@ import { Sample } from '../model/sample';
 import { BaseService } from './base.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class SampleService extends BaseService<Sample>{
-
+export class SampleService extends BaseService<Sample> {
   constructor(public override http: HttpClient) {
     super(http);
-    this.entityName = 'samples.json';
+    this.entityName = 'samples';
   }
 }

@@ -4,12 +4,11 @@ import { Reagent } from '../model/reagent';
 import { BaseService } from './base.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class ReagentService extends BaseService<Reagent>{
-
+export class ReagentService extends BaseService<Reagent> {
   constructor(public override http: HttpClient) {
     super(http);
-    this.entityName = 'reagents.json';
+    this.entityName = 'reagents';
   }
 }
