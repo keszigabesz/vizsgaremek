@@ -10,9 +10,8 @@
           *ngIf="list$ | async as list"
           [columns]="columns"
           [list]="list"
-          [entity]="entity"
+          [editor]="editor"
           (deleteItem)="onDelete($event)"
-          (editItem)="onEdit($event)"
         ></ng-data-table>
       </div>
     </div>

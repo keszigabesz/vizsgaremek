@@ -1,51 +1,53 @@
 <app-sidebar-admin></app-sidebar-admin>
 <div class="">
-  <div
-    class="row"
-    *ngIf="editedObject"
-  >
+  <div class="row">
     <div class="col-6 offset-3">
       <div class="card">
         <div class="card-header card-header-info">
-          <h4 class="card-title">Betegek szerkesztés és új beteg hozzáadása</h4>
+          <h4
+            *ngIf="patient$ | async"
+            class="card-title"
+          >Beteg szerkesztése</h4>
+          <h4
+            *ngIf="!(patient$ | async)"
+            class="card-title"
+          >Új beteg hozzáadása</h4>
         </div>
         <div class="card-body">
           <form
-            #userForm="ngForm"
-            (ngSubmit)="onSend(editedObject)"
+            #patientForm="ngForm"
+            (ngSubmit)="onSend(patient)"
           >
             <input
               type="hidden"
               name="id"
-              [(ngModel)]="editedObject.id"
+              [(ngModel)]="patient.id"
             >
             <div class="form-group">
               <label
                 class="bmd-label-floating"
-                for="i1ID"
+                for="name"
               >Név</label>
               <input
-                id="i1ID"
+                id="name"
                 class="form-control"
                 type="text"
                 name="name"
-                [(ngModel)]="editedObject.name"
-                pattern="^([A-Űa-ű]){2,}.*$"
+                [(ngModel)]="patient.name"
                 required
               >
-
             </div>
             <div class="form-group">
               <label
                 class="bmd-label-floating"
-                for="i2ID"
+                for="taj"
               >TAJ</label>
               <input
-                id="i2ID"
+                id="taj"
                 class="form-control"
                 type="number"
                 name="taj"
-                [(ngModel)]="editedObject.taj"
+                [(ngModel)]="patient.taj"
                 pattern=""
                 required
               >
@@ -53,14 +55,14 @@
             <div class="form-group">
               <label
                 class="bmd-label-floating"
-                for="i3ID"
+                for="birth_date"
               >Születési idő</label>
               <input
-                id="i3ID"
+                id="birth_date"
                 class="form-control"
                 type="text"
                 name="birth_date"
-                [(ngModel)]="editedObject.birth_date"
+                [(ngModel)]="patient.birth_date"
                 pattern=""
                 required
               >
@@ -68,20 +70,20 @@
             <div class="form-group">
               <label
                 class="bmd-label-floating"
-                for="i4ID"
+                for="mothers_name"
               >Anyja neve</label>
               <input
-                id="i4ID"
+                id="mothers_name"
                 class="form-control"
                 type="text"
                 name="mothers_name"
-                [(ngModel)]="editedObject.mothers_name"
+                [(ngModel)]="patient.mothers_name"
                 pattern=""
                 required
               >
             </div>
             <button
-              [disabled]="!userForm.valid"
+              [disabled]="!patientForm.valid"
               type="submit"
               class="btn btn-success btn-link mr-2"
             > <i class="material-icons">save</i>
@@ -91,6 +93,7 @@
               class="btn btn-danger btn-link"
             > <i class="material-icons">not_interested</i>
               Mégse</button>
+
           </form>
         </div>
       </div>

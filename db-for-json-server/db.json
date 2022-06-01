@@ -664,25 +664,32 @@
       "taj": 214131415,
       "birth_date": "2000-09-25",
       "mothers_name": "Roscoe China"
+    },
+    {
+      "id": 101,
+      "name": "Nagy Gizi",
+      "taj": 123456789,
+      "birth_date": "1989-12-34",
+      "mothers_name": "Nagy Gizi"
     }
   ],
   "physicians": [
     {
       "id": 1,
-      "name": "Daria Faull",
+      "name": "Daria Faulleeee",
       "reg_number": 43074,
       "city": "Budapest"
     },
     {
       "id": 3,
-      "name": "Terese Yabsley",
+      "name": "Terese Yabslei",
       "reg_number": 45450,
       "city": "Szeged"
     },
     {
       "id": 4,
       "name": "Nessi Karolowski",
-      "reg_number": 49705,
+      "reg_number": 99705,
       "city": "Győr"
     },
     {

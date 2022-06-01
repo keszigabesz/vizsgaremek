@@ -16,7 +16,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
   // data
   @Input() list: T[] = [];
   @Input() columns: any[] = [];
-  @Input() entity: string = '';
+  @Input() editor: string = '';
 
   @Output() editItem = new EventEmitter<any>();
   @Output() deleteItem = new EventEmitter<any>();

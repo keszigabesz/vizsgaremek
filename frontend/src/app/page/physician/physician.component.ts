@@ -12,6 +12,7 @@ import { PhysicianService } from 'src/app/service/physician.service';
 export class PhysicianComponent implements OnInit {
   columns = this.config.physicianTableColumns;
   list$: Observable<Physician[]> = this.physicianService.getAll();
+  editor: string = '/physician-edit/';
   constructor(
     private physicianService: PhysicianService,
     private config: ConfigService

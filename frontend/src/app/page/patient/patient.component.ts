@@ -13,7 +13,7 @@ import { PatientService } from 'src/app/service/patient.service';
 export class PatientComponent implements OnInit {
   columns = this.config.patientTableColumns;
   list$: Observable<Patient[]> = this.patientService.getAll();
-  entity: string = 'patient';
+  editor: string = '/patient-edit/';
 
   constructor(
     private config: ConfigService,
@@ -27,9 +27,5 @@ export class PatientComponent implements OnInit {
     this.patientService
       .delete(patient.id)
       .subscribe(() => (this.list$ = this.patientService.getAll()));
-  }
-
-  onEdit(id: number): void {
-    this.router.navigate(['patient-edit', id]);
   }
 }

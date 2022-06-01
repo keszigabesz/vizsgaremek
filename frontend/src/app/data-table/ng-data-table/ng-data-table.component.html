@@ -24,8 +24,8 @@
   </div>
   <div class="col-3">
     <button
-      (click)="onEdit(0)"
       class="btn btn-success btn-block"
+      [routerLink]="[editor, 0 ]"
     >
       <i class="material-icons">add</i>
     </button>
@@ -49,8 +49,8 @@
             <td *ngFor="let col of columns">{{row[col.key]}}</td>
             <td>
               <button
-                (click)="onEdit(row.id)"
                 class="btn btn-success btn-link"
+                [routerLink]="[editor, row.id ]"
               >
                 <i class="material-icons">edit</i>
               </button>

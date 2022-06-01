@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, switchMap } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Patient } from 'src/app/model/patient';
 import { PatientService } from 'src/app/service/patient.service';
 
@@ -10,39 +10,31 @@ import { PatientService } from 'src/app/service/patient.service';
   styleUrls: ['./patient-edit.component.scss'],
 })
 export class PatientEditComponent implements OnInit {
-  editedObject: Patient | undefined = undefined;
-  edit: boolean = true;
-  mainComponentRoute = 'patient';
+  patient$!: Observable<Patient>;
+  patient: Patient = new Patient();
 
   constructor(
     private router: Router,
     private ar: ActivatedRoute,
     private patientService: PatientService
-  ) {
-    this.ar.params
-      .pipe(switchMap((params) => this.patientService.get(params['id'])))
-      .subscribe((currentObject) => {
-        if (
-          currentObject === null ||
-          currentObject === undefined ||
-          currentObject.id < 1
-        ) {
-          this.edit = false;
-          this.editedObject = new Patient();
-        } else {
-          this.editedObject = currentObject;
-        }
-      });
+  ) {}
+
+  ngOnInit(): void {
+    this.ar.params.subscribe({
+      next: (param) => (this.patient$ = this.patientService.get(param['id'])),
+    });
+    this.patient$.subscribe({
+      next: (patient) => (this.patient = patient ? patient : this.patient),
+    });
   }
 
-  ngOnInit(): void {}
-
-  onSend(editedObject: Patient) {
-    const crudObservable: Observable<any> = this.edit
-      ? this.patientService.update(editedObject)
-      : this.patientService.create(editedObject);
+  onSend(patient: Patient) {
+    const crudObservable: Observable<any> =
+      patient.id !== 0
+        ? this.patientService.update(patient)
+        : this.patientService.create(patient);
     crudObservable.subscribe((result) => {
-      this.router.navigate([this.mainComponentRoute]);
+      this.router.navigate(['/', 'patient']);
     });
   }
 }
