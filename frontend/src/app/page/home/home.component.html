@@ -1,53 +1,52 @@
 <app-sidebar></app-sidebar>
-<app-header [title]="title" [text]="text"></app-header>
-  <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-            <div class="card-header card-header-info">
-                <h4 class="card-title">Hozzánk érkező betegek</h4>
-            </div>
-            <div class="card-body">
-                <p>Az ország minden részéből érkeznek hozzánk betegek, eddig összesen {{patientList$ | async | count}} beteg mintáján végeztünk vizsgálatokat.</p>
-            </div>
-        </div>
+<app-header
+  [title]="title"
+  [text]="text"
+></app-header>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header card-header-info">
+        <h4 class="card-title">Hozzánk érkező betegek</h4>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-            <div class="card-header card-header-info">
-                <h4 class="card-title">Feldolgozott minták</h4>
-            </div>
-            <div class="card-body">
-                 <p>Napont rengeteg vizsgálati anyag érkezik mhozzánk, eddig {{sampleList$ | async | count}} vizsgálati anyagot dolgoztunk fel.</p>
-            </div>
-        </div>
+      <div class="card-body">
+        <p>Az ország minden részéből érkeznek hozzánk betegek, eddig összesen {{patientList$ | async | count}} beteg
+          mintáján végeztünk vizsgálatokat.</p>
       </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header card-header-info">
+        <h4 class="card-title">Feldolgozott minták</h4>
       </div>
-      <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-            <div class="card-header card-header-info">
-                <h4 class="card-title">Beküldő orvosaink</h4>
-            </div>
-            <div class="card-body">
-              <p>Az ország egész területéről {{physicianList$ | async | count}} orvos küldi hozzánk a mintákat vizsgálatra.</p>
-            </div>
-        </div>
+      <div class="card-body">
+        <p>Napont rengeteg vizsgálati anyag érkezik mhozzánk, eddig {{sampleList$ | async | count}} vizsgálati anyagot
+          dolgoztunk fel.</p>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-            <div class="card-header card-header-info">
-                <h4 class="card-title">A laboratóriumunkban elérhető vizsgálatok</h4>
-            </div>
-            <div class="card-body">
-              <p>Jelenleg laboratóriumunkban {{testList$ | async | count}} különféle vizsgálatot tudunk elvégezni.</p>
-            </div>
-        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header card-header-info">
+        <h4 class="card-title">Beküldő orvosaink</h4>
       </div>
+      <div class="card-body">
+        <p>Az ország egész területéről {{physicianList$ | async | count}} orvos küldi hozzánk a mintákat vizsgálatra.
+        </p>
       </div>
-
-
-
-
-
-
-
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header card-header-info">
+        <h4 class="card-title">A laboratóriumunkban elérhető vizsgálatok</h4>
+      </div>
+      <div class="card-body">
+        <p>Jelenleg laboratóriumunkban {{testList$ | async | count}} különféle vizsgálatot tudunk elvégezni.</p>
+      </div>
+    </div>
+  </div>
+</div>
