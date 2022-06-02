@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit {
   sampleList$: Observable<Sample[]> = this.sampleService.getAll();
   patientList$: Observable<Patient[]> = this.patientService.getAll();
 
+  testCount: number = 0;
+
   constructor(
     private testService: TestService,
     private physicianService: PhysicianService,
@@ -31,5 +33,11 @@ export class HomeComponent implements OnInit {
     private patientService: PatientService,
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.testList$.subscribe({
+      next: (tests) => {
+        this.testCount = tests.length;
+      },
+    });
+  }
 }
