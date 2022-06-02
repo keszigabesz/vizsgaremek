@@ -25,6 +25,10 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
   phrase: string = '';
   filterKey: string = '';
 
+  //sorting
+  sort: string = 'id';
+  descendingOrder: boolean = false;
+
   // paging
   pageSize: number = 10;
   startSlice: number = 0;
@@ -45,6 +49,18 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     this.startSlice = this.pageSize * (pageNum - 1);
     this.endSlice = this.startSlice + this.pageSize;
   }
+
+  //sorting
+  onChangeOrder(reference: string) {
+    if (reference == this.sort) {
+      this.descendingOrder = !this.descendingOrder;
+    } else {
+      this.sort = reference;
+      this.descendingOrder = false;
+    }
+  }
+
+  // actions
 
   onEdit(id: any): void {
     this.editItem.emit(id);

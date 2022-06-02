@@ -40,12 +40,18 @@
             <th
               *ngFor="let col of columns"
               scope="col"
-            >{{col.title}}</th>
+              class="clickable-column"
+              [class.table-active]="sort === col.key" (click)="onChangeOrder(col.key)">
+                      <ng-container *ngIf="sort === col.key">
+                        <span class="fa" [class.fa-sort-down]="!descendingOrder"
+                          [class.fa-sort-up]="descendingOrder"></span>
+                      </ng-container>
+            {{col.title}}</th>
             <th>Műveletek</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let row of list | filter:phrase:filterKey | slice:startSlice:endSlice">
+          <tr *ngFor="let row of list | sorter: sort:descendingOrder | filter:phrase:filterKey | slice:startSlice:endSlice">
             <td *ngFor="let col of columns">{{row[col.key]}}</td>
             <td>
               <button
