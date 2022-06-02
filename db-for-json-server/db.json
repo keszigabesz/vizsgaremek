@@ -688,15 +688,9 @@
     },
     {
       "id": 4,
-      "name": "Nessi Karolowski",
+      "name": "Nessi Karolowskiiiiiiiiiii",
       "reg_number": 99705,
       "city": "Győr"
-    },
-    {
-      "id": 5,
-      "name": "Shela Salerg",
-      "reg_number": 84761,
-      "city": "Miskolc"
     },
     {
       "id": 6,
@@ -1828,15 +1822,15 @@
     {
       "id": 1,
       "type": "vizelet",
-      "patient_name": "Emily Hubberton",
-      "physician_name": "Nessi Karolowski",
+      "patient_name": "Matti Breitling",
+      "physician_name": "Darsey Betjeman",
       "sampling_date": "2022-05-27"
     },
     {
       "id": 3,
       "type": "vér",
-      "patient_name": "Wren Chomicki",
-      "physician_name": "Cash Doughill",
+      "patient_name": "Bryce Annon",
+      "physician_name": "Hermann Azemar",
       "sampling_date": "2022-05-05"
     },
     {
@@ -1855,23 +1849,23 @@
     },
     {
       "id": 6,
-      "type": "C902",
+      "type": "köpet",
       "patient_name": "Alyssa Jannequin",
       "physician_name": "Jan Cohane",
       "sampling_date": "2022-05-28"
     },
     {
       "id": 7,
-      "type": "S31120A",
+      "type": "köpet",
       "patient_name": "Archibald Timbs",
       "physician_name": "Wilmer Palphramand",
       "sampling_date": "2022-01-01"
     },
     {
       "id": 8,
-      "type": "S92034P",
-      "patient_name": "Townie Bruyet",
-      "physician_name": "Welsh Boylin",
+      "type": "sebváladék",
+      "patient_name": "Ammamaria Odney",
+      "physician_name": "Georas Radborn",
       "sampling_date": "2022-02-18"
     },
     {
@@ -1883,16 +1877,16 @@
     },
     {
       "id": 10,
-      "type": "S14104A",
+      "type": "vizelet",
       "patient_name": "Lillian Sains",
       "physician_name": "Edythe Goodboddy",
       "sampling_date": "2022-04-26"
     },
     {
       "id": 11,
-      "type": "W051",
-      "patient_name": "Harvey Ales0",
-      "physician_name": "Gino Searby",
+      "type": "széklet",
+      "patient_name": "Israel Andrioni",
+      "physician_name": "Wait Earengey",
       "sampling_date": "2022-02-01"
     },
     {
