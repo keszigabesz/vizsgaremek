@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Reagent } from 'src/app/model/reagent';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { ReagentService } from 'src/app/service/reagent.service';
 
 @Component({
@@ -12,11 +13,13 @@ import { ReagentService } from 'src/app/service/reagent.service';
 export class ReagentEditComponent implements OnInit {
   reagent$!: Observable<Reagent>;
   reagent: Reagent = new Reagent();
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
   constructor(
     private router: Router,
     private ar: ActivatedRoute,
-    private reagentService: ReagentService
+    private reagentService: ReagentService,
+    private config: ConfigService,
   ) {}
 
   ngOnInit(): void {

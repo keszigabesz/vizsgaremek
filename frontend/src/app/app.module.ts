@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
-import { SidebarAdminComponent } from './common/sidebar-admin/sidebar-admin.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { HeaderComponent } from './common/header/header.component';
 import { CountPipe } from './pipe/count.pipe';
@@ -35,7 +34,6 @@ import { TestEditComponent } from './page/test-edit/test-edit.component';
     SidebarComponent,
     TestCardComponent,
     LoginComponent,
-    SidebarAdminComponent,
     AdminComponent,
     HeaderComponent,
     CountPipe,

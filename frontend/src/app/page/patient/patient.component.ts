@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Patient } from 'src/app/model/patient';
-import { ConfigService } from 'src/app/service/config.service';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PatientService } from 'src/app/service/patient.service';
 
 @Component({
@@ -13,12 +12,12 @@ import { PatientService } from 'src/app/service/patient.service';
 export class PatientComponent implements OnInit {
   columns = this.config.patientTableColumns;
   list$: Observable<Patient[]> = this.patientService.getAll();
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
   editor: string = '/patient-edit/';
 
   constructor(
     private config: ConfigService,
     private patientService: PatientService,
-    private router: Router
   ) {}
 
   ngOnInit(): void {}

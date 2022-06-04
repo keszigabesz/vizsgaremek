@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Test } from 'src/app/model/test';
-import { ConfigService } from 'src/app/service/config.service';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { TestService } from 'src/app/service/test.service';
 
 @Component({
@@ -13,6 +13,7 @@ export class TestComponent implements OnInit {
   columns = this.config.testTableColumns;
   list$: Observable<Test[]> = this.testService.getAll();
   editor: string = '/test-edit/';
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
   constructor(
     private config: ConfigService,
