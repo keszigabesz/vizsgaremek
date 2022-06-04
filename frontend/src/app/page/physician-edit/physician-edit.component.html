@@ -1,86 +1,101 @@
 <app-sidebar-admin></app-sidebar-admin>
-<div class="">
-  <div class="row">
-    <div class="col-6 offset-3">
-      <div class="card">
-        <div class="card-header card-header-info">
-          <h4
-            *ngIf="physician$ | async"
-            class="card-title"
-          >Orvos szerkesztése</h4>
-          <h4
-            *ngIf="!(physician$ | async)"
-            class="card-title"
-          >Új orvos hozzáadása</h4>
-        </div>
-        <div class="card-body">
-          <form
-            #physicianForm="ngForm"
-            (ngSubmit)="onSend(physician)"
-          >
-            <input
-              type="hidden"
-              name="id"
-              [(ngModel)]="physician.id"
-            >
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="name"
-              >Név</label>
-              <input
-                id="name"
-                class="form-control"
-                type="text"
-                name="name"
-                [(ngModel)]="physician.name"
-                required
-              >
+
+<div class="main-panel">
+
+  <app-navigation></app-navigation>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="card">
+            <div class="card-header card-header-info">
+              <h4
+                *ngIf="physician$ | async"
+                class="card-title"
+              >Orvos szerkesztése</h4>
+              <h4
+                *ngIf="!(physician$ | async)"
+                class="card-title"
+              >Új orvos hozzáadása</h4>
             </div>
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="reg_number"
-              >Pecsétszám</label>
-              <input
-                id="reg_number"
-                class="form-control"
-                type="number"
-                name="reg_number"
-                [(ngModel)]="physician.reg_number"
-                pattern=""
-                required
+            <div class="card-body">
+              <form
+                #physicianForm="ngForm"
+                (ngSubmit)="onSend(physician)"
               >
+                <input
+                  type="hidden"
+                  name="id"
+                  [(ngModel)]="physician.id"
+                >
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="name"
+                  >Név</label>
+                  <input
+                    id="name"
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    [(ngModel)]="physician.name"
+                    required
+                  >
+                </div>
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="reg_number"
+                  >Pecsétszám</label>
+                  <input
+                    id="reg_number"
+                    class="form-control"
+                    type="number"
+                    name="reg_number"
+                    [(ngModel)]="physician.reg_number"
+                    pattern=""
+                    required
+                  >
+                </div>
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="city"
+                  >Település</label>
+                  <input
+                    id="city"
+                    class="form-control"
+                    type="text"
+                    name="city"
+                    [(ngModel)]="physician.city"
+                    pattern=""
+                    required
+                  >
+                </div>
+                <button
+                  [disabled]="!physicianForm.valid"
+                  type="submit"
+                  class="btn btn-success btn-link mr-2"
+                > <i class="material-icons">save</i>
+                  Mentés</button>
+                <button
+                  routerLink="/physician"
+                  class="btn btn-danger btn-link"
+                > <i class="material-icons">not_interested</i>
+                  Mégse</button>
+              </form>
             </div>
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="city"
-              >Település</label>
-              <input
-                id="city"
-                class="form-control"
-                type="text"
-                name="city"
-                [(ngModel)]="physician.city"
-                pattern=""
-                required
-              >
-            </div>
-            <button
-              [disabled]="!physicianForm.valid"
-              type="submit"
-              class="btn btn-success btn-link mr-2"
-            > <i class="material-icons">save</i>
-              Mentés</button>
-            <button
-              routerLink="/physician"
-              class="btn btn-danger btn-link"
-            > <i class="material-icons">not_interested</i>
-              Mégse</button>
-          </form>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
+
 </div>
+
+
+
+
+
