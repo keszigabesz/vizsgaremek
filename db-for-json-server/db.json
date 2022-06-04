@@ -3,14 +3,14 @@
     {
       "id": 1,
       "name": "Emily Hubberton",
-      "taj": 776865676,
+      "taj": 123456798,
       "birth_date": "1999-08-25",
       "mothers_name": "Gerry Castro"
     },
     {
       "id": 6,
       "name": "Matti Breitling",
-      "taj": 529444018,
+      "taj": 123456789,
       "birth_date": "1987-01-16",
       "mothers_name": "Nathanael Banthorpe"
     },
@@ -1268,8 +1268,8 @@
       "id": 1,
       "name": "HealthMart",
       "manufacturer": "McKesson",
-      "price": 96270,
-      "stock": 710
+      "price": 234,
+      "stock": 0
     },
     {
       "id": 3,

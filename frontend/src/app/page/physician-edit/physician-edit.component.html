@@ -33,46 +33,60 @@
                   <label
                     class="bmd-label-floating"
                     for="name"
-                  >Név</label>
+                  >Név <span class="validation-danger">*</span></label>
                   <input
                     id="name"
                     class="form-control"
                     type="text"
                     name="name"
                     [(ngModel)]="physician.name"
+                    pattern="^[A-Ű]{1,1}[a-ű]+( [A-Ű][a-ű]+)+"
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="physicianForm.controls['name']?.valid">
+                  Vezeték- és keresztnév szóközzel elválasztva, mindkettő nagybetűvel kezdődik. Betűkön kívül más karakter nem megengedett. Kötelező kitölteni.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="reg_number"
-                  >Pecsétszám</label>
+                  >Pecsétszám <span class="validation-danger">*</span></label>
                   <input
                     id="reg_number"
                     class="form-control"
                     type="number"
                     name="reg_number"
                     [(ngModel)]="physician.reg_number"
-                    pattern=""
+                    pattern="[0-9]{5,5}"
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="physicianForm.controls['reg_number']?.valid">
+                  A pecsétszám öt számjegyből áll, ha az első 0, az nem lesz elmentve. Kötelező kitölteni.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="city"
-                  >Település</label>
+                  >Település <span class="validation-danger">*</span></label>
                   <input
                     id="city"
                     class="form-control"
                     type="text"
                     name="city"
                     [(ngModel)]="physician.city"
-                    pattern=""
+                    pattern="^([A-Űa-ű]){2,}.*$"
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="physicianForm.controls['city']?.valid">
+                  A településnek nagybetűvel kell kezdődnie, és legalább két karakter hosszúnak kell lennie. Kötelező kitölteni.
+                </div>
+
+                <div class="validation-danger">* Kötelező kitölteni</div>
                 <button
                   [disabled]="!physicianForm.valid"
                   type="submit"

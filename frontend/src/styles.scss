@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-.material-icons.icon-red { color: #fb0000; }
+.material-icons.icon-red {
+  color: #fb0000;
+}
+
+th.clickable-column {
+  cursor: pointer;
+}
+
+.validation {
+  font-style: italic;
+  font-size: 90%;
+
+  &-danger {
+    color: red;
+  }
+
+  &-success {
+    color: green;
+  }
+}

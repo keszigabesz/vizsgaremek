@@ -33,7 +33,7 @@
                   <label
                     class="bmd-label"
                     for="type"
-                  >Típus</label>
+                  >Típus <span class="validation-danger">*</span></label>
                   <select
                     class="form-control"
                     id="type"
@@ -53,11 +53,15 @@
                     >{{ type }}</option>
                   </select>
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['type']?.valid">
+                  A minta típusát kötelező kitölteni
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label"
                     for="patient_name"
-                  >Beteg neve</label>
+                  >Beteg neve <span class="validation-danger">*</span></label>
                   <select
                     class="form-control"
                     id="patient_name"
@@ -77,11 +81,15 @@
                     >{{ patient.name }}</option>
                   </select>
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['patient_name']?.valid">
+                  A beteg nevét kötelező kitölteni. Ha nem találja a listában, akkor először vegye fel a betegek közé.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label"
                     for="physician_name"
-                  >Beküldő orvos</label>
+                  >Beküldő orvos <span class="validation-danger">*</span></label>
 
                   <select
                     class="form-control"
@@ -102,11 +110,15 @@
                     >{{ physician.name }}</option>
                   </select>
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['physician_name']?.valid">
+                  A orvos nevét kötelező kitölteni. Ha nem találja a listában, akkor először vegye fel az orvosok közé.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="sampling_date"
-                  >Mintavétel ideje</label>
+                  >Mintavétel ideje <span class="validation-danger">*</span></label>
                   <input
                     id="sampling_date"
                     class="form-control"
@@ -117,6 +129,11 @@
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['sampling_date']?.valid">
+                  A mintavétel idejét kötelező kitölteni.
+                </div>
+
+                <div class="validation-danger">* Kötelező kitölteni</div>
                 <button
                   [disabled]="!sampleForm.valid"
                   type="submit"

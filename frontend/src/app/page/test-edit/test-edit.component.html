@@ -33,21 +33,26 @@
                   <label
                     class="bmd-label-floating"
                     for="name"
-                  >Név</label>
+                  >Név <span class="validation-danger">*</span></label>
                   <input
                     id="name"
                     class="form-control"
                     type="text"
                     name="name"
                     [(ngModel)]="test.name"
+                    pattern="^([A-Űa-ű]){2,}.*$"
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="testForm.controls['name']?.valid">
+                  A név nagy kezdőbetűvel kezdődik és legalább két karakter hosszú. Kötelező kitölteni.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="price"
-                  >Ár</label>
+                  >Ár <span class="validation-danger">*</span></label>
                   <input
                     id="price"
                     class="form-control"
@@ -58,11 +63,15 @@
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="testForm.controls['price']?.valid">
+                  Az árat kötelező kitölteni.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="point"
-                  >TB pont</label>
+                  >TB pont <span class="validation-danger">*</span></label>
                   <input
                     id="point"
                     class="form-control"
@@ -73,11 +82,15 @@
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="testForm.controls['point']?.valid">
+                  A TB pontot kötelező kitölteni.
+                </div>
+
                 <div class="form-group">
                   <label
                     class="bmd-label-floating"
                     for="description"
-                  >Leírás</label>
+                  >Leírás <span class="validation-danger">*</span></label>
                   <input
                     id="description"
                     class="form-control"
@@ -88,6 +101,11 @@
                     required
                   >
                 </div>
+                <div class="validation validation-danger mb-3" [hidden]="testForm.controls['description']?.valid">
+                  A leírást kötelező kitölteni
+                </div>
+
+                <div class="validation-danger">* Kötelező kitölteni</div>
                 <button
                   [disabled]="!testForm.valid"
                   type="submit"
