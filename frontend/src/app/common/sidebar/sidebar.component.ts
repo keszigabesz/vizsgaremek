@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { ConfigService, IMenuItem } from 'src/app/service/config.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  sidebar: IMenuItem[] = this.config.sidebarMenu;
+  @Input() sidebarMenuItems: IMenuItem[] = [];
 
   constructor(
     private config: ConfigService

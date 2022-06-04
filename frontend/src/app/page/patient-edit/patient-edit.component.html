@@ -1,102 +1,111 @@
-<app-sidebar-admin></app-sidebar-admin>
-<div class="">
-  <div class="row">
-    <div class="col-6 offset-3">
-      <div class="card">
-        <div class="card-header card-header-info">
-          <h4
-            *ngIf="patient$ | async"
-            class="card-title"
-          >Beteg szerkesztése</h4>
-          <h4
-            *ngIf="!(patient$ | async)"
-            class="card-title"
-          >Új beteg hozzáadása</h4>
-        </div>
-        <div class="card-body">
-          <form
-            #patientForm="ngForm"
-            (ngSubmit)="onSend(patient)"
-          >
-            <input
-              type="hidden"
-              name="id"
-              [(ngModel)]="patient.id"
-            >
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="name"
-              >Név</label>
-              <input
-                id="name"
-                class="form-control"
-                type="text"
-                name="name"
-                [(ngModel)]="patient.name"
-                required
-              >
-            </div>
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="taj"
-              >TAJ</label>
-              <input
-                id="taj"
-                class="form-control"
-                type="number"
-                name="taj"
-                [(ngModel)]="patient.taj"
-                pattern=""
-                required
-              >
-            </div>
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="birth_date"
-              >Születési idő</label>
-              <input
-                id="birth_date"
-                class="form-control"
-                type="text"
-                name="birth_date"
-                [(ngModel)]="patient.birth_date"
-                pattern=""
-                required
-              >
-            </div>
-            <div class="form-group">
-              <label
-                class="bmd-label-floating"
-                for="mothers_name"
-              >Anyja neve</label>
-              <input
-                id="mothers_name"
-                class="form-control"
-                type="text"
-                name="mothers_name"
-                [(ngModel)]="patient.mothers_name"
-                pattern=""
-                required
-              >
-            </div>
-            <button
-              [disabled]="!patientForm.valid"
-              type="submit"
-              class="btn btn-success btn-link mr-2"
-            > <i class="material-icons">save</i>
-              Mentés</button>
-            <button
-              routerLink="/patient"
-              class="btn btn-danger btn-link"
-            > <i class="material-icons">not_interested</i>
-              Mégse</button>
+<app-sidebar [sidebarMenuItems]="sidebarMenuItems"></app-sidebar>
 
-          </form>
+<div class="main-panel">
+
+  <app-navigation></app-navigation>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="card">
+            <div class="card-header card-header-info">
+              <h4
+                *ngIf="patient$ | async"
+                class="card-title"
+              >Beteg szerkesztése</h4>
+              <h4
+                *ngIf="!(patient$ | async)"
+                class="card-title"
+              >Új beteg hozzáadása</h4>
+            </div>
+            <div class="card-body">
+              <form
+                #patientForm="ngForm"
+                (ngSubmit)="onSend(patient)"
+              >
+                <input
+                  type="hidden"
+                  name="id"
+                  [(ngModel)]="patient.id"
+                >
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="name"
+                  >Név</label>
+                  <input
+                    id="name"
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    [(ngModel)]="patient.name"
+                    required
+                  >
+                </div>
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="taj"
+                  >TAJ</label>
+                  <input
+                    id="taj"
+                    class="form-control"
+                    type="number"
+                    name="taj"
+                    [(ngModel)]="patient.taj"
+                    pattern=""
+                    required
+                  >
+                </div>
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="birth_date"
+                  >Születési idő</label>
+                  <input
+                    id="birth_date"
+                    class="form-control"
+                    type="text"
+                    name="birth_date"
+                    [(ngModel)]="patient.birth_date"
+                    pattern=""
+                    required
+                  >
+                </div>
+                <div class="form-group">
+                  <label
+                    class="bmd-label-floating"
+                    for="mothers_name"
+                  >Anyja neve</label>
+                  <input
+                    id="mothers_name"
+                    class="form-control"
+                    type="text"
+                    name="mothers_name"
+                    [(ngModel)]="patient.mothers_name"
+                    pattern=""
+                    required
+                  >
+                </div>
+                <button
+                  [disabled]="!patientForm.valid"
+                  type="submit"
+                  class="btn btn-success btn-link mr-2"
+                > <i class="material-icons">save</i>
+                  Mentés</button>
+                <button
+                  routerLink="/patient"
+                  class="btn btn-danger btn-link"
+                > <i class="material-icons">not_interested</i>
+                  Mégse</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
+
 </div>

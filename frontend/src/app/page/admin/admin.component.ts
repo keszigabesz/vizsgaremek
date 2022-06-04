@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-admin',
@@ -11,7 +12,11 @@ export class AdminComponent implements OnInit {
   text: string =
     'Kérjük, hogy a laboratórium adminisztrációs rendszerében az adatokat nagy körültekintéssel kezelje! Köszönettel: a Micro-Lab vezetősége.';
 
-  constructor() { }
+    sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
+
+  constructor(
+    private config: ConfigService
+  ) { }
 
   ngOnInit(): void {
   }

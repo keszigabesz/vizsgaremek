@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Physician } from 'src/app/model/physician';
-import { ConfigService } from 'src/app/service/config.service';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PhysicianService } from 'src/app/service/physician.service';
 
 @Component({
@@ -13,6 +13,8 @@ export class PhysicianComponent implements OnInit {
   columns = this.config.physicianTableColumns;
   list$: Observable<Physician[]> = this.physicianService.getAll();
   editor: string = '/physician-edit/';
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
+
   constructor(
     private physicianService: PhysicianService,
     private config: ConfigService

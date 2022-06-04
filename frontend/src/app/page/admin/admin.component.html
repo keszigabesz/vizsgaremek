@@ -1,2 +1,14 @@
-<app-sidebar-admin></app-sidebar-admin>
-<app-header [title]="title" [text]="text"></app-header>
+<app-sidebar [sidebarMenuItems]="sidebarMenuItems"></app-sidebar>
+
+<div class="main-panel">
+
+  <app-navigation></app-navigation>
+
+  <div class="content">
+    <div class="contentainer-fluid">
+      <app-header [title]="title" [text]="text"></app-header>
+
+    </div>
+  </div>
+
+</div>

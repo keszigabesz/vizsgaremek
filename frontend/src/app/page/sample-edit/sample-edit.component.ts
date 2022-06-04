@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Patient } from 'src/app/model/patient';
 import { Physician } from 'src/app/model/physician';
 import { Sample } from 'src/app/model/sample';
-import { ConfigService } from 'src/app/service/config.service';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PatientService } from 'src/app/service/patient.service';
 import { PhysicianService } from 'src/app/service/physician.service';
 import { SampleService } from 'src/app/service/sample.service';
@@ -22,6 +22,7 @@ export class SampleEditComponent implements OnInit {
   patientList: Patient[] = [];
   physicianList$: Observable<Physician[]> = this.physicianService.getAll();
   physicianList: Physician[] = [];
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
   constructor(
     private router: Router,
@@ -29,7 +30,8 @@ export class SampleEditComponent implements OnInit {
     private sampleService: SampleService,
     private configService: ConfigService,
     private patientService: PatientService,
-    private physicianService: PhysicianService
+    private physicianService: PhysicianService,
+    private config: ConfigService,
   ) {}
 
   ngOnInit(): void {

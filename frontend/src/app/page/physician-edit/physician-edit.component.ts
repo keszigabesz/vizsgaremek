@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Physician } from 'src/app/model/physician';
+import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PhysicianService } from 'src/app/service/physician.service';
 
 @Component({
@@ -12,11 +13,13 @@ import { PhysicianService } from 'src/app/service/physician.service';
 export class PhysicianEditComponent implements OnInit {
   physician$!: Observable<Physician>;
   physician: Physician = new Physician();
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
   constructor(
     private physicianService: PhysicianService,
     private ar: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private config: ConfigService
   ) {}
 
   ngOnInit(): void {
