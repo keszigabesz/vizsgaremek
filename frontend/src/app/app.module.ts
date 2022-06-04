@@ -24,6 +24,7 @@ import { PhysicianEditComponent } from './page/physician-edit/physician-edit.com
 import { ReagentEditComponent } from './page/reagent-edit/reagent-edit.component';
 import { SampleEditComponent } from './page/sample-edit/sample-edit.component';
 import { TestEditComponent } from './page/test-edit/test-edit.component';
+import { FooterComponent } from './common/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TestEditComponent } from './page/test-edit/test-edit.component';
     ReagentEditComponent,
     SampleEditComponent,
     TestEditComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
