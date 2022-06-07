@@ -66,6 +66,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     this.editItem.emit(id);
   }
   onDelete(item: any): void {
+    confirm('Biztos, hogy törölni akar?')
     this.deleteItem.emit(item);
   }
 }
