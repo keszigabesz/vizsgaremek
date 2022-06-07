@@ -40,7 +40,7 @@
                     type="text"
                     name="name"
                     [(ngModel)]="patient.name"
-                    pattern="[A-Ű][a-ű]+( [A-Ű][a-ű]+)+"
+                    pattern="^([A-Ű]{1,1}[a-ű]{1,}) ([A-Ű]{1,1}[a-ű]{1,})$"
                     required
                   >
                 </div>
@@ -59,12 +59,12 @@
                     type="number"
                     name="taj"
                     [(ngModel)]="patient.taj"
-                    pattern="[0-9]{9,9}"
+                    pattern="^([1-9]{1,1}[0-9]{8,8})$"
                     required
                   >
                 </div>
                 <div class="validation validation-danger mb-3" [hidden]="patientForm.controls['taj']?.valid">
-                  A TAJ kilenc számjegyből áll, ha az első 0, az nem lesz elmentve. Kötelező kitölteni.
+                  A TAJ kilenc számjegyből áll, az első szám nem lehet nulla. A TAJ kitöltése kötelező.
                 </div>
 
                 <div class="form-group">
@@ -96,7 +96,7 @@
                     type="text"
                     name="mothers_name"
                     [(ngModel)]="patient.mothers_name"
-                    pattern="^[A-Ű]{1,1}[a-ű]+( [A-Ű][a-ű]+)+"
+                    pattern="^([A-Ű]{1,1}[a-ű]{1,}) ([A-Ű]{1,1}[a-ű]{1,})$"
                     required
                   >
                 </div>
