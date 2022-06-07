@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 export interface INgTableColumn {
   title: string;
@@ -9,7 +10,7 @@ export interface INgTableColumn {
   selector: 'ng-data-table',
   templateUrl: './ng-data-table.component.html',
   styleUrls: ['./ng-data-table.component.scss'],
-}) // string tipusu kulcsok is lehetnek
+})
 export class NgDataTableComponent<T extends { [x: string]: any }>
   implements OnInit
 {
@@ -39,7 +40,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     return new Array(pageSize).fill(1).map((item, index) => index + 1);
   }
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
 
@@ -66,6 +67,12 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
     this.editItem.emit(id);
   }
   onDelete(item: any): void {
-    this.deleteItem.emit(item);
+    if (confirm('Biztos, hogy törölni akar?')) {
+      this.toastr.error('Sikeres törlés.', '', {
+        timeOut: 1800,
+        positionClass: 'toast-top-right'
+      });
+      this.deleteItem.emit(item);
+    }
   }
 }

@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Test } from 'src/app/model/test';
 import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { TestService } from 'src/app/service/test.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-test-edit',
@@ -19,7 +20,8 @@ export class TestEditComponent implements OnInit {
     private router: Router,
     private ar: ActivatedRoute,
     private testService: TestService,
-    private config: ConfigService
+    private config: ConfigService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -37,6 +39,10 @@ export class TestEditComponent implements OnInit {
         ? this.testService.update(test)
         : this.testService.create(test);
     crudObservable.subscribe((result) => {
+      this.toastr.success('Sikeres mentés.', '', {
+        timeOut: 1800,
+        positionClass: 'toast-top-right'
+      });
       this.router.navigate(['/', 'test']);
     });
   }

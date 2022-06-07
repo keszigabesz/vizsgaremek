@@ -8,6 +8,7 @@ import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PatientService } from 'src/app/service/patient.service';
 import { PhysicianService } from 'src/app/service/physician.service';
 import { SampleService } from 'src/app/service/sample.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sample-edit',
@@ -32,6 +33,7 @@ export class SampleEditComponent implements OnInit {
     private patientService: PatientService,
     private physicianService: PhysicianService,
     private config: ConfigService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -59,6 +61,10 @@ export class SampleEditComponent implements OnInit {
         ? this.sampleService.update(sample)
         : this.sampleService.create(sample);
     crudObservable.subscribe((result) => {
+      this.toastr.success('Sikeres mentés.', '', {
+        timeOut: 1800,
+        positionClass: 'toast-top-right'
+      });
       this.router.navigate(['/', 'sample']);
     });
   }

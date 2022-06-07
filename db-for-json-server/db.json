@@ -15,32 +15,11 @@
       "mothers_name": "Nathanael Banthorpe"
     },
     {
-      "id": 7,
-      "name": "Elmo Blase",
-      "taj": 461186663,
-      "birth_date": "2003-06-10",
-      "mothers_name": "Krissy Casaletto"
-    },
-    {
-      "id": 9,
-      "name": "Charyl Rubinshtein",
-      "taj": 169807038,
-      "birth_date": "1989-06-15",
-      "mothers_name": "Rhody Attwoul"
-    },
-    {
       "id": 10,
       "name": "Bryce Annon",
       "taj": 529842063,
       "birth_date": "1989-01-08",
       "mothers_name": "Paulita Macvain"
-    },
-    {
-      "id": 11,
-      "name": "Adelbert Dockwray",
-      "taj": 137828428,
-      "birth_date": "2009-08-31",
-      "mothers_name": "Rene Labrow"
     },
     {
       "id": 12,
@@ -691,12 +670,6 @@
       "name": "Nessi Karolowskiiiiiiiiiii",
       "reg_number": 99705,
       "city": "Győr"
-    },
-    {
-      "id": 6,
-      "name": "Drona Wilfinger",
-      "reg_number": 66410,
-      "city": "Budapest"
     },
     {
       "id": 7,
@@ -1820,48 +1793,6 @@
   ],
   "samples": [
     {
-      "id": 1,
-      "type": "vizelet",
-      "patient_name": "Matti Breitling",
-      "physician_name": "Darsey Betjeman",
-      "sampling_date": "2022-05-27"
-    },
-    {
-      "id": 3,
-      "type": "vér",
-      "patient_name": "Bryce Annon",
-      "physician_name": "Hermann Azemar",
-      "sampling_date": "2022-05-05"
-    },
-    {
-      "id": 4,
-      "type": "torok váladék",
-      "patient_name": "Xever Ridehalgh",
-      "physician_name": "Mendy Cleve",
-      "sampling_date": "2022-04-27"
-    },
-    {
-      "id": 5,
-      "type": "liquor",
-      "patient_name": "Bertrand Easterling",
-      "physician_name": "Teddie Breckon",
-      "sampling_date": "2020-06-26"
-    },
-    {
-      "id": 6,
-      "type": "köpet",
-      "patient_name": "Alyssa Jannequin",
-      "physician_name": "Jan Cohane",
-      "sampling_date": "2022-05-28"
-    },
-    {
-      "id": 7,
-      "type": "köpet",
-      "patient_name": "Archibald Timbs",
-      "physician_name": "Wilmer Palphramand",
-      "sampling_date": "2022-01-01"
-    },
-    {
       "id": 8,
       "type": "sebváladék",
       "patient_name": "Ammamaria Odney",
@@ -1869,25 +1800,11 @@
       "sampling_date": "2022-02-18"
     },
     {
-      "id": 9,
-      "type": "S52264M",
-      "patient_name": "Kaia Thewless",
-      "physician_name": "Jeremias Eliesco",
-      "sampling_date": "2022-03-06"
-    },
-    {
       "id": 10,
       "type": "vizelet",
       "patient_name": "Lillian Sains",
       "physician_name": "Edythe Goodboddy",
       "sampling_date": "2022-04-26"
-    },
-    {
-      "id": 11,
-      "type": "széklet",
-      "patient_name": "Israel Andrioni",
-      "physician_name": "Wait Earengey",
-      "sampling_date": "2022-02-01"
     },
     {
       "id": 12,
@@ -2996,13 +2913,6 @@
       "sampling_date": "2022-01-15"
     },
     {
-      "id": 170,
-      "type": "M13162",
-      "patient_name": "Britteny Laphorn",
-      "physician_name": "Valina Docharty",
-      "sampling_date": "2022-02-04"
-    },
-    {
       "id": 171,
       "type": "T86831",
       "patient_name": "Avrom Keveren",
@@ -3572,24 +3482,10 @@
       "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
     },
     {
-      "id": 4,
-      "name": "Vizelet mikroszkópos vizsgálata",
-      "price": 8801,
-      "point": 79,
-      "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
-    },
-    {
       "id": 5,
       "name": "Széklet általános vizsgálata, tenyésztés nélkül",
       "price": 19319,
       "point": 72,
-      "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
-    },
-    {
-      "id": 6,
-      "name": "Széklet általános vizsgálata tenyésztéssel",
-      "price": 13231,
-      "point": 67,
       "description": "Ide jöhetne egy rövid leírás a vizsgálatról."
     },
     {
