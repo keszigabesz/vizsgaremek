@@ -27,6 +27,7 @@ import { TestEditComponent } from './page/test-edit/test-edit.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoaderComponent } from './common/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SampleEditComponent,
     TestEditComponent,
     FooterComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
