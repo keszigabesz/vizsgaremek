@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Physician } from 'src/app/model/physician';
 import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { PhysicianService } from 'src/app/service/physician.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-physician-edit',
@@ -19,7 +20,8 @@ export class PhysicianEditComponent implements OnInit {
     private physicianService: PhysicianService,
     private ar: ActivatedRoute,
     private router: Router,
-    private config: ConfigService
+    private config: ConfigService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -39,6 +41,10 @@ export class PhysicianEditComponent implements OnInit {
         ? this.physicianService.update(physician)
         : this.physicianService.create(physician);
     crudObservable.subscribe((result) => {
+      this.toastr.success('Sikeres mentés.', '', {
+        timeOut: 1800,
+        positionClass: 'toast-top-right'
+      });
       this.router.navigate(['/', 'physician']);
     });
   }

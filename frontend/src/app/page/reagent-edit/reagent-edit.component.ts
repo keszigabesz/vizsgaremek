@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Reagent } from 'src/app/model/reagent';
 import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 import { ReagentService } from 'src/app/service/reagent.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-reagent-edit',
@@ -20,6 +21,7 @@ export class ReagentEditComponent implements OnInit {
     private ar: ActivatedRoute,
     private reagentService: ReagentService,
     private config: ConfigService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -37,6 +39,10 @@ export class ReagentEditComponent implements OnInit {
         ? this.reagentService.update(reagent)
         : this.reagentService.create(reagent);
     crudObservable.subscribe((result) => {
+      this.toastr.success('Sikeres mentés.', '', {
+        timeOut: 1800,
+        positionClass: 'toast-top-right'
+      });
       this.router.navigate(['/', 'reagent']);
     });
   }
