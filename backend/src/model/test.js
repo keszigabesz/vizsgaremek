@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const TestSchema = mongoose.Schema({
-  _id: Number,
   name: {
     type: String,
     require: true

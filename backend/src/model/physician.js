@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const PhysicianSchema = mongoose.Schema({
-  _id: Number,
   name: {
     type: String,
     require: true

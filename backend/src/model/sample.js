@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const SampleSchema = mongoose.Schema({
-  _id: Number,
   type: {
     type: String,
     require: true
