@@ -35,7 +35,7 @@ export class TestEditComponent implements OnInit {
 
   onSend(test: Test) {
     const crudObservable: Observable<any> =
-      test._id !== ''
+      test._id
         ? this.testService.update(test)
         : this.testService.create(test);
     crudObservable.subscribe((result) => {

@@ -57,7 +57,7 @@ export class SampleEditComponent implements OnInit {
 
   onSend(sample: Sample) {
     const crudObservable: Observable<any> =
-      sample._id !== ''
+      sample._id
         ? this.sampleService.update(sample)
         : this.sampleService.create(sample);
     crudObservable.subscribe((result) => {
