@@ -63,7 +63,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
 
   // actions
 
-  onEdit(_id: any): void {
+  onEdit(_id: string): void {
     this.editItem.emit(_id);
   }
   onDelete(item: any): void {
