@@ -34,9 +34,9 @@ exports.create = (req, res, next) => {
     };
 
     
-    const physician = new Physician(newPhysician);
+    
 
-    return service.create(physician)
+    return service.create(Physician, newPhysician)
         .then(cp => {
             res.status(201);
             res.json(cp);

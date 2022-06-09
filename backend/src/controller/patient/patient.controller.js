@@ -34,9 +34,8 @@ exports.create = (req, res, next) => {
     };
 
     
-    const patient = new Patient(newPatient);
 
-    return service.create(patient)
+    return service.create(Patient, newPatient)
         .then(cp => {
             res.status(201);
             res.json(cp);

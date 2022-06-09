@@ -27,7 +27,7 @@ export class PhysicianEditComponent implements OnInit {
   ngOnInit(): void {
     this.ar.params.subscribe({
       next: (param) =>
-        (this.physician$ = this.physicianService.get(param['_id'])),
+        (this.physician$ = this.physicianService.get(param['id'])),
     });
     this.physician$.subscribe({
       next: (physician) =>

@@ -48,7 +48,7 @@ export class SampleEditComponent implements OnInit {
       },
     });
     this.ar.params.subscribe({
-      next: (param) => (this.sample$ = this.sampleService.get(param['_id'])),
+      next: (param) => (this.sample$ = this.sampleService.get(param['id'])),
     });
     this.sample$.subscribe({
       next: (sample) => (this.sample = sample ? sample : this.sample),

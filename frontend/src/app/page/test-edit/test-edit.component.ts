@@ -26,7 +26,7 @@ export class TestEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.test$ = this.testService.get(param['_id'])),
+      next: (param) => (this.test$ = this.testService.get(param['id'])),
     });
     this.test$.subscribe({
       next: (test) => (this.test = test ? test : this.test),
