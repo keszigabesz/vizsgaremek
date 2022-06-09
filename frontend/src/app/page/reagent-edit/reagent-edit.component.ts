@@ -35,7 +35,7 @@ export class ReagentEditComponent implements OnInit {
 
   onSend(reagent: Reagent) {
     const crudObservable: Observable<any> =
-      reagent.id !== 0
+      reagent._id
         ? this.reagentService.update(reagent)
         : this.reagentService.create(reagent);
     crudObservable.subscribe((result) => {

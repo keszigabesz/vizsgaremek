@@ -24,7 +24,7 @@ export class PatientComponent implements OnInit {
 
   onDelete(patient: Patient): void {
     this.patientService
-      .delete(patient.id)
+      .delete(patient._id)
       .subscribe(() => (this.list$ = this.patientService.getAll()));
   }
 }

@@ -1,6 +1,6 @@
 export class Sample {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   type: string = '';
   patient_name: string = '';
   physician_name: string = '';

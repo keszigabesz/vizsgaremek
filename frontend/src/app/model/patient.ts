@@ -1,6 +1,6 @@
 export class Patient {
   [key: string]: any;
-  id: number = 0;
+  _id: string  = '';
   name: string = '';
   taj: number = 0;
   birth_date: string = '';

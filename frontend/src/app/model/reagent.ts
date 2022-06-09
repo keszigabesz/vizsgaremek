@@ -1,6 +1,6 @@
 export class Reagent {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   name: string = '';
   manufacturer: string = '';
   price: number = 0;

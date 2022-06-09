@@ -37,7 +37,7 @@ export class PhysicianEditComponent implements OnInit {
 
   onSend(physician: Physician) {
     const crudObservable: Observable<any> =
-      physician.id !== 0
+      physician._id
         ? this.physicianService.update(physician)
         : this.physicianService.create(physician);
     crudObservable.subscribe((result) => {

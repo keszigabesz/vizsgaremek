@@ -9,6 +9,6 @@ import { BaseService } from './base.service';
 export class SampleService extends BaseService<Sample> {
   constructor(public override http: HttpClient) {
     super(http);
-    this.entityName = 'samples';
+    this.entityName = 'sample';
   }
 }
