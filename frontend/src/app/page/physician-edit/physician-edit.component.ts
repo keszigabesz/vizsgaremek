@@ -27,7 +27,7 @@ export class PhysicianEditComponent implements OnInit {
   ngOnInit(): void {
     this.ar.params.subscribe({
       next: (param) =>
-        (this.physician$ = this.physicianService.get(param['id'])),
+        (this.physician$ = this.physicianService.get(param['_id'])),
     });
     this.physician$.subscribe({
       next: (physician) =>
@@ -37,7 +37,7 @@ export class PhysicianEditComponent implements OnInit {
 
   onSend(physician: Physician) {
     const crudObservable: Observable<any> =
-      physician.id !== 0
+      physician._id !== ''
         ? this.physicianService.update(physician)
         : this.physicianService.create(physician);
     crudObservable.subscribe((result) => {

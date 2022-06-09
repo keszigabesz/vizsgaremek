@@ -76,34 +76,29 @@ export class ConfigService {
   ];
 
   patientTableColumns: INgTableColumn[] = [
-    { key: 'id', title: '#' },
     { key: 'name', title: 'Név' },
     { key: 'taj', title: 'TAJ' },
     { key: 'birth_date', title: 'Szül. idő' },
     { key: 'mothers_name', title: 'Anyja neve' },
   ];
   physicianTableColumns: INgTableColumn[] = [
-    { key: 'id', title: '#' },
     { key: 'name', title: 'Név' },
     { key: 'reg_number', title: 'Pecsétszám' },
     { key: 'city', title: 'Település' },
   ];
   reagentTableColumns: INgTableColumn[] = [
-    { key: 'id', title: '#' },
     { key: 'name', title: 'Név' },
     { key: 'manufacturer', title: 'Gyártó' },
     { key: 'price', title: 'Ár' },
     { key: 'stock', title: 'Készlet' },
   ];
   sampleTableColumns: INgTableColumn[] = [
-    { key: 'id', title: '#' },
     { key: 'type', title: 'Típus' },
     { key: 'patient_name', title: 'Beteg neve' },
     { key: 'physician_name', title: 'Beküldő orvos' },
     { key: 'sampling_date', title: 'Mintavétel dátuma' },
   ];
   testTableColumns: INgTableColumn[] = [
-    { key: 'id', title: '#' },
     { key: 'name', title: 'Név' },
     { key: 'price', title: 'Ár' },
     { key: 'point', title: 'TB pont' },

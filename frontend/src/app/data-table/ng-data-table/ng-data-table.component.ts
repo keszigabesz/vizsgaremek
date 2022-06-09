@@ -27,7 +27,7 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
   filterKey: string = '';
 
   //sorting
-  sort: string = 'id';
+  sort: string = '';
   descendingOrder: boolean = false;
 
   // paging
@@ -63,8 +63,8 @@ export class NgDataTableComponent<T extends { [x: string]: any }>
 
   // actions
 
-  onEdit(id: any): void {
-    this.editItem.emit(id);
+  onEdit(_id: any): void {
+    this.editItem.emit(_id);
   }
   onDelete(item: any): void {
     if (confirm('Biztos, hogy törölni akar?')) {

@@ -24,7 +24,7 @@ export class SampleComponent implements OnInit {
 
   onDeleteOne(sample: Sample): void {
     this.sampleService
-      .delete(sample.id)
+      .delete(sample._id)
       .subscribe(() => (this.list$ = this.sampleService.getAll()));
   }
 }

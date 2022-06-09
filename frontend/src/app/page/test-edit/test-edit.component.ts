@@ -26,7 +26,7 @@ export class TestEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.test$ = this.testService.get(param['id'])),
+      next: (param) => (this.test$ = this.testService.get(param['_id'])),
     });
     this.test$.subscribe({
       next: (test) => (this.test = test ? test : this.test),
@@ -35,7 +35,7 @@ export class TestEditComponent implements OnInit {
 
   onSend(test: Test) {
     const crudObservable: Observable<any> =
-      test.id !== 0
+      test._id !== ''
         ? this.testService.update(test)
         : this.testService.create(test);
     crudObservable.subscribe((result) => {

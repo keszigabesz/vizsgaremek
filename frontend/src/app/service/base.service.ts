@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class BaseService<T extends {id: number, [key: string]: any}> {
+export class BaseService<T extends {_id: string , [key: string]: any}> {
   apiUrl: string = environment.apiUrl;
   entityName: string = '';
 
@@ -16,8 +16,8 @@ export class BaseService<T extends {id: number, [key: string]: any}> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entityName}`);
   }
 
-  get(id: number): Observable<T> {
-    return this.http.get<T>(`${this.apiUrl}${this.entityName}/${id}`);
+  get(_id: string): Observable<T> {
+    return this.http.get<T>(`${this.apiUrl}${this.entityName}/${_id}`);
   }
 
   create(entity: T): Observable<T> {
@@ -26,12 +26,12 @@ export class BaseService<T extends {id: number, [key: string]: any}> {
 
   update(entity: T): Observable<T> {
     return this.http.patch<T>(
-      `${this.apiUrl}${this.entityName}/${entity.id}`,
+      `${this.apiUrl}${this.entityName}/${entity._id}`,
       entity
     );
   }
 
-  delete(id: number): Observable<T> {
-    return this.http.delete<T>(`${this.apiUrl}${this.entityName}/${id}`);
+  delete(_id: string): Observable<T> {
+    return this.http.delete<T>(`${this.apiUrl}${this.entityName}/${_id}`);
   }
 }

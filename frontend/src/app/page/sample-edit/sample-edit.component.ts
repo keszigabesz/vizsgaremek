@@ -48,7 +48,7 @@ export class SampleEditComponent implements OnInit {
       },
     });
     this.ar.params.subscribe({
-      next: (param) => (this.sample$ = this.sampleService.get(param['id'])),
+      next: (param) => (this.sample$ = this.sampleService.get(param['_id'])),
     });
     this.sample$.subscribe({
       next: (sample) => (this.sample = sample ? sample : this.sample),
@@ -57,7 +57,7 @@ export class SampleEditComponent implements OnInit {
 
   onSend(sample: Sample) {
     const crudObservable: Observable<any> =
-      sample.id !== 0
+      sample._id !== ''
         ? this.sampleService.update(sample)
         : this.sampleService.create(sample);
     crudObservable.subscribe((result) => {

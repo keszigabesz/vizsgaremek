@@ -26,7 +26,7 @@ export class ReagentEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.reagent$ = this.reagentService.get(param['id'])),
+      next: (param) => (this.reagent$ = this.reagentService.get(param['_id'])),
     });
     this.reagent$.subscribe({
       next: (reagent) => (this.reagent = reagent ? reagent : this.reagent),
@@ -35,7 +35,7 @@ export class ReagentEditComponent implements OnInit {
 
   onSend(reagent: Reagent) {
     const crudObservable: Observable<any> =
-      reagent.id !== 0
+      reagent._id !== ''
         ? this.reagentService.update(reagent)
         : this.reagentService.create(reagent);
     crudObservable.subscribe((result) => {

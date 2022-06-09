@@ -24,7 +24,7 @@ export class ReagentComponent implements OnInit {
 
   onDeleteOne(reagent: Reagent): void {
     this.reagentService
-      .delete(reagent.id)
+      .delete(reagent._id)
       .subscribe(() => (this.list$ = this.reagentService.getAll()));
   }
 }
