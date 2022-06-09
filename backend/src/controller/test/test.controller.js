@@ -1,39 +1,39 @@
-const Patient = require('../../model/patient');
+const Test = require('../../model/test');
 const service = require('../base/base.service');
 const createError = require('http-errors');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Patient)
+    return service.findAll(Test)
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Patient, req.params.id)
-        .then( patient => {
-            if (!patient) {
-                return next(new createError.NotFound("Patient is not found"));
+    return service.findOne(Test, req.params.id)
+        .then( test => {
+            if (!test) {
+                return next(new createError.NotFound("Test is not found"));
             }
-            return res.json(patient);
+            return res.json(test);
         });
 };
 
 exports.create = (req, res, next) => {
-    const { name, taj, birth_date, mothers_name } = req.body;
-    if (!taj || !name || !birth_date || !mothers_name) {
+    const { name, price, point, description } = req.body;
+    if (!name || !price || !point || !description) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
-    const newPatient = {
+    const newTest = {
         name: name,
-        taj: taj,
-        birth_date: birth_date,
-        mothers_name: mothers_name
+        price: price,
+        point: point,
+        description: description
     };    
 
-    return service.create(Patient, newPatient)
+    return service.create(Test, newTest)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -43,8 +43,8 @@ exports.create = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { name, taj, birth_date,  mothers_name } = req.body;
-    if (!taj || !name || !birth_date || !mothers_name) {
+    const { name, price, point, description } = req.body;
+    if (!name || !price || !point || !description) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
@@ -52,13 +52,13 @@ exports.update = (req, res, next) => {
 
     const update = {
         name: name,
-        taj: taj,
-        birth_date: birth_date,
-        mothers_name: mothers_name
+        price: price,
+        point: point,
+        description: description
     };
-    return service.update(Patient, req.params.id, update)
-        .then(patient => {
-            res.json(patient);
+    return service.update(Test, req.params.id, update)
+        .then(test => {
+            res.json(test);
         })
         .catch( err => {
             next(new createError.InternalServerError(err.message));
@@ -67,7 +67,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Patient, req.params.id)
+    return service.delete(Test, req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));
