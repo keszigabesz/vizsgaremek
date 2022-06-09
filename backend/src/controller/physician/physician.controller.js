@@ -1,42 +1,42 @@
-const Patient = require('../../model/patient');
+const Physician = require('../../model/physician');
 const service = require('../base/base.service');
 const createError = require('http-errors');
+const physician = require('../../model/physician');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Patient)
+    return service.findAll(Physician)
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Patient, req.params.id)
-        .then( patient => {
-            if (!patient) {
-                return next(new createError.NotFound("Patient is not found"));
+    return service.findOne(Physician, req.params.id)
+        .then( physician => {
+            if (!physician) {
+                return next(new createError.NotFound("Physician is not found"));
             }
-            return res.json(patient);
+            return res.json(physician);
         });
 };
 
 exports.create = (req, res, next) => {
-    const { name, taj, birth_date, mothers_name} = req.body;
-    if (!taj || !name || !birth_date || !mothers_name) {
+    const { name, reg_number,  city } = req.body;
+    if (!name || !reg_number || !city) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
-    const newPatient = {
+    const newPhysician = {
         name: name,
-        taj: taj,
-        birth_date: birth_date,
-        mothers_name: mothers_name
+        reg_number: reg_number,
+        city: city
     };
 
     
-    const patient = new Patient(newPatient);
+    const physician = new Physician(newPhysician);
 
-    return service.create(patient)
+    return service.create(physician)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -46,8 +46,8 @@ exports.create = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { name, taj, birth_date,  mothers_name} = req.body;
-    if (!taj || !name || !birth_date || !mothers_name) {
+    const { name, reg_number,  city} = req.body;
+    if (!name || !reg_number || !city) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
@@ -55,13 +55,12 @@ exports.update = (req, res, next) => {
 
     const update = {
         name: name,
-        taj: taj,
-        birth_date: birth_date,
-        mothers_name: mothers_name
+        reg_number: reg_number,
+        city: city
     };
-    return service.update(Patient, req.params.id, update)
-        .then(patient => {
-            res.json(patient);
+    return service.update(Physician, req.params.id, update)
+        .then(physician => {
+            res.json(physician);
         })
         .catch( err => {
             next(new createError.InternalServerError(err.message));
@@ -70,7 +69,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Patient, req.params.id)
+    return service.delete(Physician, req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));

@@ -28,6 +28,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.use('/patient', require('./controller/patient/patient.router'));
+app.use('/physician', require('./controller/physician/physician.router'));
 
 
 
