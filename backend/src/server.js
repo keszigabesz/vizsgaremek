@@ -3,6 +3,7 @@ const config = require('config');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const logger = require('./config/logger');
 
 const app = express();
 
@@ -15,12 +16,13 @@ mongoose.connect(`mongodb+srv://${host}`, {
         user,
         pass,
     }).then(conn => {
-        console.log('Mongo DB connection successfull!');
+        logger.info('MongoDB connection has been established successfully.');
         // require('./seeder/seeder');
-        // console.log('Database is seeded');
+        // logger.info('Database is seeded');
     })
     .catch(err => {
-        throw new Error(err.message);
+        logger.error(err);
+        process.exit();
     });
 
 app.use(cors());
