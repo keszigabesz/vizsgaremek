@@ -34,7 +34,7 @@ app.use('/physician', require('./controller/physician/physician.router'));
 app.use('/reagent', require('./controller/reagent/reagent.router'));
 app.use('/sample', require('./controller/sample/sample.router'));
 app.use('/test', require('./controller/test/test.router'));
-
+app.use('/statistic', require('./controller/statistic/statistic.router'));
 
 app.use((err, req, res, next) => {
     console.error(`ERROR ${err.statusCode}: ${err.message}`);
