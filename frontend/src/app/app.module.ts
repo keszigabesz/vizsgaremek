@@ -13,7 +13,6 @@ import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { HeaderComponent } from './common/header/header.component';
-import { CountPipe } from './pipe/count.pipe';
 import { PatientComponent } from './page/patient/patient.component';
 import { SampleComponent } from './page/sample/sample.component';
 import { TestComponent } from './page/test/test.component';
@@ -40,7 +39,6 @@ import { LoaderComponent } from './common/loader/loader.component';
     LoginComponent,
     AdminComponent,
     HeaderComponent,
-    CountPipe,
     PatientComponent,
     SampleComponent,
     TestComponent,
