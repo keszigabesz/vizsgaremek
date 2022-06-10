@@ -1,6 +1,5 @@
 const express = require('express');
 const controller = require('./statistic.controller');
-const Patient = require('../../model/patient');
 
 const router = express.Router();
 
@@ -20,5 +19,8 @@ router.get('/test-count', (req, res, next) => {
   return controller.countTest(req, res, next);
 });
 
+router.get('/city-count', (req, res, next) => {
+  return controller.countCity(req, res, next);
+});
 
 module.exports = router;

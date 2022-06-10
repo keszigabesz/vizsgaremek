@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   physicianCount$: Observable<any> = this.statisticService.getCount('physician-count');
   testCount$: Observable<any> = this.statisticService.getCount('test-count');
   sampleCount$: Observable<any> = this.statisticService.getCount('sample-count');
+  cityCount$: Observable<any> = this.statisticService.getCount('city-count');
 
   constructor(
     private statisticService: StatisticService,
