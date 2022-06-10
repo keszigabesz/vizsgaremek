@@ -34,6 +34,16 @@ app.use('/sample', require('./controller/sample/sample.router'));
 app.use('/test', require('./controller/test/test.router'));
 
 
+app.use((err, req, res, next) => {
+    console.error(`ERROR ${err.statusCode}: ${err.message}`);
+    res.status(err.statusCode);
+    res.json({
+        hasError: true,
+        message: err.message
+    });
+});
+
+
 
 
 module.exports = app;
