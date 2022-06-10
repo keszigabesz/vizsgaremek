@@ -17,7 +17,7 @@
               <h4 class="card-title">Hozzánk érkező betegek</h4>
             </div>
             <div class="card-body">
-              <p>Az ország minden részéből érkeznek hozzánk betegek, eddig összesen {{patientCount$ | async }}
+              <p>Az ország minden részéből érkeznek hozzánk betegek, eddig összesen <strong>{{patientCount$ | async }}</strong>
                 beteg
                 mintáján végeztünk vizsgálatokat.</p>
             </div>
@@ -29,7 +29,7 @@
               <h4 class="card-title">Feldolgozott minták</h4>
             </div>
             <div class="card-body">
-              <p>Napont rengeteg vizsgálati anyag érkezik mhozzánk, eddig {{sampleCount$ | async }} vizsgálati
+              <p>Napont rengeteg vizsgálati anyag érkezik mhozzánk, eddig <strong>{{sampleCount$ | async }}</strong> vizsgálati
                 anyagot
                 dolgoztunk fel.</p>
             </div>
@@ -43,7 +43,7 @@
               <h4 class="card-title">Beküldő orvosaink</h4>
             </div>
             <div class="card-body">
-              <p>Az ország {{cityCount$ | async}} településéről {{physicianCount$ | async }} orvos küldi hozzánk a mintákat
+              <p>Az ország <strong>{{cityCount$ | async}}</strong> településéről <strong>{{physicianCount$ | async }}</strong> orvos küldi hozzánk a mintákat
                 vizsgálatra.
               </p>
             </div>
@@ -55,7 +55,7 @@
               <h4 class="card-title">A laboratóriumunkban elérhető vizsgálatok</h4>
             </div>
             <div class="card-body">
-              <p>Jelenleg laboratóriumunkban {{testCount$ | async}} különféle vizsgálatot tudunk elvégezni.</p>
+              <p>Jelenleg laboratóriumunkban <strong>{{testCount$ | async}}</strong> különféle vizsgálatot tudunk elvégezni.</p>
             </div>
           </div>
         </div>
