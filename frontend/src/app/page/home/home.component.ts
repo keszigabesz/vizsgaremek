@@ -9,9 +9,8 @@ import { StatisticService } from 'src/app/service/statistic.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  title: string = 'Üdvözöljük a Micro-Lab oldalán!';
-  text: string =
-    'A Micro-Lab modern diagnosztikai szolgáltatásokat kínál - ezen belül rutin vizsgálatokat és speciális teszteket is. Célunk, hogy széles körben elérhetővé tegyük, költséghatékonyan, de a legmagasabb minőséget garantálva, a páciensek számára a labordiagnosztikai eljárásokat. Laboratóriumi vizsgálatok aznapi eredménnyel, az ország minden pontján.';
+  title: string = this.config.homeHeader.title;
+  text: string = this.config.homeHeader.text;
   sidebarMenuItems: IMenuItem[] = this.config.sidebarMenu;
 
   patientCount$: Observable<any> = this.statisticService.getCount('patient-count');
