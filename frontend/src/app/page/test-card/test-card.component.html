@@ -8,8 +8,17 @@
     <div class="container-fluid">
       <app-header [title]="title" [text]="text"></app-header>
 
+      <div class="col-6">
+        <input
+          [(ngModel)]="phrase"
+          type="text"
+          class="form-control"
+          placeholder="Keresés a vizsgálatok között...."
+        >
+      </div>
+
       <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-5" *ngFor="let test of list$ | async">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-5" *ngFor="let test of list$ | async | filter:phrase:filterKey">
         <div
           class="card h-100">
           <div class="card-header card-header-info">

@@ -17,6 +17,10 @@ export class TestCardComponent implements OnInit {
 
   sidebarMenuItems: IMenuItem[] = this.config.sidebarMenu;
 
+    // filter
+    phrase: string = '';
+    filterKey: string = 'name';
+
   currency: string = ' Ft';
   list$: Observable<Test[]> = this.testCardService.getAll();
 

@@ -17,6 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
   ],
-  exports: [NgDataTableComponent],
+  exports: [NgDataTableComponent, FilterPipe],
 })
 export class DataTableModule {}
