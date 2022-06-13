@@ -4,7 +4,7 @@ const User = require('../../model/user');
 const router = express.Router();
 
 router.post('/', async (req, res, next) => {
-    const newUser = new User({
+   /*  const newUser = new User({
         userName: 'user',
         fullName: 'User User',
         password: 'user',
@@ -21,7 +21,7 @@ router.post('/', async (req, res, next) => {
 
     return res.json({
         message: 'user created'
-    });
+    }); */
 
     const {
         userName,
@@ -37,7 +37,6 @@ router.post('/', async (req, res, next) => {
         if (err) {
             return res.sendStatus(403);
         }
-
         res.json({
             success: true
         })
