@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('../../model/user');
+const jwt = require('jsonwebtoken');
 
 const router = express.Router();
 
@@ -37,8 +38,21 @@ router.post('/', async (req, res, next) => {
         if (err) {
             return res.sendStatus(403);
         }
+
+        const accessToken = jwt.sign({
+            _id: user._id,
+            userName: user.userName,
+            role: 1,
+        }, 'egynagyo9ntitkosszöveg', {
+            expiresIn: '1h',
+        });
+
+
+
         res.json({
-            success: true
+            success: true, 
+            accessToken, 
+            user: {...user._doc, password: ''},
         })
     });
 });
@@ -51,7 +65,7 @@ fetch('http://localhost:3000/login', {
     headers: {
         'Content-Type': 'application/json'
     },
-    body: '{"email": "test@test.hu", "password": "test789"}',
+    body: '{"userName": "user", "password": "user"}',
 }).then(r => r.json())
     .then( d => console.log(d) );
 */
