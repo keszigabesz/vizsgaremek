@@ -8,9 +8,8 @@ import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 })
 export class AdminComponent implements OnInit {
 
-  title: string = 'Kedves Felhasználó, Ön belépett a Micro-Lab adminisztrációs felületére!';
-  text: string =
-    'Kérjük, hogy a laboratórium adminisztrációs rendszerében az adatokat nagy körültekintéssel kezelje! Köszönettel: a Micro-Lab vezetősége.';
+  title: string = this.config.adminHeader.title;
+  text: string = this.config.adminHeader.text;
 
     sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 

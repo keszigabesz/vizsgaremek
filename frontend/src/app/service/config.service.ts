@@ -116,5 +116,18 @@ export class ConfigService {
     'orr váladék',
   ];
 
+  homeHeader: any = {
+    title: 'Üdvözöljük a Micro-Lab oldalán!',
+    text: 'A Micro-Lab modern diagnosztikai szolgáltatásokat kínál - ezen belül rutin vizsgálatokat és speciális teszteket is. Célunk, hogy széles körben elérhetővé tegyük, költséghatékonyan, de a legmagasabb minőséget garantálva, a páciensek számára a labordiagnosztikai eljárásokat. Laboratóriumi vizsgálatok aznapi eredménnyel, az ország minden pontján.',
+  };
+  testCardHeader: any = {
+    title: 'Aktuálisan elérhető vizsgálataink',
+    text: 'Itt találja a Micro-Lab által jelenleg végzett vizsgálatokat. Az elérhető vizsgálatok listáját folyamatosan bővítjük.',
+  };
+  adminHeader: any = {
+    title: 'Kedves Felhasználó, Ön belépett a Micro-Lab adminisztrációs felületére!',
+    text: 'Kérjük, hogy a laboratórium adminisztrációs rendszerében az adatokat nagy körültekintéssel kezelje! Köszönettel: a Micro-Lab vezetősége.',
+  };
+
   constructor() {}
 }
