@@ -35,6 +35,13 @@ export class AuthService {
   ) {
     this.loginUrl = `${this.apiUrl}login`;
 
+    const loginInfo = sessionStorage.getItem('login');
+    if (loginInfo) {
+      const loginObject = JSON.parse(loginInfo);
+      this.access_token$.next(loginObject.accessToken);
+      this.user$.next(loginObject.user);
+    }
+
     this.user$.subscribe({
       next: user => {
         if (user) {
