@@ -59,9 +59,14 @@ export class AuthService {
   login(loginData: ILoginData): void {
     this.http.post<IAuthModel>(this.loginUrl, loginData).subscribe({
       next: (response: IAuthModel) => {
+        this.toastr.success('Sikeres bejelentkezés.', '', {
+          timeOut: 1800,
+          positionClass: 'toast-top-right',
+        }),
         this.user$.next(response.user);
         this.access_token$.next(response.accessToken);
         sessionStorage.setItem('login', JSON.stringify(response));
+
       },
       error: (err) =>
         this.toastr.error('Sikertelen bejelentkezés, próbálja meg újra!', '', {
@@ -72,6 +77,10 @@ export class AuthService {
   }
 
   logout(): void {
+    this.toastr.warning('Sikeres kijelentkezés.', '', {
+      timeOut: 1800,
+      positionClass: 'toast-top-right',
+    }),
     this.user$.next(null);
     sessionStorage.removeItem('login');
   }
