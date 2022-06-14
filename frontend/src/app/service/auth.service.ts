@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '../model/user';
@@ -8,7 +9,7 @@ import { User } from '../model/user';
 export interface IAuthModel {
   success: boolean;
   accessToken: string;
-  user: User,
+  user: User;
 }
 
 export interface ILoginData {
@@ -17,10 +18,9 @@ export interface ILoginData {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-
   apiUrl: string = environment.apiUrl;
 
   loginUrl: string = '';
@@ -32,6 +32,7 @@ export class AuthService {
   constructor(
     private http: HttpClient,
     private router: Router,
+    private toastr: ToastrService
   ) {
     this.loginUrl = `${this.apiUrl}login`;
 
@@ -43,7 +44,7 @@ export class AuthService {
     }
 
     this.user$.subscribe({
-      next: user => {
+      next: (user) => {
         if (user) {
           this.router.navigate(['/', 'admin']);
         } else {
@@ -51,24 +52,27 @@ export class AuthService {
           this.access_token$.next('');
           sessionStorage.removeItem('login');
         }
-      }
+      },
     });
+  }
 
-   }
-
-   login(loginData: ILoginData): void {
+  login(loginData: ILoginData): void {
     this.http.post<IAuthModel>(this.loginUrl, loginData).subscribe({
       next: (response: IAuthModel) => {
-       this.user$.next(response.user);
+        this.user$.next(response.user);
         this.access_token$.next(response.accessToken);
         sessionStorage.setItem('login', JSON.stringify(response));
       },
-      error: (err) => console.error(err),
+      error: (err) =>
+        this.toastr.error('Sikertelen bejelentkezés, próbálja meg újra!', '', {
+          timeOut: 1800,
+          positionClass: 'toast-top-right',
+        }),
     });
   }
 
   logout(): void {
     this.user$.next(null);
+    sessionStorage.removeItem('login');
   }
-
 }
