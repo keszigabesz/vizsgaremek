@@ -42,6 +42,7 @@
                     [(ngModel)]="physician.name"
                     pattern="^([A-Ű]{1,1}[a-ű]{1,}) ([A-Ű]{1,1}[a-ű]{1,})$"
                     required
+                    autofocus
                   >
                 </div>
                 <div class="validation validation-danger mb-3" [hidden]="physicianForm.controls['name']?.valid">
