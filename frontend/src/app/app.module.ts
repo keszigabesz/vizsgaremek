@@ -7,7 +7,7 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { PhysicianComponent } from './page/physician/physician.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { TestCardComponent } from './page/test-card/test-card.component';
 import { LoginComponent } from './page/login/login.component';
@@ -56,6 +56,7 @@ import { LoaderComponent } from './common/loader/loader.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     DataTableModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),

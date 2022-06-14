@@ -17,7 +17,7 @@ mongoose.connect(`mongodb+srv://${host}`, {
         pass,
     }).then(conn => {
         logger.info('MongoDB connection has been established successfully.');
-        // require('./seeder/seeder');
+        // require('./module/seeder/seeder');
         // logger.info('Database is seeded');
     })
     .catch(err => {

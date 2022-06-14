@@ -43,7 +43,7 @@ router.post('/', async (req, res, next) => {
             _id: user._id,
             userName: user.userName,
             role: 1,
-        }, 'egynagyo9ntitkosszöveg', {
+        }, process.env.ACCESS_TOKEN_SECRET, {
             expiresIn: '1h',
         });
 
