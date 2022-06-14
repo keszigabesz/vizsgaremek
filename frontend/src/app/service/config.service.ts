@@ -6,7 +6,6 @@ export interface IMenuItem {
   title: string;
   icon?: string;
   class: string;
-  iconClass: string;
 }
 
 @Injectable({
@@ -14,20 +13,12 @@ export interface IMenuItem {
 })
 export class ConfigService {
   sidebarMenu: IMenuItem[] = [
-    { link: '/', title: 'Kezdőoldal', icon: 'home', class: '', iconClass: '' },
+    { link: '/', title: 'Kezdőoldal', icon: 'home', class: '', },
     {
       link: '/test-card',
       title: 'Elérhető vizsgálatok',
       icon: 'science',
       class: '',
-      iconClass: '',
-    },
-    {
-      link: '/login',
-      title: 'Bejelentkezés',
-      icon: 'login',
-      class: 'text-danger',
-      iconClass: 'icon-red',
     },
   ];
   adminSidebarMenu: IMenuItem[] = [
@@ -36,42 +27,30 @@ export class ConfigService {
       title: 'Betegek',
       icon: 'person',
       class: '',
-      iconClass: '',
     },
     {
       link: '/sample',
       title: 'Minták',
       icon: 'biotech',
       class: '',
-      iconClass: '',
     },
     {
       link: '/physician',
       title: 'Orvosok',
       icon: 'person',
       class: '',
-      iconClass: '',
     },
     {
       link: '/test',
       title: 'Vizsgálatok',
       icon: 'science',
       class: '',
-      iconClass: '',
     },
     {
       link: '/reagent',
       title: 'Reagensek',
       icon: 'bloodtype',
       class: '',
-      iconClass: '',
-    },
-    {
-      link: '/logout',
-      title: 'Kijelentkezés',
-      icon: 'logout',
-      class: 'text-danger',
-      iconClass: 'icon-red',
     },
   ];
 

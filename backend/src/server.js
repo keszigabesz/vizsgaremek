@@ -17,7 +17,7 @@ mongoose.connect(`mongodb+srv://${host}`, {
         pass,
     }).then(conn => {
         logger.info('MongoDB connection has been established successfully.');
-        // require('./seeder/seeder');
+        // require('./module/seeder/seeder');
         // logger.info('Database is seeded');
     })
     .catch(err => {
@@ -29,13 +29,16 @@ app.use(cors());
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.use('/patient', require('./controller/patient/patient.router'));
-app.use('/physician', require('./controller/physician/physician.router'));
-app.use('/reagent', require('./controller/reagent/reagent.router'));
-app.use('/sample', require('./controller/sample/sample.router'));
-app.use('/test', require('./controller/test/test.router'));
+const authencticateJwt = require('./module/auth/authentication');
+
+app.use('/patient', authencticateJwt, require('./controller/patient/patient.router'));
+app.use('/physician', authencticateJwt, require('./controller/physician/physician.router'));
+app.use('/reagent', authencticateJwt, require('./controller/reagent/reagent.router'));
+app.use('/sample',authencticateJwt, require('./controller/sample/sample.router'));
+app.use('/test',authencticateJwt, require('./controller/test/test.router'));
 app.use('/test-card', require('./controller/test/test.router'));
 app.use('/statistic', require('./controller/statistic/statistic.router'));
+app.use('/login', require('./controller/login/login.router'));
 
 app.use((err, req, res, next) => {
     console.error(`ERROR ${err.statusCode}: ${err.message}`);
