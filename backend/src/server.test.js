@@ -2,7 +2,7 @@ const app = require('./server');
 const mongoose = require('mongoose');
 const supertest = require('supertest');
 const config = require('config');
-const Test = require('./model/test');
+const Test = require('./model/tests');
 const { response } = require('jest-mock-req-res');
 
 describe('REST API integration tests', () => {

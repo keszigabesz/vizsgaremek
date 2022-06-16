@@ -35,8 +35,8 @@ app.use('/patient', authencticateJwt, require('./controller/patient/patient.rout
 app.use('/physician', authencticateJwt, require('./controller/physician/physician.router'));
 app.use('/reagent', authencticateJwt, require('./controller/reagent/reagent.router'));
 app.use('/sample',authencticateJwt, require('./controller/sample/sample.router'));
-app.use('/test',authencticateJwt, require('./controller/test/test.router'));
-app.use('/test-card', require('./controller/test/test.router'));
+app.use('/test',authencticateJwt, require('./controller/labtest/labtest.router'));
+app.use('/test-card', require('./controller/labtest/labtest.router'));
 app.use('/statistic', require('./controller/statistic/statistic.router'));
 app.use('/login', require('./controller/login/login.router'));
 
