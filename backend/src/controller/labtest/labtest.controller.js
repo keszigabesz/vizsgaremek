@@ -1,4 +1,4 @@
-const Test = require('../../model/test');
+const Test = require('../../model/tests');
 const service = require('../base/base.service');
 const createError = require('http-errors');
 

@@ -2,7 +2,7 @@ const Patient = require('../../model/patient');
 const Physician = require('../../model/physician');
 const Reagent = require('../../model/reagent');
 const Sample = require('../../model/sample');
-const Test = require('../../model/test');
+const Test = require('../../model/tests');
 const statService = require('./statistic.service');
 
 const service = require('../base/base.service');
