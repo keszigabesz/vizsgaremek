@@ -2,7 +2,7 @@ const Patient = require('../../model/patient');
 const Physician = require('../../model/physician');
 const Reagent = require('../../model/reagent');
 const Sample = require('../../model/sample');
-const Test = require('../../model/tests');
+const Test = require('../../model/labtest');
 const statService = require('./statistic.service');
 
 const service = require('../base/base.service');
@@ -28,12 +28,12 @@ exports.countTest = async (req, res, next) => {
         .then(count => res.json(count));
 };
 exports.countCity = async (req, res, next) => {
-    const array = await service.findAll(Physician)
+    const physicians = await service.findAll(Physician)
     let city = [];
-    array.forEach(item => {
-        city.push(item.city);
+    physicians.forEach(physician => {
+        city.push(physician.city);
 
     });
-    const distinct = [...new Set(city)]
-    res.json(distinct.length)
+    const distinctCities = [...new Set(city)]
+    res.json(distinctCities.length)
 }

@@ -20,13 +20,96 @@ paths:
                                 type: array
                                 items:
                                     $ref: '#/components/schemas/Patient'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+        post:
+            description: Creates a new patient
+            security:
+                - bearerAuth: []
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Patient'
+            responses:
+                '200':
+                    description: Patient has been created successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Patient'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /patient/{_id}:
+        get:
+            description: Get one patient
+            security:
+                - bearerAuth: []
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a patient successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Patient'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+
 components:
     securitySchemes:
         bearerAuth:
             type: http
             scheme: bearer
             bearerFormat: JWT
+    responses:
+        NotFound:
+            description: The specified resource was not found
+            content:
+                application/json:
+                    schema:
+                        $ref: '#/components/schemas/Error'  
+        Unauthorized:
+            description: Unauthorized request
+            content:
+                application/json:
+                    schema:
+                        $ref: '#/components/schemas/Error'
+        BadRequest:
+            description: Invalid request with invalid data
+            content:
+                application/json:
+                    schema:
+                        $ref: '#/components/schemas/Error'
+        InternalServerError:
+            description: Internal server error
+            content:
+                application/json:
+                    schema:
+                        $ref: '#/components/schemas/Error'
     schemas:
+        Error:
+            type: object
+            properties:
+                code:
+                    type: number
+                message:
+                    type: string
+            require:
+                - code
+                - message
         Patient:
             type: object
             require:
