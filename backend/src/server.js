@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const logger = require('./config/logger');
+const swaggerUi = require('swagger-ui-express');
+const yaml = require('yamljs');
+
+const swaggerDocument = yaml.load('./docs/swagger.yaml');
 
 const app = express();
 
@@ -39,6 +43,7 @@ app.use('/test',authencticateJwt, require('./controller/labtest/labtest.router')
 app.use('/test-card', require('./controller/labtest/labtest.router'));
 app.use('/statistic', require('./controller/statistic/statistic.router'));
 app.use('/login', require('./controller/login/login.router'));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use((err, req, res, next) => {
     console.error(`ERROR ${err.statusCode}: ${err.message}`);
