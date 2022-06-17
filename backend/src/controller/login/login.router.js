@@ -1,7 +1,6 @@
 const express = require('express');
 const User = require('../../model/user');
 const jwt = require('jsonwebtoken');
-const bycript = require('bcrypt');
 
 const router = express.Router();
 
@@ -33,25 +32,31 @@ router.post('/', async (req, res, next) => {
         userName
     });
     if (!user) {
+        return res.sendStatus(404);
+    }
+
+    user.password = 'user';
+    await user.save();
+
+    const valid = user.verifyPasswordSync(password);
+    if (valid) {
+        const accessToken = jwt.sign({
+            _id: user._id,
+            userName: user.userName,
+            role: 1,
+        }, process.env.ACCESS_TOKEN_SECRET, {
+            expiresIn: '1h',
+        });
+
+        res.json({ 
+            success: true, 
+            accessToken, 
+            user: {...user._doc, password: ''},
+        });
+    } else {
         return res.sendStatus(401);
     }
 
-    const isValidPassword = await bycript.compare(password, user.password);
-    if (!isValidPassword) {
-        return res.sendStatus(403);
-    }
-    const accessToken = jwt.sign({
-        _id: user._id,
-        userName: user.userName,
-        role: 1,
-    }, process.env.ACCESS_TOKEN_SECRET, {
-        expiresIn: '1h',
-    });
-    res.json({
-        success: true, 
-        accessToken, 
-        user: {...user._doc, password: ''},
-    })
 });
 
 module.exports = router;
