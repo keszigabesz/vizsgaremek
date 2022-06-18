@@ -1,4 +1,7 @@
-const { mockRequest, mockResponse } = require('jest-mock-req-res');
+const {
+    mockRequest,
+    mockResponse
+} = require('jest-mock-req-res');
 const createError = require('http-errors');
 
 const personController = require('./labtest-card.controller');
@@ -47,7 +50,7 @@ describe("labtest controller", () => {
         response = mockResponse();
     });
 
-    test("find one with valid id", () => {
+    test("find one with valid id", async () => {
         const PERSON_ID = 1;
 
         const request = mockRequest({
@@ -56,21 +59,13 @@ describe("labtest controller", () => {
             }
         });
 
-        return personController.findOne(request, response, nextFunction)
-            .then( () => {
-                expect(personService.findOne).toBeCalledWith(PERSON_ID);
-                expect(response.json).toBeCalledWith(
-                    mockData.find(p => p.id === PERSON_ID)
-                );                
-            })
+        await personController.findOne(request, response, nextFunction);
+        expect(personService.findOne).toBeCalledWith(PERSON_ID);
+        expect(response.json).toBeCalledWith(
+            mockData.find(p => p.id === PERSON_ID)
+        );
+        expect(personService.findOne).toHaveLength(1);
     });
-    test("find all", () => {
-        const request = mockRequest();
-        const response = mockResponse();
+    
 
-        return personController.findAll(request, response, nextFunction)
-            .then( () => {
-                expect(Array.isArray(response.body)).toBeTruthy();               
-            })
-    });
 });
