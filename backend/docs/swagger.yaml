@@ -671,6 +671,91 @@ paths:
                 '401':
                     $ref: '#/components/responses/Unauthorized'
 
+    /statistic/patient-count:
+        get:
+            description: Return the number of patients
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of patients successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+
+    /statistic/physician-count:
+        get:
+            description: Return the number of physicians
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of physicians successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+
+    /statistic/reagent-count:
+        get:
+            description: Return the number of reagents
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of reagents successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+                                
+    /statistic/sample-count:
+        get:
+            description: Return the number of samples
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of samples successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+
+    /statistic/test-count:
+        get:
+            description: Return the number of laboratory tests
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of laboratory tests successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+
+    /statistic/city-count:
+        get:
+            description: Return the number of distinct cities of physicians
+            tags:
+                - Statistic
+            responses:
+                '200':
+                    description: Return the number of distinct cities of physicians successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: number
+                                example: 10
+
+
 components:
     securitySchemes:
         bearerAuth:
@@ -706,12 +791,9 @@ components:
         Error:
             type: object
             properties:
-                code:
-                    type: number
                 message:
                     type: string
             require:
-                - code
                 - message
         Patient:
             type: object
