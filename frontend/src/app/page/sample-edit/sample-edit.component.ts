@@ -16,7 +16,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./sample-edit.component.scss'],
 })
 export class SampleEditComponent implements OnInit {
-  sample$!: Observable<Sample>;
+  sample$: Observable<Sample> = new Observable();
   sample: Sample = new Sample();
   sampleTypes: any[] = this.configService.sampleTypes;
   patientList$: Observable<Patient[]> = this.patientService.getAll();
@@ -38,20 +38,16 @@ export class SampleEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.patientList$.subscribe({
-      next: (patients) => {
-        this.patientList = patients;
-      },
+      next: patients => this.patientList = patients
     });
     this.physicianList$.subscribe({
-      next: (physician) => {
-        this.physicianList = physician;
-      },
+      next: physician => this.physicianList = physician
     });
     this.ar.params.subscribe({
-      next: (param) => (this.sample$ = this.sampleService.get(param['id'])),
-    });
-    this.sample$.subscribe({
-      next: (sample) => (this.sample = sample ? sample : this.sample),
+      next: param => (this.sample$ = this.sampleService.get(param['id'])).subscribe({
+        next: sample => this.sample = sample,
+        error: error => console.log(error),
+      })
     });
   }
 

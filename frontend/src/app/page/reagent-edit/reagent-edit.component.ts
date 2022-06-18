@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./reagent-edit.component.scss'],
 })
 export class ReagentEditComponent implements OnInit {
-  reagent$!: Observable<Reagent>;
+  reagent$: Observable<Reagent> = new Observable();
   reagent: Reagent = new Reagent();
   sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
@@ -26,10 +26,10 @@ export class ReagentEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.reagent$ = this.reagentService.get(param['id'])),
-    });
-    this.reagent$.subscribe({
-      next: (reagent) => (this.reagent = reagent ? reagent : this.reagent),
+      next: param => (this.reagent$ = this.reagentService.get(param['id'])).subscribe({
+        next: reagent => this.reagent = reagent,
+        error: error => console.log(error),
+      })
     });
   }
 

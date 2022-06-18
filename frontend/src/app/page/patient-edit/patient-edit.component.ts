@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./patient-edit.component.scss'],
 })
 export class PatientEditComponent implements OnInit {
-  patient$!: Observable<Patient>;
+  patient$: Observable<Patient> = new Observable();
   patient: Patient = new Patient();
 
   sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
@@ -27,10 +27,10 @@ export class PatientEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.patient$ = this.patientService.get(param['id'])),
-    });
-    this.patient$.subscribe({
-      next: (patient) => (this.patient = patient ? patient : this.patient),
+      next: param => (this.patient$ = this.patientService.get(param['id'])).subscribe({
+        next: patient => this.patient = patient,
+        error: error => console.log(error),
+      })
     });
   }
 

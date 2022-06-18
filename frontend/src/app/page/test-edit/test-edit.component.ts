@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./test-edit.component.scss'],
 })
 export class TestEditComponent implements OnInit {
-  test$!: Observable<Test>;
+  test$: Observable<Test> = new Observable();
   test: Test = new Test();
   sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
 
@@ -26,10 +26,10 @@ export class TestEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.ar.params.subscribe({
-      next: (param) => (this.test$ = this.testService.get(param['id'])),
-    });
-    this.test$.subscribe({
-      next: (test) => (this.test = test ? test : this.test),
+      next: param => (this.test$ = this.testService.get(param['id'])).subscribe({
+        next: test => this.test = test,
+        error: error => console.log(error),
+      })
     });
   }
 
