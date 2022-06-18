@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res, next) => {
-  logger.info('GET /labtest-card');
+  logger.info('GET /test-card');
   return controller.findAll(req, res, next);
 });
 
