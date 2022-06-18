@@ -40,7 +40,7 @@ app.use('/physician', authencticateJwt, require('./controller/physician/physicia
 app.use('/reagent', authencticateJwt, require('./controller/reagent/reagent.router'));
 app.use('/sample',authencticateJwt, require('./controller/sample/sample.router'));
 app.use('/test',authencticateJwt, require('./controller/labtest/labtest.router'));
-app.use('/test-card', require('./controller/labtest/labtest.router'));
+app.use('/test-card', require('./controller/labtest-card/labtest-card.router'));
 app.use('/statistic', require('./controller/statistic/statistic.router'));
 app.use('/login', require('./controller/login/login.router'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));

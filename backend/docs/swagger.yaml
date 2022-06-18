@@ -5,12 +5,27 @@ info:
     description: A Vizsgaremek végpontjainak részletes leírása és használata
 servers:
     - url: http://localhost:3000
+tags:
+    - name: Patient
+      description: To manage patient informations
+    - name: Laboratory test
+      description: To manage laboratory test informations
+    - name: Physician
+      description: To manage physician informations
+    - name: Reagent
+      description: To manage reagent informations
+    - name: Sample
+      description: To manage sample informations
+    - name: Statistic
+      description: To get some statistical informations
 paths:
     /patient:
         get:
             description: Returns a list of patients
             security:
                 - bearerAuth: []
+            tags:
+                - Patient
             responses:
                 '200':
                     description: Success
@@ -26,6 +41,8 @@ paths:
             description: Creates a new patient
             security:
                 - bearerAuth: []
+            tags:
+                - Patient
             requestBody:
                 required: true
                 content:
@@ -48,9 +65,11 @@ paths:
 
     /patient/{_id}:
         get:
-            description: Get one patient
+            description: Gets one patient
             security:
                 - bearerAuth: []
+            tags:
+                - Patient
             parameters:
                 - name: _id
                   in: path
@@ -65,8 +84,592 @@ paths:
                             schema:
                                 type: object
                                 $ref: '#/components/schemas/Patient'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+        put:
+            description: Updates a patient
+            security:
+                - bearerAuth: []
+            tags:
+                - Patient
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Patient'
+            responses:
+                '200':
+                    description: Patient has been updated successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Patient'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+        delete:
+            description: Deletes a patient
+            security:
+                - bearerAuth: []
+            tags:
+                - Patient
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            responses:
+                '200':
+                    description: Patient has been deleted successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /test:
+        get:
+            description: Returns a list of laboratory tests
+            security:
+                - bearerAuth: []
+            tags:
+                - Laboratory test
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Labtest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+        post:
+            description: Creates a new laboratory test
+            security:
+                - bearerAuth: []
+            tags:
+                - Laboratory test
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Labtest'
+            responses:
+                '200':
+                    description: Laboratory test has been created successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Labtest'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+                    
+    /test/{_id}:
+        get:
+            description: Gets one laboratory test
+            security:
+                - bearerAuth: []
+            tags:
+                - Laboratory test
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a laboratory test successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Labtest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+        put:
+            description: Updates a laboratory test
+            security:
+                - bearerAuth: []
+            tags:
+                - Laboratory test
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Labtest'
+            responses:
+                '200':
+                    description: Laboratory test has been updated successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Labtest'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+        delete:
+            description: Deletes a laboratory test
+            security:
+                - bearerAuth: []
+            tags:
+                - Laboratory test
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            responses:
+                '200':
+                    description: Laboratory test has been deleted successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /physician:
+        get:
+            description: Returns a list of physicians
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Physician'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+        post:
+            description: Creates a new physician
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Physician'
+            responses:
+                '200':
+                    description: Physician has been created successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Physician'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+                    
+    /physician/{_id}:
+        get:
+            description: Gets one physician
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a physician successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Physician'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+        put:
+            description: Updates a physician
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Physician'
+            responses:
+                '200':
+                    description: Physician has been updated successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Physician'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+        delete:
+            description: Deletes a physician
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            responses:
+                '200':
+                    description: Physician has been deleted successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /reagent:
+        get:
+            description: Returns a list of reagents
+            security:
+                - bearerAuth: []
+            tags:
+                - Reagent
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Reagent'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+        post:
+            description: Creates a new reagent
+            security:
+                - bearerAuth: []
+            tags:
+                - Reagent
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Reagent'
+            responses:
+                '200':
+                    description: Reagent has been created successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Reagent'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+                    
+    /reagent/{_id}:
+        get:
+            description: Gets one reagent
+            security:
+                - bearerAuth: []
+            tags:
+                - Reagent
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a reagent successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Reagent'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+        put:
+            description: Updates a reagent
+            security:
+                - bearerAuth: []
+            tags:
+                - Reagent
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Reagent'
+            responses:
+                '200':
+                    description: Reagent has been updated successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Reagent'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+        delete:
+            description: Deletes a reagent
+            security:
+                - bearerAuth: []
+            tags:
+                - Reagent
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            responses:
+                '200':
+                    description: Reagent has been deleted successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /sample:
+        get:
+            description: Returns a list of samples
+            security:
+                - bearerAuth: []
+            tags:
+                - Sample
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Sample'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+        post:
+            description: Creates a new sample
+            security:
+                - bearerAuth: []
+            tags:
+                - Sample
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Sample'
+            responses:
+                '200':
+                    description: Sample has been created successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Sample'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+                    
+    /sample/{_id}:
+        get:
+            description: Gets one sample
+            security:
+                - bearerAuth: []
+            tags:
+                - Sample
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a sample successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Sample'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+        put:
+            description: Updates a sample
+            security:
+                - bearerAuth: []
+            tags:
+                - Sample
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Sample'
+            responses:
+                '200':
+                    description: Sample has been updated successfully
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Sample'
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+        delete:
+            description: Deletes a sample
+            security:
+                - bearerAuth: []
+            tags:
+                - Sample
+            parameters:
+                - in: path
+                  name: _id
+                  required: true
+                  schema: 
+                    type: string
+            responses:
+                '200':
+                    description: Sample has been deleted successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /test-card:
+        get:
+            description: Returns a list of laboratory tests to list on main page on cards without authorization
+            tags:
+                - Laboratory test
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Labtest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
 
 components:
     securitySchemes:
@@ -125,4 +728,75 @@ components:
                 birth_date:
                     type: string
                 mothers_name:
+                    type: string
+        Labtest:
+            type: object
+            require:
+                - name
+                - price
+                - point
+                - description
+            properties:
+                name:
+                    type: string
+                price:
+                    type: number
+                point:
+                    type: number
+                description:
+                    type: string
+        Physician:
+            type: object
+            require:
+                - name
+                - reg_number
+                - city
+            properties:
+                name:
+                    type: string
+                reg_number:
+                    type: number
+                city:
+                    type: string
+        Reagent:
+            type: object
+            require:
+                - name
+                - manufacturer
+                - price
+                - stock
+            properties:
+                name:
+                    type: string
+                manufacturer:
+                    type: string
+                price:
+                    type: number
+                stock:
+                    type: number
+        Sample:
+            type: object
+            require:
+                - type
+                - patient_name
+                - physician_name
+                - sampling_date
+            properties:
+                type:
+                    type: string
+                patient_name:
+                    type: string
+                physician_name:
+                    type: string
+                sampling_date:
+                    type: string
+        User:
+            type: object
+            require:
+                - userName
+                - fullName
+            properties:
+                userName:
+                    type: string
+                fullName:
                     type: string
