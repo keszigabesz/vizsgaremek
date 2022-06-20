@@ -671,6 +671,30 @@ paths:
                 '401':
                     $ref: '#/components/responses/Unauthorized'
 
+    /test-card/{_id}:
+        get:
+            description: Gets one laboratory test
+            tags:
+                - Laboratory test
+            parameters:
+                - name: _id
+                  in: path
+                  required: true
+                  schema: 
+                      type: string
+            responses:
+                '200':
+                    description: Returns a laboratory test successfully
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                $ref: '#/components/schemas/Labtest'
+                '401':
+                    $ref: '#/components/responses/Unauthorized'
+                '404':
+                    $ref: '#/components/responses/NotFound'
+
     /statistic/patient-count:
         get:
             description: Return the number of patients
