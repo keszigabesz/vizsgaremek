@@ -61,15 +61,17 @@ import { AuthService } from './service/auth.service';
     FormsModule,
     DataTableModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 1800,
+      positionClass: 'toast-top-right',
+      closeButton: true
+    }),
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JwtInterceptor,
-      deps: [
-        AuthService,
-      ],
+      deps: [AuthService],
       multi: true,
     },
   ],

@@ -40,10 +40,7 @@ export class PatientEditComponent implements OnInit {
         ? this.patientService.update(patient)
         : this.patientService.create(patient);
     crudObservable.subscribe((result) => {
-      this.toastr.success('Sikeres mentés.', '', {
-        timeOut: 1800,
-        positionClass: 'toast-top-right'
-      });
+      this.toastr.success('Sikeres mentés.', '');
       this.router.navigate(['/', 'patient']);
     });
   }

@@ -39,10 +39,7 @@ export class ReagentEditComponent implements OnInit {
         ? this.reagentService.update(reagent)
         : this.reagentService.create(reagent);
     crudObservable.subscribe((result) => {
-      this.toastr.success('Sikeres mentés.', '', {
-        timeOut: 1800,
-        positionClass: 'toast-top-right'
-      });
+      this.toastr.success('Sikeres mentés.', '');
       this.router.navigate(['/', 'reagent']);
     });
   }

@@ -57,10 +57,7 @@ export class SampleEditComponent implements OnInit {
         ? this.sampleService.update(sample)
         : this.sampleService.create(sample);
     crudObservable.subscribe((result) => {
-      this.toastr.success('Sikeres mentés.', '', {
-        timeOut: 1800,
-        positionClass: 'toast-top-right'
-      });
+      this.toastr.success('Sikeres mentés.', '');
       this.router.navigate(['/', 'sample']);
     });
   }
