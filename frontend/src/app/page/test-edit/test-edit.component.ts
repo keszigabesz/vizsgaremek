@@ -39,10 +39,7 @@ export class TestEditComponent implements OnInit {
         ? this.testService.update(test)
         : this.testService.create(test);
     crudObservable.subscribe((result) => {
-      this.toastr.success('Sikeres mentés.', '', {
-        timeOut: 1800,
-        positionClass: 'toast-top-right'
-      });
+      this.toastr.success('Sikeres mentés.', '');
       this.router.navigate(['/', 'test']);
     });
   }

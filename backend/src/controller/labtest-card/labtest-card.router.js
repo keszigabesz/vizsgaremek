@@ -10,4 +10,9 @@ router.get('/', (req, res, next) => {
   return controller.findAll(req, res, next);
 });
 
+router.get('/:id', (req, res, next) => {
+  logger.info('GET /test/:id');
+  return controller.findOne(req, res, next);
+});
+
 module.exports = router;
