@@ -66,13 +66,5 @@ describe("labtest controller", () => {
         );
         expect(personService.findOne).toHaveLength(1);
     });
-    test("find all", async () => {   
-
-        const request = mockRequest();
-
-        await personController.findAll(request, response, nextFunction);
-        console.log(response.json);
-    });
-    
 
 });
