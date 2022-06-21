@@ -31,7 +31,7 @@
                 >
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="name"
                   >Név <span class="validation-danger">*</span></label>
                   <input
@@ -42,6 +42,7 @@
                     [(ngModel)]="reagent.name"
                     pattern="^([A-Ű]{1,1}[A-Űa-ű -]{1,})$"
                     required
+                    autofocus
                   >
                 </div>
                 <div class="validation validation-danger mb-3" [hidden]="reagentForm.controls['name']?.valid">
@@ -50,7 +51,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="manufacturer"
                   >Gyártó <span class="validation-danger">*</span></label>
                   <input
@@ -69,7 +70,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="price"
                   >Ár <span class="validation-danger">*</span></label>
                   <input
@@ -88,7 +89,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="stock"
                   >Készlet <span class="validation-danger">*</span></label>
                   <input

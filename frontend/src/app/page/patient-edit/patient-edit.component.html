@@ -31,7 +31,7 @@
                 >
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="name"
                   >Név <span class="validation-danger">*</span></label>
                   <input
@@ -42,6 +42,7 @@
                     [(ngModel)]="patient.name"
                     pattern="^([A-Ű]{1,1}[a-ű]{1,}) ([A-Ű]{1,1}[a-ű]{1,})$"
                     required
+                    autofocus
                   >
                 </div>
                 <div class="validation validation-danger mb-3" [hidden]="patientForm.controls['name']?.valid">
@@ -50,7 +51,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="taj"
                   >TAJ <span class="validation-danger">*</span></label>
                   <input
@@ -69,7 +70,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="birth_date"
                   >Születési idő <span class="validation-danger">*</span></label>
                   <input
@@ -87,7 +88,7 @@
 
                 <div class="form-group">
                   <label
-                    class="bmd-label-floating"
+                    class=""
                     for="mothers_name"
                   >Anyja neve <span class="validation-danger">*</span></label>
                   <input
