@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
     version: 1.0.0
-    title: Vizsgaremek Szerver API Dokumentáció
-    description: A Vizsgaremek végpontjainak részletes leírása és használata
+    title: Certifying Exam Project Server API Documentation
+    description: Detailed description and use of the Certifying Exam Project's endpoints
 servers:
     - url: http://localhost:3000
 tags:
