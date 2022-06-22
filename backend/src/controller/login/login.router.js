@@ -35,7 +35,7 @@ router.post('/', async (req, res, next) => {
         return res.sendStatus(404);
     }
 
-   // user.password = 'user';
+    // user.password = 'password1234';
    // await user.save();
 
     const valid = user.verifyPasswordSync(password);

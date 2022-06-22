@@ -42,8 +42,8 @@ The purpose of the application is to record, maintain and manage the Micro-Lab m
 ### **Login**  
 *You must be logged in to edit the data:*  
 
-- Username: user 
-- Password: user
+- Username: username 
+- Password: password1234
 
 ---
 ## *Endpoint documentation*
