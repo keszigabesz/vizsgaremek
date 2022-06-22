@@ -1,29 +1,54 @@
 # Goal of application and installation instructions
 
-## Goal of application
+## *Goal of application*
 The purpose of the application is to record, maintain and manage the Micro-Lab microbiology laboratory's data on patients, doctors, samples, laboratory tests and reagents for tests.
 
 ---
 
-## Installation instructions
+## *Installation instructions*
 
-### Szükséges programok (telepítés az adott sorrendbe történjen)
-1. Git: töltsük le és telepítsük a Git alkalmazást. Ki kell választani a számítógép operációs rendszerének megfelelő telepítőt (Windows, Mac, Linux): https://git-scm.com/downloads
-2. Node JS: töltsük le és telepítsük a legfrisebb LTS verziót: https://nodejs.org/en/
-3. Angular keretrendszer: parancssorból adjuk ki a `npm i -g @angular/cli` parancsot
-4. Docke Desktop: töltsük le és telepítsük a Docker Desktop alkalmazást. Ki kell választani a számítógép operációs rendszerének megfelelő telepítőt (Windows, Mac, Linux): https://www.docker.com/get-started/
+### **Required applications and softwares** (telepítés az adott sorrendbe történjen)
+1. Git: Download and install the Git application. Choose the appropriate installer for your computer's operating system (Windows, Mac, Linux): https://git-scm.com/downloads
+2. Node JS: Download and install the latest LTS version: https://nodejs.org/en/
+3. Angular framework: In the command line issue the command: `npm i -g @angular/cli`
+4. Docke Desktop: Download and install the Docker Desktop application. Choose the appropriate installer for your computer's operating system (Windows, Mac, Linux): https://www.docker.com/get-started/
 
-### Az app letöltése
-1. Parancssorban klónozzuk le a repository-t: `git clone https://github.com/keszigabesz/vizsgaremek.git`
+### **Download the application**
+1. In the command line clone the repository: `git clone https://github.com/keszigabesz/vizsgaremek.git`
 
-### Függőségek telepítése
-1. A leklónozott repository-ban lépjünk be a frontend mappába.
-2. Adjuk ki a `npm i` parancsot.
-3. Lépjünk ki a frontend mappából, lépjünk be a backend mappába.
-2. Adjuk ki a `npm i` parancsot.
+### **Install dependencies**
+1. In the cloned repository change to the frontend directory.
+2. Run the `npm i` command.
+3. In the cloned repository change to the backend directory.
+2. Run the `npm i` command.
 
-### Docker Desktop futtatása
-1. Indítsuk el a korábban letöltött és telepített Dosker Desktop alkalmazást, ha esetleg még nem futna.
+### **Running Docker Desktop**
+1. Start the Docker Desktop application.
 
-### Az alkalmazás futtatása
-1.
+### **Running the application**
+1. Change to the backend directory.
+2. Run the `npm run deploy` command in the command line.
+3. If the start was successfull, in the command line appeared: `micro_lab  | App is listening at http://localhost:3000`
+4. In a browser open: http://localhost:3000
+
+### **Error during running the application**
+*If the previous method does not start the application, you can start the application in the following way.*
+1. Change to the backend directory.
+2. Run the `npm start` command to run the server.
+3. In another command line change to the frontend directory.
+4. Run the `ng serve -o` command to build the angular application.
+5. The application opens automatically in the default browser at http://localhost:4220
+
+### **Login**  
+*You must be logged in to edit the data:*  
+
+- Username: user 
+- Password: user
+
+---
+## *Endpoint documentation*
+A swagger documentation can be found at: https://localhost:3000/api-docs
+
+---
+## *User Story*
+A User Story can be found at: https://github.com/keszigabesz/vizsgaremek/blob/main/README.md
