@@ -55,7 +55,7 @@ describe('REST API integration tests', () => {
     test('GET /statistic/sample-count', done => {
        supertest(app).get('/statistic/sample-count').expect(200)
         .then(response => { 
-            expect(response.body).toBe(200)        
+            expect(response.body).toBe(100)        
             done();
         });
     });
