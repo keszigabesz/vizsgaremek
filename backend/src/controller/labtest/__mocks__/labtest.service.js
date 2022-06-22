@@ -1,4 +1,4 @@
-const labtestService = jest.mock('./labtest-card.service');
+const labtestService = jest.mock('./labtest.service');
 
 let mockData;
 
