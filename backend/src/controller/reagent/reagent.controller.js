@@ -1,15 +1,14 @@
-const Reagent = require('../../model/reagent');
-const service = require('../base/base.service');
+const service = require('./reagent.service');
 const createError = require('http-errors');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Reagent)
+    return service.findAll()
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Reagent, req.params.id)
+    return service.findOne(req.params.id)
         .then(reagent => {
             if (!reagent) {
                 return next(new createError.NotFound("Reagent is not found"));
@@ -38,7 +37,7 @@ exports.create = (req, res, next) => {
         stock: stock
     };
 
-    return service.create(Reagent, newReagent)
+    return service.create(newReagent)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -66,7 +65,7 @@ exports.update = (req, res, next) => {
         price: price,
         stock: stock
     };
-    return service.update(Reagent, req.params.id, update)
+    return service.update(req.params.id, update)
         .then(reagent => {
             res.json(reagent);
         })
@@ -77,7 +76,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Reagent, req.params.id)
+    return service.delete(req.params.id)
         .then(() => res.json({}))
         .catch(err => {
             next(new createError.InternalServerError(err.message));

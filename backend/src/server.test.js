@@ -38,4 +38,11 @@ describe('REST API integration tests', () => {
             done();
         });
     });
+    test('GET /statistic/patient-count', done => {
+       supertest(app).get('/statistic/patient-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(100)        
+            done();
+        });
+    });
 });

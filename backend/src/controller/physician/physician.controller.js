@@ -1,16 +1,14 @@
-const Physician = require('../../model/physician');
-const service = require('../base/base.service');
+const service = require('./physician.service');
 const createError = require('http-errors');
-const physician = require('../../model/physician');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Physician)
+    return service.findAll()
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Physician, req.params.id)
+    return service.findOne(req.params.id)
         .then( physician => {
             if (!physician) {
                 return next(new createError.NotFound("Physician is not found"));
@@ -36,7 +34,7 @@ exports.create = (req, res, next) => {
     
     
 
-    return service.create(Physician, newPhysician)
+    return service.create(newPhysician)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -58,7 +56,7 @@ exports.update = (req, res, next) => {
         reg_number: reg_number,
         city: city
     };
-    return service.update(Physician, req.params.id, update)
+    return service.update(req.params.id, update)
         .then(physician => {
             res.json(physician);
         })
@@ -69,7 +67,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Physician, req.params.id)
+    return service.delete(req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));
