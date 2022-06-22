@@ -1,15 +1,14 @@
-const Sample = require('../../model/sample');
-const service = require('../base/base.service');
+const service = require('./sample.service');
 const createError = require('http-errors');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Sample)
+    return service.findAll()
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Sample, req.params.id)
+    return service.findOne(req.params.id)
         .then( sample => {
             if (!sample) {
                 return next(new createError.NotFound("Sample is not found"));
@@ -33,7 +32,7 @@ exports.create = (req, res, next) => {
         sampling_date: sampling_date
     };    
 
-    return service.create(Sample, newSample)
+    return service.create(newSample)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -56,7 +55,7 @@ exports.update = (req, res, next) => {
         physician_name: physician_name,
         sampling_date: sampling_date
     };
-    return service.update(Sample, req.params.id, update)
+    return service.update(req.params.id, update)
         .then(sample => {
             res.json(sample);
         })
@@ -67,7 +66,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Sample, req.params.id)
+    return service.delete(req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));
