@@ -17,4 +17,13 @@
   }
 }
 
-
+@mixin loader-style ($bottom, $height, $left, $margin, $position, $right, $top, $width) {
+  bottom: $bottom;
+  height: $height;
+  left: $left;
+  margin: $margin;
+  position: $position;
+  right: $right;
+  top: $top;
+  width: $width;
+}
