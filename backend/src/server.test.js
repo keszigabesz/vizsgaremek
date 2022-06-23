@@ -31,4 +31,39 @@ describe('REST API integration tests', () => {
             done();
         });
     });
+    test('GET /statistic/patient-count', done => {
+       supertest(app).get('/statistic/patient-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(100)        
+            done();
+        });
+    });
+    test('GET /statistic/physician-count', done => {
+       supertest(app).get('/statistic/physician-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(100)        
+            done();
+        });
+    });
+    test('GET /statistic/reagent-count', done => {
+       supertest(app).get('/statistic/reagent-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(80)        
+            done();
+        });
+    });
+    test('GET /statistic/sample-count', done => {
+       supertest(app).get('/statistic/sample-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(100)        
+            done();
+        });
+    });
+    test('GET /statistic/test-count', done => {
+       supertest(app).get('/statistic/test-count').expect(200)
+        .then(response => { 
+            expect(response.body).toBe(60)        
+            done();
+        });
+    });
 });

@@ -4,12 +4,12 @@ const {
 } = require('jest-mock-req-res');
 const createError = require('http-errors');
 
-const labtestController = require('./labtest-card.controller');
-const labtestService = require('./labtest-card.service');
+const labtestController = require('./labtest.controller');
+const labtestService = require('./labtest.service');
 
-jest.mock('./labtest-card.service');
+jest.mock('./labtest.service');
 
-describe("labtest-card controller", () => {
+describe("labtest controller", () => {
     const mockData = [{
         "id": 1,
         "name": "LABTEST",

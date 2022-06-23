@@ -1,15 +1,14 @@
-const Patient = require('../../model/patient');
-const service = require('../base/base.service');
+const service = require('./patient.service');
 const createError = require('http-errors');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Patient)
+    return service.findAll()
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Patient, req.params.id)
+    return service.findOne(req.params.id)
         .then( patient => {
             if (!patient) {
                 return next(new createError.NotFound("Patient is not found"));
@@ -33,7 +32,7 @@ exports.create = (req, res, next) => {
         mothers_name: mothers_name
     };    
 
-    return service.create(Patient, newPatient)
+    return service.create(newPatient)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -56,7 +55,7 @@ exports.update = (req, res, next) => {
         birth_date: birth_date,
         mothers_name: mothers_name
     };
-    return service.update(Patient, req.params.id, update)
+    return service.update(req.params.id, update)
         .then(patient => {
             res.json(patient);
         })
@@ -67,7 +66,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Patient, req.params.id)
+    return service.delete(req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));

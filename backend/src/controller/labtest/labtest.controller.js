@@ -1,15 +1,14 @@
-const Test = require('../../model/labtest');
-const service = require('../base/base.service');
+const service = require('./labtest.service');
 const createError = require('http-errors');
 
 
 exports.findAll = (req, res, next) => {
-    return service.findAll(Test)
+    return service.findAll()
         .then(list => res.json(list));
 };
 
 exports.findOne = (req, res, next) => {
-    return service.findOne(Test, req.params.id)
+    return service.findOne(req.params.id)
         .then( test => {
             if (!test) {
                 return next(new createError.NotFound("Test is not found"));
@@ -33,7 +32,7 @@ exports.create = (req, res, next) => {
         description: description
     };    
 
-    return service.create(Test, newTest)
+    return service.create(newTest)
         .then(cp => {
             res.status(201);
             res.json(cp);
@@ -56,7 +55,7 @@ exports.update = (req, res, next) => {
         point: point,
         description: description
     };
-    return service.update(Test, req.params.id, update)
+    return service.update(req.params.id, update)
         .then(test => {
             res.json(test);
         })
@@ -67,7 +66,7 @@ exports.update = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    return service.delete(Test, req.params.id)
+    return service.delete(req.params.id)
         .then( () => res.json({}) )
         .catch( err => {
             next(new createError.InternalServerError(err.message));
