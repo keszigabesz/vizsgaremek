@@ -40,7 +40,7 @@
                     type="text"
                     name="name"
                     [(ngModel)]="physician.name"
-                    pattern="^([A-Ű]{1,1}[a-ű]{1,}) ([A-Ű]{1,1}[a-ű]{1,})$"
+                    pattern="^([A-ZÖÜÓŐÚŰÉÁÍ]{1,1}[a-ű]{1,}) ([A-ZÖÜÓŐÚŰÉÁÍ]{1,1}[a-ű]{1,})$"
                     required
                     autofocus
                   >
@@ -79,7 +79,7 @@
                     type="text"
                     name="city"
                     [(ngModel)]="physician.city"
-                    pattern="^([A-Ű]{1,1}[a-ű -]{1,})$"
+                    pattern="^([A-ZÖÜÓŐÚŰÉÁÍ]{1,1}[a-ű -]{1,})"
                     required
                   >
                 </div>

@@ -40,7 +40,7 @@
                     type="text"
                     name="name"
                     [(ngModel)]="reagent.name"
-                    pattern="^([A-Ű]{1,1}[A-Űa-ű -]{1,})$"
+                    pattern="^([A-ZÖÜÓŐÚŰÉÁÍ]{1,1}[A-Űa-ű \-0-9]{1,})$"
                     required
                     autofocus
                   >
@@ -60,7 +60,7 @@
                     type="text"
                     name="manufacturer"
                     [(ngModel)]="reagent.manufacturer"
-                    pattern="^([A-Ű]{1,1}[A-Űa-ű -]{1,})$"
+                    pattern="^([A-ZÖÜÓŐÚÉÁÍ]{1,1}[A-Űa-ű \-]{1,})$"
                     required
                   >
                 </div>
