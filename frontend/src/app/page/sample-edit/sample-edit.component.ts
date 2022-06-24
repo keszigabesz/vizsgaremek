@@ -16,14 +16,14 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./sample-edit.component.scss'],
 })
 export class SampleEditComponent implements OnInit {
+  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
   sample$: Observable<Sample> = new Observable();
   sample: Sample = new Sample();
   sampleTypes: any[] = this.configService.sampleTypes;
-  patientList$: Observable<Patient[]> = this.patientService.getAll();
-  patientList: Patient[] = [];
-  physicianList$: Observable<Physician[]> = this.physicianService.getAll();
-  physicianList: Physician[] = [];
-  sidebarMenuItems: IMenuItem[] = this.config.adminSidebarMenu;
+  patientNames: Observable<any> = this.patientService.getNames('patient-name');
+  physicianNames: Observable<any> = this.physicianService.getNames('physician-name');
+  patientSearch: string = '';
+  physicianSearch: string = '';
 
   constructor(
     private router: Router,
@@ -37,21 +37,21 @@ export class SampleEditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.patientList$.subscribe({
-      next: patients => this.patientList = patients
-    });
-    this.physicianList$.subscribe({
-      next: physician => this.physicianList = physician
-    });
     this.ar.params.subscribe({
       next: param => (this.sample$ = this.sampleService.get(param['id'])).subscribe({
-        next: sample => this.sample = sample,
+        next: sample => {
+          this.sample = sample
+          this.patientSearch = sample.patient_name
+          this.physicianSearch = sample.physician_name
+        },
         error: error => console.log(error),
       })
     });
   }
 
   onSend(sample: Sample) {
+    sample.patient_name=this.patientSearch;
+    sample.physician_name=this.physicianSearch;
     const crudObservable: Observable<any> =
       sample._id
         ? this.sampleService.update(sample)
@@ -61,4 +61,15 @@ export class SampleEditComponent implements OnInit {
       this.router.navigate(['/', 'sample']);
     });
   }
+
+
+  patientSelect(result: any) {
+    this.patientSearch = result;
+  }
+  physicianSelect(result: any) {
+    this.physicianSearch = result;
+  }
+
+
+
 }

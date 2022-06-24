@@ -34,7 +34,9 @@ app.use(bodyParser.json());
 const authencticateJwt = require('./module/auth/authentication');
 
 app.use('/patient', authencticateJwt, require('./controller/patient/patient.router'));
+app.use('/patient-name', authencticateJwt, require('./controller/patient/patient.-namerouter'));
 app.use('/physician', authencticateJwt, require('./controller/physician/physician.router'));
+app.use('/physician-name', authencticateJwt, require('./controller/physician/physician-name.roter'));
 app.use('/reagent', authencticateJwt, require('./controller/reagent/reagent.router'));
 app.use('/sample',authencticateJwt, require('./controller/sample/sample.router'));
 app.use('/test',authencticateJwt, require('./controller/labtest/labtest.router'));

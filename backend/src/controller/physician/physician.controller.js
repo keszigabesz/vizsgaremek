@@ -73,3 +73,13 @@ exports.delete = (req, res, next) => {
             next(new createError.InternalServerError(err.message));
         } );
 };
+
+exports.physicianNames = async (req, res, next) => {
+    const physicians = await service.findAll()
+    let physiciansName = [];
+    physicians.forEach(physician => {
+        physiciansName.push(physician.name);
+
+    });
+    res.json(physiciansName)
+};

@@ -20,6 +20,10 @@ export class BaseService<T extends {_id: string , [key: string]: any}> {
     return this.http.get<T>(`${this.apiUrl}${this.entityName}/${_id}`);
   }
 
+  getNames(endPoint: string): Observable<T> {
+    return this.http.get<T>(`${this.apiUrl}${endPoint}`);
+  }
+
   create(entity: T): Observable<T> {
     return this.http.post<T>(`${this.apiUrl}${this.entityName}`, entity);
   }

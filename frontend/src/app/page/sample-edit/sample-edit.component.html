@@ -47,12 +47,13 @@
                       selected
                       hidden
                     >Kérjük válasszon</option>
-                    <option
-                      *ngFor="let type of sampleTypes"
-                    >{{ type }}</option>
+                    <option *ngFor="let type of sampleTypes">{{ type }}</option>
                   </select>
                 </div>
-                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['type']?.valid">
+                <div
+                  class="validation validation-danger mb-3"
+                  [hidden]="sampleForm.controls['type']?.valid"
+                >
                   A minta típusát kötelező kitölteni
                 </div>
 
@@ -61,25 +62,22 @@
                     class=""
                     for="patient_name"
                   >Beteg neve <span class="validation-danger">*</span></label>
-                  <select
+                  <input
                     class="form-control"
                     id="patient_name"
                     name="patient_name"
                     [(ngModel)]="sample.patient_name"
                     required
+                    [value]="patientSearch"
+                    ngxTypeahead
+                    [taList]="patientNames | async"
+                    (taSelected)="patientSelect($event)"
                   >
-                    <option
-                      value=""
-                      disabled
-                      selected
-                      hidden
-                    >Kérjük válasszon</option>
-                    <option
-                      *ngFor="let patient of patientList"
-                    >{{ patient.name }}</option>
-                  </select>
                 </div>
-                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['patient_name']?.valid">
+                <div
+                  class="validation validation-danger mb-3"
+                  [hidden]="sampleForm.controls['patient_name']?.valid"
+                >
                   A beteg nevét kötelező kitölteni. Ha nem találja a listában, akkor először vegye fel a betegek közé.
                 </div>
 
@@ -89,25 +87,22 @@
                     for="physician_name"
                   >Beküldő orvos <span class="validation-danger">*</span></label>
 
-                  <select
+                  <input
                     class="form-control"
                     id="physician_name"
                     name="physician_name"
                     [(ngModel)]="sample.physician_name"
                     required
+                    [value]="physicianSearch"
+                    ngxTypeahead
+                    [taList]="physicianNames | async"
+                    (taSelected)="physicianSelect($event)"
                   >
-                    <option
-                      value=""
-                      disabled
-                      selected
-                      hidden
-                    >Kérjük válasszon</option>
-                    <option
-                      *ngFor="let physician of physicianList"
-                    >{{ physician.name }}</option>
-                  </select>
                 </div>
-                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['physician_name']?.valid">
+                <div
+                  class="validation validation-danger mb-3"
+                  [hidden]="sampleForm.controls['physician_name']?.valid"
+                >
                   A orvos nevét kötelező kitölteni. Ha nem találja a listában, akkor először vegye fel az orvosok közé.
                 </div>
 
@@ -126,7 +121,10 @@
                     required
                   >
                 </div>
-                <div class="validation validation-danger mb-3" [hidden]="sampleForm.controls['sampling_date']?.valid">
+                <div
+                  class="validation validation-danger mb-3"
+                  [hidden]="sampleForm.controls['sampling_date']?.valid"
+                >
                   A mintavétel idejét kötelező kitölteni.
                 </div>
 

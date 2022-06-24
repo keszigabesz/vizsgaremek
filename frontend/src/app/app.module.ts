@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxTypeaheadModule } from 'ngx-typeahead';
 
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
@@ -66,6 +67,7 @@ import { AuthService } from './service/auth.service';
       positionClass: 'toast-top-right',
       closeButton: true
     }),
+    NgxTypeaheadModule,
   ],
   providers: [
     {

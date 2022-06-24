@@ -37,6 +37,8 @@ paths:
                                     $ref: '#/components/schemas/Patient'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         post:
             description: Creates a new patient
             security:
@@ -88,6 +90,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         put:
             description: Updates a patient
             security:
@@ -164,6 +168,8 @@ paths:
                                     $ref: '#/components/schemas/Labtest'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         post:
             description: Creates a new laboratory test
             security:
@@ -215,6 +221,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         put:
             description: Updates a laboratory test
             security:
@@ -291,6 +299,8 @@ paths:
                                     $ref: '#/components/schemas/Physician'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         post:
             description: Creates a new physician
             security:
@@ -342,6 +352,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         put:
             description: Updates a physician
             security:
@@ -418,6 +430,8 @@ paths:
                                     $ref: '#/components/schemas/Reagent'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         post:
             description: Creates a new reagent
             security:
@@ -469,6 +483,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         put:
             description: Updates a reagent
             security:
@@ -545,6 +561,8 @@ paths:
                                     $ref: '#/components/schemas/Sample'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         post:
             description: Creates a new sample
             security:
@@ -596,6 +614,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
         put:
             description: Updates a sample
             security:
@@ -670,6 +690,8 @@ paths:
                                     $ref: '#/components/schemas/Labtest'
                 '401':
                     $ref: '#/components/responses/Unauthorized'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /test-card/{_id}:
         get:
@@ -694,6 +716,8 @@ paths:
                     $ref: '#/components/responses/Unauthorized'
                 '404':
                     $ref: '#/components/responses/NotFound'
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /statistic/patient-count:
         get:
@@ -708,6 +732,8 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /statistic/physician-count:
         get:
@@ -722,6 +748,8 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /statistic/reagent-count:
         get:
@@ -736,6 +764,8 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
                                 
     /statistic/sample-count:
         get:
@@ -750,6 +780,8 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /statistic/test-count:
         get:
@@ -764,6 +796,8 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
     /statistic/city-count:
         get:
@@ -778,7 +812,48 @@ paths:
                             schema:
                                 type: number
                                 example: 10
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
+    /patient-name:
+        get:
+            description: Return the list of patients
+            security:
+                - bearerAuth: []
+            tags:
+                - Patient
+            responses:
+                '200':
+                    description: Return the list of patients successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items: 
+                                    type: string
+                                    example: Kiss István
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
+
+    /physician-name:
+        get:
+            description: Return the list of physicians
+            security:
+                - bearerAuth: []
+            tags:
+                - Physician
+            responses:
+                '200':
+                    description: Return the list of physicians successfully
+                    content:
+                        aplication/json:
+                            schema:
+                                type: array
+                                items: 
+                                    type: string
+                                    example: Nagy Mária
+                '500':
+                    $ref: '#/components/responses/InternalServerError'
 
 components:
     securitySchemes:

@@ -105,3 +105,13 @@ th.clickable-column {
   }
 }
 
+.ta-results.list-group{
+  max-width: 400px;
+  overflow: auto;
+  max-height: 75vh;
+  background-color: colors.$main;
+}
+
+.ta-item {
+  color: white;
+}

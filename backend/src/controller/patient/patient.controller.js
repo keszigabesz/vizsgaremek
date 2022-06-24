@@ -72,3 +72,13 @@ exports.delete = (req, res, next) => {
             next(new createError.InternalServerError(err.message));
         } );
 };
+
+exports.patientNames = async (req, res, next) => {
+    const patients = await service.findAll()
+    let patientsName = [];
+    patients.forEach(patient => {
+        patientsName.push(patient.name);
+
+    });
+    res.json(patientsName)
+};
