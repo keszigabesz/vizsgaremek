@@ -25,12 +25,17 @@ export class ReagentEditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.ar.params.subscribe({
-      next: param => (this.reagent$ = this.reagentService.get(param['id'])).subscribe({
-        next: reagent => this.reagent = reagent,
-        error: error => console.log(error),
-      })
-    });
+    const id = this.ar.snapshot.paramMap.get('id');
+    if (id !== '000000000000000000000000') {
+      this.ar.params.subscribe({
+        next: param => (this.reagent$ = this.reagentService.get(id)).subscribe({
+          next: reagent => this.reagent = reagent,
+          error: error => console.log(error),
+        })
+      });
+    }
+
+
   }
 
   onSend(reagent: Reagent) {

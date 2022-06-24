@@ -26,12 +26,15 @@ export class PatientEditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.ar.params.subscribe({
-      next: param => (this.patient$ = this.patientService.get(param['id'])).subscribe({
-        next: patient => this.patient = patient,
-        error: error => console.log(error),
-      })
-    });
+    const id = this.ar.snapshot.paramMap.get('id');
+    if (id !== '000000000000000000000000') {
+      this.ar.params.subscribe({
+        next: param => (this.patient$ = this.patientService.get(id)).subscribe({
+          next: patient => this.patient = patient,
+          error: error => console.log(error),
+        })
+      });
+    }
   }
 
   onSend(patient: Patient) {

@@ -16,7 +16,7 @@ export class BaseService<T extends {_id: string , [key: string]: any}> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entityName}`);
   }
 
-  get(_id: string): Observable<T> {
+  get(_id: string | null): Observable<T> {
     return this.http.get<T>(`${this.apiUrl}${this.entityName}/${_id}`);
   }
 

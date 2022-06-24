@@ -37,16 +37,19 @@ export class SampleEditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.ar.params.subscribe({
-      next: param => (this.sample$ = this.sampleService.get(param['id'])).subscribe({
-        next: sample => {
-          this.sample = sample
-          this.patientSearch = sample.patient_name
-          this.physicianSearch = sample.physician_name
-        },
-        error: error => console.log(error),
-      })
-    });
+    const id = this.ar.snapshot.paramMap.get('id');
+    if (id !== '000000000000000000000000') {
+      this.ar.params.subscribe({
+        next: param => (this.sample$ = this.sampleService.get(id)).subscribe({
+          next: sample => {
+            this.sample = sample
+            this.patientSearch = sample.patient_name
+            this.physicianSearch = sample.physician_name
+          },
+          error: error => console.log(error),
+        })
+      });
+    }
   }
 
   onSend(sample: Sample) {
