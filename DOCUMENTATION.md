@@ -18,7 +18,7 @@ The purpose of the application is to record, maintain and manage the Micro-Lab m
 
 ### **Install dependencies**
 1. In the cloned repository change to the frontend directory.
-2. Run the `npm i` command.
+2. Run the `npm i --force` command.
 3. In the cloned repository change to the backend directory.
 2. Run the `npm i` command.
 
